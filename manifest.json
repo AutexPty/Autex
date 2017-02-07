@@ -3,7 +3,7 @@
   "description": "",
   "details": "A Test Power-Up to prove trello can be upgraded.",
   "icon": {
-    "url": "./images/autexlogo.png"
+    "url": "./images/autexlogo.png.png"
   },
   "author": "Trello Inc",
   "capabilities": [
