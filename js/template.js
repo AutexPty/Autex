@@ -94,7 +94,7 @@ var boardButtonCallback = function(t){
     title: 'Popup List Example',
     items: [
       {
-        text: 'Autex Custom Menu',
+        text: 'Open Overlay',
         callback: function(t){
           return t.overlay({
             url: './overlay.html',
@@ -202,7 +202,7 @@ TrelloPowerUp.initialize({
   'board-buttons': function(t, options){
     return [{
       icon: WHITE_ICON,
-      text: 'Template',
+      text: 'Autex Options',
       callback: boardButtonCallback
     }];
   },
@@ -214,7 +214,11 @@ TrelloPowerUp.initialize({
       icon: GRAY_ICON,
       text: 'Template',
       callback: cardButtonCallback
-    }];
+    },{
+      icon: GRAY_ICON,
+      text: 'Products',
+      callback: cardButtonCallback		
+	}];
   },
   'card-detail-badges': function(t, options) {
     return getBadges(t);
