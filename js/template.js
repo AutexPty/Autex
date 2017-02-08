@@ -19,16 +19,6 @@ var parkMap = {
   zion: 'Zion National Park'
 };
 
-var products = {
-  VTF: 'Vertiface',
-  ASL: 'Greenstuf Autex Soffit Liner',
-  GSC: 'Greenstuf Ceiling batts',
-  GSW: 'Greenstuf Wall batts'
-  QSP: 'Quietspace Panel',
-  QSA: 'Quietspace Composition Acoustic Fabric',
-  CUB: 'Cube Panel'
-}
-
 var getBadges = function(t){
   return t.card('name')
   .get('name')
@@ -94,7 +84,7 @@ var boardButtonCallback = function(t){
     title: 'Popup List Example',
     items: [
       {
-        text: 'Autex Custom Menu',
+        text: 'Open Overlay',
         callback: function(t){
           return t.overlay({
             url: './overlay.html',
