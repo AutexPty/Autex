@@ -17,6 +17,7 @@ t.render(function(){
   .then(function(yellowstoneAttachments){
     var urls = yellowstoneAttachments.map(function(a){ return a.url; });
     document.getElementById('urls').textContent = urls.join(', ');
+    debugger;
   })
   .then(function(){
     return t.sizeTo('#content');
