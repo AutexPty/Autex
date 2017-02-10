@@ -1,0 +1,3 @@
+function AddProduct() {
+  alert('bang');
+}
