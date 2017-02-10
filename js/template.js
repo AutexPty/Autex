@@ -112,6 +112,7 @@ var boardButtonCallback = function(t){
 };
 
 var cardButtonCallback = function(t){
+  debugger;
   var items = Object.keys(parkMap).map(function(parkCode){
     var urlForCode = 'http://www.nps.gov/' + parkCode + '/';
     return {
