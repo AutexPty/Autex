@@ -9,7 +9,7 @@ function selectcategory() {
  document.getElementById("dproduct").hidden = false; 
   
  debugger;
- selectedcategory =  document.getElementById("category").value;
+ selcat =  document.getElementById("category").value;
 
   if (selectedcategory) {
     if (window.XMLHttpRequest) {
@@ -17,7 +17,7 @@ function selectcategory() {
     } else {    // IE 5/6
       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhttp.open("GET", "./" & selectedcategory & ".xml", false);
+    xhttp.open("GET", "./" &  selcat & ".xml", false);
     xhttp.send(null);
     xhttp.onreadystatechange = function(){
     if (xhttp.status == "200")
