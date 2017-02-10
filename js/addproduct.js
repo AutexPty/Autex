@@ -8,7 +8,8 @@ function selectcategory() {
  document.getElementById("dproductcat").hidden = true;
  document.getElementById("dproduct").hidden = false; 
   
- selectedcategory = $("#category").value
+ debugger;
+ selectedcategory = $("#category").value;
 
   if (selectedcategory) {
     if (window.XMLHttpRequest) {
