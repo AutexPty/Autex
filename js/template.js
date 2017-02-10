@@ -111,6 +111,10 @@ var boardButtonCallback = function(t){
   });
 };
 
+var productAddCallback = function(t){
+  debugger;
+};
+
 var cardButtonCallback = function(t){
   debugger;
   var items = Object.keys(parkMap).map(function(parkCode){
@@ -205,7 +209,8 @@ TrelloPowerUp.initialize({
     return [{
       icon: GRAY_ICON,
       text: 'Add Product',
-      callback: cardButtonCallback
+      callback: productAddCallback 
+      //cardButtonCallback
     }];
   },
   'card-detail-badges': function(t, options) {
