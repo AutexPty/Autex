@@ -20,7 +20,7 @@ function selectcategory() {
     xhttp.open("GET", "./" +  selcat + ".xml", false);
     xhttp.send(null);
     xhttp.onreadystatechange = function(){
-    if (xhttp.status == "200")
+    //if (xhttp.status == "200") 
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
 
