@@ -19,7 +19,7 @@ function selectcategory() {
     }
     xhttp.open("GET", "./" +  selcat + ".xml", false);
     xhttp.send(null);
-    xhttp.onreadystatechange = function(){
+    //xhttp.onreadystatechange = function(){
     //if (xhttp.status == "200") 
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
@@ -32,7 +32,7 @@ function selectcategory() {
         opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("Description").childNodes[0].textContent+"</option>";
         select.appendChild(opt);
       }
-    }
+    //}
   }
  debugger;
   
