@@ -29,7 +29,7 @@ function selectcategory() {
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("Description").childNodes[0].textContent+"</option>";
+        opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("Description")[0].textContent+"</option>";
         select.appendChild(opt);
       }
     //}
