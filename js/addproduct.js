@@ -1,3 +1,3 @@
-function AddProduct() {
+function addproduct() {
   alert('bang');
 }
