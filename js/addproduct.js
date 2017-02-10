@@ -22,6 +22,16 @@ function selectcategory() {
     xhttp.onreadystatechange = function(){
     if (xhttp.status == "200")
       xmlDoc = xhttp.responseXML; 
+      select = document.getElementById('product');
+
+      var products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
+      for (var i = 0; i < products.length; i++) {
+        
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = "<option value="+i+">"+p[0].getElementsByTagName("Description").childNodes[0].textContent+"</option>";
+        select.appendChild(opt);
+      }
     }
  debugger;  
  var uurloon = xmlDoc.getElementsByTagName("uurloon")[0].childNodes[0].textContent;
