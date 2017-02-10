@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+  <ProductCode>AIARSE</ProductCode>
+  <Description>SHORT ENDS STOCK</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFAUB</ProductCode>
+  <Description>DISCONTINUED - Vertiface Aubergine</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFAVO</ProductCode>
+  <Description>Vertiface® Avocado</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFBAR</ProductCode>
+  <Description>Vertiface® Bark</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFBLA</ProductCode>
+  <Description>Vertiface Vintage/Blaze</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFBLU</ProductCode>
+  <Description>Vertiface® Blush</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFBOR</ProductCode>
+  <Description>Vertiface® Brilliant Orange</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFBRE</ProductCode>
+  <Description>Vertiface® Blazing Red</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFBUT</ProductCode>
+  <Description>DISCONTINUED - Vertiface Butter #</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCAL</ProductCode>
+  <Description>Vertiface® Calypso</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCHA</ProductCode>
+  <Description>Vertiface® Charcoal</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCIN</ProductCode>
+  <Description>Vertiface® Cinder</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCIT</ProductCode>
+  <Description>Vertiface® Citrus</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCIV</ProductCode>
+  <Description>Vertiface® Civic</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLA</ProductCode>
+  <Description>Vertiface® Clay</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLAUB</ProductCode>
+  <Description>DISCONTINUED -  Vertiface Classic Aubergine</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLAVO</ProductCode>
+  <Description>Vertiface Classic Avocado</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBAR</ProductCode>
+  <Description>Vertiface Classic Bark</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBLA</ProductCode>
+  <Description>Vertiface Classic Vintage/Blaze</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBLU</ProductCode>
+  <Description>Vertiface Classic Blush</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBRE</ProductCode>
+  <Description>Vertiface Classic Blazing Red</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBUT</ProductCode>
+  <Description>DISCONTINUED -  Vertiface Classic Butter</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCAL</ProductCode>
+  <Description>Vertiface Classic Calypso</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCAL1.95</ProductCode>
+  <Description>Vertiface Classic Calypso 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCIN</ProductCode>
+  <Description>Vertiface Classic Cinder</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCLA</ProductCode>
+  <Description>Vertiface Classic Clay</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCRE</ProductCode>
+  <Description>Vertiface Classic Chilli Red</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLGSM</ProductCode>
+  <Description>Vertiface Classic Granny Smith</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLINK</ProductCode>
+  <Description>Vertiface Classic Ink</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLJAD</ProductCode>
+  <Description>Vertiface Classic Jade</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLJAD1.95</ProductCode>
+  <Description>Vertiface Classic Jade 1.95 m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLKOA</ProductCode>
+  <Description>Vertiface Classic Koala</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLKOA1.95</ProductCode>
+  <Description>Vertiface Classic Koala 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLLIM</ProductCode>
+  <Description>Vertiface Classic Lime</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLLIM1.95</ProductCode>
+  <Description>Vertiface Classic Lime 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLMYS</ProductCode>
+  <Description>Vertiface Classic Myst</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLMYS1.95</ProductCode>
+  <Description>Vertiface Classic Myst 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLNAU</ProductCode>
+  <Description>Vertiface Classic Atlantis/Nautilus</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLNAU1.95</ProductCode>
+  <Description>DISCONTINUED - Vertiface Classic Nautilus 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLNOI</ProductCode>
+  <Description>Vertiface Classic Noir</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLOCT</ProductCode>
+  <Description>Vertiface Classic Octane</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLOPA</ProductCode>
+  <Description>Vertiface Classic Opal</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPNK1.95</ProductCode>
+  <Description>Vertiface Classic Pink 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPOR</ProductCode>
+  <Description>Vertiface Classic Porcelain</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPOR1.95</ProductCode>
+  <Description>Vertiface Classic Porcelain 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSAN</ProductCode>
+  <Description>Vertiface Classic Sanz</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSAN1.95</ProductCode>
+  <Description>Vertiface Classic Sanz 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSHI</ProductCode>
+  <Description>Vertiface Classic Shiraz</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSIL</ProductCode>
+  <Description>Vertiface Classic Silver</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSIL1.95</ProductCode>
+  <Description>Vertiface Classic Silver 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSIM</ProductCode>
+  <Description>Vertiface Classic Simba</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSIM1.95</ProductCode>
+  <Description>Vertiface Classic Simba 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSKY</ProductCode>
+  <Description>DISCONTINUED - Vertiface Classic Skye</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSKY1.95</ProductCode>
+  <Description>DISCONTINUED -  Vertiface Classic Stonewash/Skye 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSPE</ProductCode>
+  <Description>Vertiface Classic Spearmint</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSPE1.95</ProductCode>
+  <Description>Vertiface Classic Spearmint 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSTA</ProductCode>
+  <Description>Vertiface Classic Stately</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSTE</ProductCode>
+  <Description>Vertiface Classic Silhouette</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLTHE</ProductCode>
+  <Description>Vertiface Classic Theatre</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLWAS</ProductCode>
+  <Description>Vertiface Classic Wasabi</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCRE</ProductCode>
+  <Description>Vertiface® Chilli Red</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFEBL</ProductCode>
+  <Description>Vertiface® Electric Blue</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFFAW</ProductCode>
+  <Description>Vertiface® Fawn</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFGSM</ProductCode>
+  <Description>Vertiface® Granny Smith</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFINK</ProductCode>
+  <Description>Vertiface® Ink</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFJAD</ProductCode>
+  <Description>Vertiface® Jade</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFKOA</ProductCode>
+  <Description>Vertiface® Koala</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFLIG</ProductCode>
+  <Description>Vertiface® Lightsout</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFLIM</ProductCode>
+  <Description>Vertiface® Lime</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFMYS</ProductCode>
+  <Description>Vertiface® Myst</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFNAU</ProductCode>
+  <Description>DNU - USE ATLANTIS - Vertiface Nautilus #</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFNOI</ProductCode>
+  <Description>Vertiface® Noir</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFOCT</ProductCode>
+  <Description>Vertiface® Octane</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFPES</ProductCode>
+  <Description>Vertiface Pesto</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFPOR</ProductCode>
+  <Description>Vertiface® Porcelain</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSAN</ProductCode>
+  <Description>Vertiface® Sanz</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSIL</ProductCode>
+  <Description>Vertiface® Silver</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSIM</ProductCode>
+  <Description>Vertiface® Simba</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSKY</ProductCode>
+  <Description>DISCONTINUED -  Vertiface Skye #DO NOT USE - USE STONEWASH</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFSPE</ProductCode>
+  <Description>Vertiface® Spearmint</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSTA</ProductCode>
+  <Description>Vertiface® Stately</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSTE</ProductCode>
+  <Description>Vertiface Silhouette #</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFTHE</ProductCode>
+  <Description>Vertiface® Theatre</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFWAS</ProductCode>
+  <Description>Vertiface® Wasabi</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>QSAFAO</ProductCode>
+  <Description>QUIETSPACE FABRIC AVOCADO</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSAFLE</ProductCode>
+  <Description>QUIETSPACE FABRIC LIME</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSFVAG</ProductCode>
+  <Description>QUIETSPACE FABRIC AUBERGINE</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSFVAO</ProductCode>
+  <Description>QUIETSPACE FABRIC AVOCADO</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSFVBO</ProductCode>
+  <Description>QUIETSPACE FABRIC BRILLIANT ORANGE</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSFVLE</ProductCode>
+  <Description>QUIETSPACE FABRIC LIME</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>QSFVNS</ProductCode>
+  <Description>QUIETSPACE FABRIC NAUTILUS</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLNEP1.95</ProductCode>
+  <Description>Vertiface Classic Neptune 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLOPA1.95</ProductCode>
+  <Description>Vertiface Classic Opal 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSHI1.95</ProductCode>
+  <Description>Vertiface Classic Shiraz 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFOPA</ProductCode>
+  <Description>Vertiface Opal - Deleted Sept '09</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFSHI</ProductCode>
+  <Description>Vertiface Shiraz - Deleted Sept '09</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBUT1.95</ProductCode>
+  <Description>DISCONTINUED -  Vertiface Classic Butter 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFRAS</ProductCode>
+  <Description>Vertiface® Raspberry</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLBOR</ProductCode>
+  <Description>Vertiface Classic Brilliant Orange</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCHA</ProductCode>
+  <Description>Vertiface Classic Charcoal</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCIV</ProductCode>
+  <Description>Vertiface Classic Civic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLEBL</ProductCode>
+  <Description>Vertiface Classic Electric Blue</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLFAW</ProductCode>
+  <Description>Vertiface Classic Fawn</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLLIG</ProductCode>
+  <Description>Vertiface Classic Lightsout</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPES</ProductCode>
+  <Description>Vertiface Classic Pesto</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSIIM</ProductCode>
+  <Description>Vertiface Classic  Simba</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFAZU</ProductCode>
+  <Description>Vertiface® Azure</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFCIT1.95</ProductCode>
+  <Description>Vertiface Citrus 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFPHA</ProductCode>
+  <Description>Vertiface® Phantom</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFPHA1.95</ProductCode>
+  <Description>Vertiface Phantom 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFRAS1.95</ProductCode>
+  <Description>Vertiface Raspberry 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFSAG</ProductCode>
+  <Description>Vertiface® Sage</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSAG1.95</ProductCode>
+  <Description>Vertiface Sage 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFSTW</ProductCode>
+  <Description>Vertiface® Stonewash</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFSTW1.95</ProductCode>
+  <Description>Vertiface Stonewash 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFVIN</ProductCode>
+  <Description>Vertiface® Vintage</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFVIN1.95</ProductCode>
+  <Description>Vertiface Vintage 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLCIT</ProductCode>
+  <Description>Vertiface Citrus Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPHA</ProductCode>
+  <Description>Vertiface Phantom Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLPHA1.95</ProductCode>
+  <Description>Vertiface Classic Phantom 1.95m Wide</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLRAS</ProductCode>
+  <Description>Vertiface Raspberry Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSAG</ProductCode>
+  <Description>Vertiface Sage Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLSTW</ProductCode>
+  <Description>Vertiface Stonewash Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLVIN</ProductCode>
+  <Description>Vertiface Vintage Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLATL</ProductCode>
+  <Description>Vertiface Atlantis Classic</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFATL</ProductCode>
+  <Description>Vertiface® Atlantis</Description>
+  <Unit>Lm</Unit>
+</product>
+<product>
+  <ProductCode>VTFATL1.95</ProductCode>
+  <Description>Vertiface Atlantis 1.95m</Description>
+  <Unit>LM</Unit>
+</product>
+<product>
+  <ProductCode>VTFCLAZU</ProductCode>
+  <Description>Vertiface Classic Azure</Description>
+  <Unit>LM</Unit>
+</product>
