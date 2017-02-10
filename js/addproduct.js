@@ -11,7 +11,7 @@ function selectcategory() {
  debugger;
  selcat =  document.getElementById("category").value;
 
-  if (selectedcategory) {
+  if (selcat) {
     if (window.XMLHttpRequest) {
       xhttp = new XMLHttpRequest();
     } else {    // IE 5/6
