@@ -15,4 +15,19 @@
     </variants>
     <Unit>Packs</Unit>
   </product>
+  <product>
+    <ProductCode>GSW</ProductCode>
+    <Description>GreenStuf Wall Batts</Description>
+    <variants>
+      <variant>R1.0</variant>
+      <variant>R1.5</variant>
+      <variant>R2.0</variant>
+      <variant>R2.5</variant>
+      <variant>R3.0</variant>
+      <variant>R3.5</variant>
+      <variant>R4.0</variant>
+      <variant>R4.5</variant>
+    </variants>
+    <Unit>Packs</Unit>
+  </product>  
 </products>
