@@ -1,5 +1,10 @@
 function addproduct() {
   debugger;
-  alert('bang');
+  alert('confirm pressed');
 
+}
+
+function selectcategory() {
+ debugger;
+  alert('selected category');
 }
