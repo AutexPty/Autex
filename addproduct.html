@@ -6,18 +6,27 @@
     </head>
     <body>
 <div id="content">
-  <label for="Category">Product Category</label>
-  <select id="Category" name="Category">
-    <option value="" selected>Please choose</option>
-    <option value="VTF">Vertiface</option>
-    <option value="QSP">Quietspace Panel</option>
-    <option value="QSA">Quietspace Composition Acoustic Fabric</option>
-   </select>
-  <label for="Category">Product</label>
-    <select> 
-    </select>
+    <div id="dproductcat">
+        <label for="category">Product Category</label>
+        <select id="category" name="category" onselect="selectcategory();">
+            <option value="" selected>Please choose</option>
+            <option value="VTF">Vertiface</option>
+            <option value="QSP">Quietspace Panel</option>
+            <option value="QSA">Quietspace Composition Acoustic Fabric</option>
+        </select>
+    </div>
+    
+    <div id="dproduct">
+        <label for="category">Product</label>
+        <select id = "product" name="product"> 
+        </select>
+    </div>
+    
+    <div id = "dquantity">
         <label for="Quantity">Quantity</label>
-    <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"> 
+        <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"> 
+    </div>
+    
     <input type="button" value="Add Product" onclick="addproduct();">
 </div>
  <script src="./js/section.js"></script>
