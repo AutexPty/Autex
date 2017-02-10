@@ -5,6 +5,7 @@ function addproduct() {
 }
 
 function selectcategory() {
+ document.getElementById("dproductcat").hidden = true;
+ document.getElementById("dproduct").hidden = false; 
  debugger;
-  alert('selected category');
 }
