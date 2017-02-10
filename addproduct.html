@@ -7,27 +7,34 @@
     <body>
 <div id="content">
     <div id="dproductcat">
-        <label for="category">Product Category</label>
+        <label for="category">Select Product Category</label>
         <select id="category" name="category" onchange="selectcategory();">
             <option value="" selected>Please choose</option>
-            <option value="VTF">Vertiface</option>
-            <option value="QSP">Quietspace Panel</option>
-            <option value="QSA">Quietspace Composition Acoustic Fabric</option>
+            <option value="AIA">Interior Acoustics</option>
+            <option value="GSI">Greenstuf Insulation</option>
+            <option value="IND">Industrial Solutions</option>
         </select>
     </div>
     
-    <div id="dproduct" hidden="true">
-        <label for="category">Product</label>
+    <div id="dproduct" hidden="true" onchange="selectproduct();">
+        <label for="product">Select Product</label>
         <select id = "product" name="product"> 
+        </select>
+    </div>
+
+    <div id="dvariant" hidden="true" onchange="selectcolour();">
+        <label for="variant">Select Product Variant</label>
+        <select id = "variant" name="variant"> 
         </select>
     </div>
     
     <div id = "dquantity" hidden="true">
-        <label for="Quantity">Quantity</label>
+        <label for="Quantity">Enter Quantity Required</label>
         <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"> 
     </div>
-    
-    <input type="button" value="Add Product" onclick="addproduct();">
+    <div id = "confirm" hidden="true">
+        <input type="button" value="Add Product" onclick="addproduct();">
+    </div>
 </div>
  <script src="./js/section.js"></script>
  <script src="./js/addproduct.js"></script>    
