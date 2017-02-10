@@ -112,7 +112,7 @@ var boardButtonCallback = function(t){
 };
 
 var productAddCallback = function(t){
-  debugger;
+  t.popup({url:"https://dean0c.github.io/deanc.github.io/addproduct.html"});
 };
 
 var cardButtonCallback = function(t){
