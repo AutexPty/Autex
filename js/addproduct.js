@@ -6,6 +6,8 @@ function addproduct() {
 
 }
 function selectproduct() {
+  document.getElementById("dproduct").hidden = true;
+  document.getElementById("dvariant").hidden = false;   
   selectedproduct = document.getElementById('product').selectedOptions;
   variants = products[0].getElementsByTagName("variants")[0].getElementsByTagName('variant')
   select = document.getElementById('variant');
@@ -16,14 +18,12 @@ function selectproduct() {
         opt.innerHTML = "<option value="+i+">"+variants[i].textContent+"</option>";
         select.appendChild(opt);
   }    
-   debugger;
 }
 
 function selectcategory() {
  document.getElementById("dproductcat").hidden = true;
  document.getElementById("dproduct").hidden = false; 
   
- debugger;
  selcat =  document.getElementById("category").value;
 
   if (selcat) {
@@ -40,7 +40,6 @@ function selectcategory() {
       select = document.getElementById('product');
 
       products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
-      debugger;   
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
@@ -49,6 +48,5 @@ function selectcategory() {
       }
     //}
   }
- debugger;
   
   }
