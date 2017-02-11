@@ -6,6 +6,16 @@ function addproduct() {
 
 }
 function selectproduct() {
+  selectedproduct = document.getElementById('product').selectedOptions;
+  variants = products[0].getElementsByTagName("variants")[0].getElementsByTagName('variant')
+  select = document.getElementById('variant');
+  
+  for (var i = 0; i < variants.length; i++) {        
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = "<option value="+i+">"+variants[i].textContent+"</option>";
+        select.appendChild(opt);
+  }    
    debugger;
 }
 
