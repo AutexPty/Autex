@@ -1,3 +1,5 @@
+var products;
+
 function addproduct() {
   debugger;
   alert('confirm pressed');
@@ -27,7 +29,7 @@ function selectcategory() {
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
 
-      var products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
+      products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
       debugger;   
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
