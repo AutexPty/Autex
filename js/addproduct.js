@@ -3,6 +3,9 @@ function addproduct() {
   alert('confirm pressed');
 
 }
+function selectproduct() {
+   debugger;
+}
 
 function selectcategory() {
  document.getElementById("dproductcat").hidden = true;
