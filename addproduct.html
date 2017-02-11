@@ -9,7 +9,7 @@
     <div id="dproductcat">
         <label for="category">Select Product Category</label>
         <select id="category" name="category" onchange="selectcategory();">
-            <option value="" selected>Please choose</option>
+            <option value="" selected>Please Select</option>
             <option value="AIA">Interior Acoustics</option>
             <option value="GSI">Greenstuf Insulation</option>
             <option value="IND">Industrial Solutions</option>
@@ -19,20 +19,20 @@
     <div id="dproduct" hidden="true" onchange="selectproduct();">
         <label for="product">Select Product</label>
         <select id = "product" name="product"> 
+            <option value="" selected>Please Select</option>
         </select>
     </div>
 
     <div id="dvariant" hidden="true" onchange="selectcolour();">
         <label for="variant">Select Product Variant</label>
         <select id = "variant" name="variant"> 
+            <option value="" selected>Please Select</option>
         </select>
     </div>
     
     <div id = "dquantity" hidden="true">
-        <label for="Quantity">Enter Quantity Required</label>
-        <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"> 
-    </div>
-    <div id = "confirm" hidden="true">
+        <label for="Quantity">Please enter Quantity Required</label>
+        <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"><span id="Unit">Units</span> 
         <input type="button" value="Add Product" onclick="addproduct();">
     </div>
 </div>
