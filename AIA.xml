@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <ProductCode>QSP</ProductCode>
+    <Description>Quietspace Panel</Description>
+    <variants>
+      <variant>25mm</variant>
+      <variant>50mm</variant>
+    </variants>
+    <Unit>Packs</Unit>
+  </product>
+  <product>
+    <ProductCode>QSA</ProductCode>
+    <Description>Acoustic Fabric</Description>
+    <variants>
+      <variant>Myst</variant>
+      <variant>Aubergine</variant>
+      <variant>Citrus</variant>
+    </variants>
+    <Unit>Packs</Unit>
+  </product>  
+</products>
