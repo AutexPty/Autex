@@ -20,6 +20,12 @@ function selectproduct() {
   }    
 }
 
+function selectvariant() {
+  document.getElementById("dvariant").hidden = true;   
+  document.getElementById("dcolour").hidden = false;   
+}
+
+
 function selectcategory() {
  document.getElementById("dproductcat").hidden = true;
  document.getElementById("dproduct").hidden = false; 
