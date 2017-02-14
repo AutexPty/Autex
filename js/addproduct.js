@@ -17,7 +17,7 @@ function selectproduct() {
   for (var i = 0; i < variants.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+variants[0].getElementsByTagName("code")[0].textContent+">"+variants[0].getElementsByTagName("description")[0].textContent+"</option>";
+        opt.innerHTML = "<option value="+variants[0].getElementsByTagName("code")[i].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
         debugger;
         select.appendChild(opt);
   }    
