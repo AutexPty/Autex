@@ -3,20 +3,33 @@
   <product>
     <ProductCode>QSP</ProductCode>
     <Description>Quietspace Panel</Description>
+    <colours>Vertiface</colours>
     <variants>
       <variant>25mm</variant>
       <variant>50mm</variant>
+      <variant>75mm</variant>
+      <variant>100mm</variant>
     </variants>
     <Unit>Packs</Unit>
   </product>
   <product>
     <ProductCode>QSA</ProductCode>
     <Description>Acoustic Fabric</Description>
+    <colours>Vertiface</colours>
     <variants>
-      <variant>Myst</variant>
-      <variant>Aubergine</variant>
-      <variant>Citrus</variant>
+      <variant>1.2m</variant>
     </variants>
     <Unit>Packs</Unit>
   </product>  
+  <product>
+    <ProductCode>CUB</ProductCode>
+    <Description>Cube Panels</Description>
+    <colours>Cube</colours>
+    <variants>
+      <variant>6mm</variant>
+      <variant>12mm</variant>
+      <variant>18mm</variant>
+      <variant>24mm</variant>
+    </variants>
+  </product>
 </products>
