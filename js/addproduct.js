@@ -1,4 +1,5 @@
 var products;
+var colourfile;
 
 function addproduct() {
   debugger;
@@ -11,11 +12,12 @@ function selectproduct() {
   selectedproduct = document.getElementById('product').selectedOptions;
   variants = products[0].getElementsByTagName("variants")[0].getElementsByTagName('variant')
   select = document.getElementById('variant');
+  colourfile = products[0].getElementsByTagName("colours")[0].textContent
   
   for (var i = 0; i < variants.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+i+">"+variants[i].textContent+"</option>";
+        opt.innerHTML = "<option value="+variants[0].getElementsByTagName("code")[0].textContent+">"+variants[0].getElementsByTagName("description")[0].textContent+"</option>";
         debugger;
         select.appendChild(opt);
   }    
@@ -28,6 +30,7 @@ function selectvariant() {
 
 
 function selectcategory() {
+ colourfile = "";
  document.getElementById("dproductcat").hidden = true;
  document.getElementById("dproduct").hidden = false; 
  selcat =  document.getElementById("category").value;
