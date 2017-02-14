@@ -23,13 +23,20 @@
         </select>
     </div>
 
-    <div id="dvariant" hidden="true" onchange="selectcolour();">
+    <div id="dvariant" hidden="true" onchange="selectvariant();">
         <label for="variant">Select Product Variant</label>
         <select id = "variant" name="variant"> 
             <option value="" selected>Please Select</option>
         </select>
     </div>
-    
+
+    <div id="dcolours" hidden="true" onchange="selectcolour();">
+        <label for="variant">Select Product Colour</label>
+        <select id = "variant" name="variant"> 
+            <option value="" selected>Please Select</option>
+        </select>
+    </div>
+
     <div id = "dquantity" hidden="true">
         <label for="Quantity">Please enter Quantity Required</label>
         <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"><span id="Unit">Units</span> 
