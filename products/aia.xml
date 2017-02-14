@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products>
   <product>
-    <ProductCode>QSP</ProductCode>
-    <Description>Quietspace Panel</Description>
+    <productcode>QSP</productcode>
+    <description>Quietspace Panel</description>
     <colours>Vertiface</colours>
     <variants>
-      <variant>25mm</variant>
-      <variant>50mm</variant>
-      <variant>75mm</variant>
-      <variant>100mm</variant>
+      <variant><code>25</code><description>25mm Panel</description></variant>
+      <variant><code>50</code><description>50mm Panel</description></variant>
+      <variant><code>75</code><description>75mm Panel</description></variant>
+      <variant><code>100</code><description>100mm Panel</description></variant>
     </variants>
-    <Unit>Packs</Unit>
+    <unit>Packs</unit>
   </product>
   <product>
-    <ProductCode>QSA</ProductCode>
-    <Description>Acoustic Fabric</Description>
+    <productcode>QSA</productcode>
+    <description>Composition Acoustic Fabric</description>
     <colours>Vertiface</colours>
     <variants>
-      <variant>1.2m</variant>
+      <variant><code>5</code><description>5mm Composition Acoustic Fabric</description></variant>
+      <variant><code>9</code><description>9mm Composition Acoustic Fabric</description></variant>      
     </variants>
-    <Unit>Packs</Unit>
+    <unit>Packs</unit>
   </product>  
   <product>
-    <ProductCode>CUB</ProductCode>
-    <Description>Cube Panels</Description>
-    <colours>Cube</colours>
+    <productcode>CUB</productcode>
+    <description>Cube Panels</description>
+    <colours>cube</colours>
     <variants>
-      <variant>6mm</variant>
-      <variant>12mm</variant>
-      <variant>18mm</variant>
-      <variant>24mm</variant>
+      <variant><code>6</code><description>6mm Cube Panel</description></variant>
+      <variant><code>12</code><description>12mm Cube Panel</description></variant>
+      <variant><code>18</code><description>18mm Cube Panel</description></variant>
+      <variant><code>24</code><description>24mm Cube Panel</description></variant>
     </variants>
   </product>
 </products>
