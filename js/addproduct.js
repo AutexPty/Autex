@@ -31,7 +31,7 @@ function selectcategory() {
     } else {    // IE 5/6
       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhttp.open("GET", "./products/" +  selcat.toLower() + ".xml", false);
+    xhttp.open("GET", "./products/" +  selcat.toLowerCase() + ".xml", false);
     xhttp.send(null);
     //xhttp.onreadystatechange = function(){
     //if (xhttp.status == "200") 
