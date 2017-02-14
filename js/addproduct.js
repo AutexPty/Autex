@@ -3,8 +3,8 @@ var products;
 function addproduct() {
   debugger;
   alert('confirm pressed');
-
 }
+
 function selectproduct() {
   document.getElementById("dproduct").hidden = true;
   document.getElementById("dvariant").hidden = false;   
@@ -23,7 +23,6 @@ function selectproduct() {
 function selectcategory() {
  document.getElementById("dproductcat").hidden = true;
  document.getElementById("dproduct").hidden = false; 
-  
  selcat =  document.getElementById("category").value;
 
   if (selcat) {
@@ -32,7 +31,7 @@ function selectcategory() {
     } else {    // IE 5/6
       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhttp.open("GET", "./" +  selcat + ".xml", false);
+    xhttp.open("GET", "./products/" +  selcat.toLower() + ".xml", false);
     xhttp.send(null);
     //xhttp.onreadystatechange = function(){
     //if (xhttp.status == "200") 
@@ -45,8 +44,7 @@ function selectcategory() {
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("Description")[0].textContent+"</option>";
         select.appendChild(opt);
-      }
-    //}
-  }
-  
-  }
+      } //end of for loop
+    //} //end of onstate change disabled
+    }   //end of if selcart
+  }     //end of function 
