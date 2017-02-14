@@ -16,6 +16,7 @@ function selectproduct() {
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"+variants[i].textContent+"</option>";
+        debugger;
         select.appendChild(opt);
   }    
 }
