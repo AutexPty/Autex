@@ -5,6 +5,11 @@ function addproduct() {
   alert('confirm pressed');
 }
 
+function selectcolour() {
+  document.getElementById("dcolour").hidden = true;
+  document.getElementById("dquantity").hidden = false;     
+};
+
 function selectproduct() {
   document.getElementById("dproduct").hidden = true;
   document.getElementById("dvariant").hidden = false;   
