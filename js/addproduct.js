@@ -1,41 +1,96 @@
 var products;
 var colourfile;
+var page = 0;
+
+function nextpage(){
+  page = page + 1;
+  changepage();
+}
+
+function changepage(){
+  switch(page) {
+    case 0:
+        // select category
+        document.getElementById("dproductcat").hidden = false;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+      break;
+    case 1:
+        // select product group
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = false; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        break;
+    case 2:
+        // select variant
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = false;
+        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        break;
+    case 3:
+        // select colour
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolor").hidden = false;
+        document.getElementById("dquantity").hidden = true;     
+        break;
+    case 4:
+        // select quantity
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dquantity").hidden = false;     
+        break;
+    case 5:
+        // enter description
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        break;
+     default:
+        break;
+  }
+}
 
 function addproduct() {
   alert('confirm pressed');
 }
 
 function selectcolour() {
-  document.getElementById("dcolour").hidden = true;
-  document.getElementById("dquantity").hidden = false;     
-};
+ };
 
 function selectproduct() {
-  document.getElementById("dproduct").hidden = true;
-  document.getElementById("dvariant").hidden = false;   
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
-  
-  debugger;
-  
-  variants = products[item].getElementsByTagName("variants")[0].getElementsByTagName('variant')
-  select = document.getElementById('variant');
+  checkVariants = products[item].getElementsByTagName("variants")[0];
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
   
-  for (var i = 0; i < variants.length; i++) {  
+  if (checkVariants) {
+    variants = checkVariants.getElementsByTagName('variant')
+    select = document.getElementById('variant');
+    for (var i = 0; i < variants.length; i++) {  
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
-        select.appendChild(opt);
+        select.appendChild(opt);  
+    }
+  } else {
+      updatecolour();
   }    
 }
 
-function selectvariant() {
-  document.getElementById("dvariant").hidden = true;   
-  document.getElementById("dcolour").hidden = false;
-  selvar = document.getElementById("variant").value;
-  
-  if (selvar) {
+function updatecolour() {
+  if (colourfile) {
     if (window.XMLHttpRequest) {
       xhttp = new XMLHttpRequest();
     } else {
@@ -52,17 +107,22 @@ function selectvariant() {
         opt.value = colours[i].getElementsByTagName("code")[0].textContent;
         opt.innerHTML = "<option value="+opt.value+">"+colours[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
+        nextpage();
       } //end of for loop    
+  } else {
+    page = page +2;
+    changepage();
   }
 }
 
+function selectvariant() {
+  selvar = document.getElementById("variant").value;
+  updatecolour();
+}
 
 function selectcategory() {
  colourfile = "";
- document.getElementById("dproductcat").hidden = true;
- document.getElementById("dproduct").hidden = false; 
  selcat =  document.getElementById("category").value;
-
   if (selcat) {
     if (window.XMLHttpRequest) {
       xhttp = new XMLHttpRequest();
@@ -83,5 +143,6 @@ function selectcategory() {
         select.appendChild(opt);
       } //end of for loop
     //} //end of onstate change disabled
+    nextpage();
     }   //end of if selcart
   }     //end of function 
