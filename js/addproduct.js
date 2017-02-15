@@ -14,7 +14,8 @@ function selectproduct() {
   select = document.getElementById('variant');
   colourfile = products[0].getElementsByTagName("colours")[0].textContent
   
-  for (var i = 0; i < variants.length; i++) {        
+  for (var i = 0; i < variants.length; i++) {  
+        debugger;
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+variants[0].getElementsByTagName("code")[i].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
