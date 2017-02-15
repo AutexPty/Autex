@@ -26,7 +26,7 @@ function selectvariant() {
   document.getElementById("dcolour").hidden = false;
   selvar = document.getElementById("variant").value;
   
-  if (varcat) {
+  if (selvar) {
     if (window.XMLHttpRequest) {
       xhttp = new XMLHttpRequest();
     } else {
