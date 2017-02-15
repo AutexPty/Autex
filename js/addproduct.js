@@ -18,8 +18,7 @@ function selectproduct() {
         debugger;
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+variants[0].getElementsByTagName("code")[i].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
-        debugger;
+        opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
   }    
 }
