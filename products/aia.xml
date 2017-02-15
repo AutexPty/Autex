@@ -10,21 +10,22 @@
       <variant><code>75</code><description>75mm Panel</description></variant>
       <variant><code>100</code><description>100mm Panel</description></variant>
     </variants>
-    <unit>Packs</unit>
+    <unit>Panels</unit>
   </product>
   <product>
     <productcode>QSA</productcode>
     <description>Composition Acoustic Fabric</description>
     <colours>Vertiface</colours>
+    <unit>Lm</unit>
     <variants>
       <variant><code>5</code><description>5mm Composition Acoustic Fabric</description></variant>
       <variant><code>9</code><description>9mm Composition Acoustic Fabric</description></variant>      
     </variants>
-    <unit>Packs</unit>
   </product>  
   <product>
     <productcode>CUB</productcode>
     <description>Cube Panels</description>
+    <unit>Panels</unit>
     <colours>cube</colours>
     <variants>
       <variant><code>6</code><description>6mm Cube Panel</description></variant>
