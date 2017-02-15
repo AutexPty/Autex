@@ -2,7 +2,6 @@ var products;
 var colourfile;
 
 function addproduct() {
-  debugger;
   alert('confirm pressed');
 }
 
@@ -15,7 +14,6 @@ function selectproduct() {
   colourfile = products[0].getElementsByTagName("colours")[0].textContent
   
   for (var i = 0; i < variants.length; i++) {  
-        debugger;
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
@@ -25,7 +23,20 @@ function selectproduct() {
 
 function selectvariant() {
   document.getElementById("dvariant").hidden = true;   
-  document.getElementById("dcolour").hidden = false;   
+  document.getElementById("dcolour").hidden = false;
+  selvar = document.getElementById("variant").value;
+  
+  if (varcat) {
+    if (window.XMLHttpRequest) {
+      xhttp = new XMLHttpRequest();
+    } else {
+      xhttp = new ActiveXObject("Microsoft.XMLHTTP");  
+    }
+    xhttp.open("GET", "./colours/" +  colourfile.toLowerCase() + ".xml", false);
+    xhttp.send(null);
+    xmlDoc = xhttp.responseXML; 
+    debugger;
+  }
 }
 
 
@@ -47,7 +58,6 @@ function selectcategory() {
     //if (xhttp.status == "200") 
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
-
       products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
