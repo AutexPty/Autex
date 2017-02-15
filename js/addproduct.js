@@ -14,10 +14,10 @@ function selectproduct() {
   document.getElementById("dproduct").hidden = true;
   document.getElementById("dvariant").hidden = false;   
   selectedproduct = document.getElementById('product').selectedOptions;
-  debugger;
-  variants = products[0].getElementsByTagName("variants")[0].getElementsByTagName('variant')
+  item = selectedproduct[0].value;
+  variants = products[item].getElementsByTagName("variants")[0].getElementsByTagName('variant')
   select = document.getElementById('variant');
-  colourfile = products[0].getElementsByTagName("colours")[0].textContent
+  colourfile = products[item].getElementsByTagName("colours")[0].textContent
   
   for (var i = 0; i < variants.length; i++) {  
         var opt = document.createElement('option');
