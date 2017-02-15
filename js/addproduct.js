@@ -14,7 +14,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = false;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
       break;
     case 1:
@@ -22,7 +22,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = false; 
         document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         break;
     case 2:
@@ -30,7 +30,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = false;
-        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         break;
     case 3:
@@ -38,7 +38,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolor").hidden = false;
+        document.getElementById("dcolour").hidden = false;
         document.getElementById("dquantity").hidden = true;     
         break;
     case 4:
@@ -46,7 +46,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = false;     
         break;
     case 5:
@@ -54,7 +54,7 @@ function changepage(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolor").hidden = true;
+        document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         break;
      default:
