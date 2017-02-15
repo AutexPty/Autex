@@ -36,6 +36,14 @@ function selectvariant() {
     xhttp.send(null);
     xmlDoc = xhttp.responseXML; 
     debugger;
+      select = document.getElementById('colour');    
+      colours = xmlDoc.getElementsByTagName("colours")[0].getElementsByTagName("colour")
+      for (var i = 0; i < colours.length; i++) {        
+        var opt = document.createElement('option');
+        opt.value = colours[i].getElementsByTagName("code")[0].textContent;
+        opt.innerHTML = "<option value="+opt.value+">"+colours[i].getElementsByTagName("description")[0].textContent+"</option>";
+        select.appendChild(opt);
+      } //end of for loop    
   }
 }
 
