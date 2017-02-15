@@ -30,4 +30,11 @@
     </variants>
     <unit>Packs</unit>
   </product>  
+
+  <product>
+    <productcode>IND</productcode>
+    <description>Industrial Bespoke Product</description>
+    <unit>Packs</unit>
+  </product>
+
 </products>
