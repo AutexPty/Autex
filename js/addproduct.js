@@ -15,6 +15,9 @@ function selectproduct() {
   document.getElementById("dvariant").hidden = false;   
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
+  
+  debugger;
+  
   variants = products[item].getElementsByTagName("variants")[0].getElementsByTagName('variant')
   select = document.getElementById('variant');
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
