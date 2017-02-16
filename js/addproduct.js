@@ -1,6 +1,7 @@
 var products;
 var colourfile;
 var page = 0;
+var item;
 
 function nextpage(){
   page = page + 1;
@@ -73,7 +74,9 @@ function todescription(){
 };
 
 function addproduct() {
-  alert('save changes here');
+  var productstr = "product=";
+  productstr = productstr + item;
+  alert('productstr');
 }
 
 function selectcolour() {
@@ -117,7 +120,6 @@ function updatecolour() {
     xhttp.open("GET", "./colours/" +  colourfile.toLowerCase() + ".xml", false);
     xhttp.send(null);
     xmlDoc = xhttp.responseXML; 
-    debugger;
       select = document.getElementById('colour');    
       colours = xmlDoc.getElementsByTagName("colours")[0].getElementsByTagName("colour")
       for (var i = 0; i < colours.length; i++) {        
