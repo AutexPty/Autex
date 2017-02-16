@@ -15,7 +15,8 @@ function changepage(){
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("dquantity").hidden = true; 
+        document.getElementById("ddescription").hidden = true;      
       break;
     case 1:
         // select product group
@@ -23,7 +24,8 @@ function changepage(){
         document.getElementById("dproduct").hidden = false; 
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("dquantity").hidden = true;    
+        document.getElementById("ddescription").hidden = true;      
         break;
     case 2:
         // select variant
@@ -32,6 +34,7 @@ function changepage(){
         document.getElementById("dvariant").hidden = false;
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true;      
         break;
     case 3:
         // select colour
@@ -40,6 +43,7 @@ function changepage(){
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = false;
         document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true;         
         break;
     case 4:
         // select quantity
@@ -47,7 +51,8 @@ function changepage(){
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = false;     
+        document.getElementById("dquantity").hidden = false;    
+        document.getElementById("ddescription").hidden = true;      
         break;
     case 5:
         // enter description
@@ -56,14 +61,19 @@ function changepage(){
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
-        break;
+        document.getElementById("ddescription").hidden = false;
+      break;
      default:
         break;
   }
 }
 
+function todescription(){
+  nextpage();
+};
+
 function addproduct() {
-  alert('confirm pressed');
+  alert('save changes here');
 }
 
 function selectcolour() {
