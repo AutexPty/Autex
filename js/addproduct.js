@@ -67,6 +67,7 @@ function addproduct() {
 }
 
 function selectcolour() {
+  nextpage();
  };
 
 function selectproduct() {
