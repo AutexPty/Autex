@@ -84,6 +84,7 @@ function selectproduct() {
         opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);  
     }
+    nextpage();
   } else {
       updatecolour();
   }    
