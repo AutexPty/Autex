@@ -38,10 +38,16 @@
     </div>
 
     <div id = "dquantity" hidden="true">
-        <label for="Quantity">Please enter Quantity Required</label>
-        <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00"><span id="Unit">Units</span> 
-        <input type="button" value="Add Product" onclick="addproduct();">
+        <label for="Quantity">Please enter <span id="Unit">Quantity</span> Required</label>
+        <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00">
+        <input type="button" value="Add Product" onclick="todescription();">
     </div>
+    
+    <div id = "ddescription" hidden="true">
+        <label for="description">Please enter any Production Details/Comments Required.</label>
+        <input  id="description" type="text" maxlength="200">
+        <input type="button" value="Add Product" onclick="addproduct();">
+    </div>        
 </div>
  <script src="./js/section.js"></script>
  <script src="./js/addproduct.js"></script>    
