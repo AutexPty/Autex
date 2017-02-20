@@ -1,1 +1,15 @@
-
+<colours>
+<colour><code>PAV</code><description>Cube™ PAVILION</description></colour>
+<colour><code>SAV</code><description>Cube™ SAVOYE</description></colour>
+<colour><code>OPE</code><description>Cube™ OPERA</description></colour>
+<colour><code>ACR</code><description>Cube™ ACROS</description></colour>
+<colour><code>FAL</code><description>Cube™ FALLING WATER</description></colour>
+<colour><code>PIN</code><description>Cube™ PINNACLE</description></colour>
+<colour><code>SEN</code><description>Cube™ SENADO</description></colour>
+<colour><code>BOX</code><description>Cube™ BOSCO</description></colour>
+<colour><code>ZEN</code><description>Cube™ ZENITH</description></colour>
+<colour><code>IRO</code><description>Cube™ IRONBANK</description></colour>
+<colour><code>FLI</code><description>Cube™ FLATIRON</description></colour>
+<colour><code>EMP</code><description>Cube™ EMPIRE</description></colour>
+<colour><code>PET</code><description>Cube™ PETRONAS</description></colour>
+</colours>
