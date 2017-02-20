@@ -1,7 +1,7 @@
 {
-  "name": "Autex Testing Powerip",
+  "name": "AUtex Trello EXtensions ",
   "description": "",
-  "details": "A Test Power-Up to prove trello can be upgraded.",
+  "details": "Provides Trello with Autex Products.",
   "icon": {
     "url": "./images/autexlogo.png.png"
   },
