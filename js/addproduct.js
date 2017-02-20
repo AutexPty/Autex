@@ -87,7 +87,7 @@ function selectproduct() {
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
   checkVariants = products[item].getElementsByTagName("variants")[0];
-  if (products[item].getElementsByTagName("colours")) {
+  if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
   }
   
