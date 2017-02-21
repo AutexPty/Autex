@@ -2,6 +2,8 @@ var products;
 var colourfile;
 var page = 0;
 var item;
+var productcode;
+var selvar;
 
 function nextpage(){
   page = page + 1;
@@ -74,7 +76,7 @@ function todescription(){
 };
 
 function addproduct() {
-  var productstr = "product=";
+  var productstr = "product=" + products[item].getElementsByTagName("productcode")[0].textContent ;
   productstr = productstr + item;
   alert('productstr');
 }
@@ -86,6 +88,8 @@ function selectcolour() {
 function selectproduct() {
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
+  productcode = products[item].getElementsByTagName("productcode")[0].textContent
+  
   checkVariants = products[item].getElementsByTagName("variants")[0];
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
