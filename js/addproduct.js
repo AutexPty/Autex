@@ -134,7 +134,7 @@ function updatecolour() {
       for (var i = 0; i < colours.length; i++) {        
         var opt = document.createElement('option');
         opt.value = colours[i].getElementsByTagName("code")[0].textContent;
-        opt.innerHTML = "<option value="+opt.value+">"+colours[i].getElementsByTagName("description")[0].textContent+"</option>";
+        opt.innerHTML = "<option value="+colours[i].getElementsByTagName("code")[0].textContent+">"+colours[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
         page = 3;
         changepage();
