@@ -78,7 +78,7 @@ function todescription(){
 function addproduct() {
   var productstr = "product=" + products[item].getElementsByTagName("productcode")[0].textContent ;
   productstr = productstr + item;
-  alert('productstr');
+  alert(productstr);
 }
 
 function selectcolour() {
