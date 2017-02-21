@@ -89,8 +89,8 @@ function selectproduct() {
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
   productcode = products[item].getElementsByTagName("productcode")[0].textContent
-  
   checkVariants = products[item].getElementsByTagName("variants")[0];
+  
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
   }
@@ -104,7 +104,7 @@ function selectproduct() {
         opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);  
     }
-    updatecolour();
+    nextpage();
   } else {
       if (colourfile) {
       updatecolour();
