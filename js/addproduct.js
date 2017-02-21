@@ -4,6 +4,7 @@ var page = 0;
 var item;
 var productcode;
 var selvar;
+var colour;
 
 function nextpage(){
   page = page + 1;
@@ -77,11 +78,15 @@ function todescription(){
 
 function addproduct() {
   var productstr = "product=" + products[item].getElementsByTagName("productcode")[0].textContent ;
+  if (selvar) {productstr = productstr + "?variant=" + selvar;};
+  if (colour) {productstr = productstr + "?colour=" + colour;};
+  
   productstr = productstr + item;
   alert(productstr);
 }
 
 function selectcolour() {
+  colour = document.getElementById('product').selectedOptions[0].value;
   nextpage();
  };
 
