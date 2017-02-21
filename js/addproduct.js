@@ -86,7 +86,7 @@ function addproduct() {
 }
 
 function selectcolour() {
-  colour = document.getElementById('product').selectedOptions[0].value;
+  colour = document.getElementById('colour').selectedOptions[0].value;
   nextpage();
  };
 
