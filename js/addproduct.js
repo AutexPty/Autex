@@ -80,6 +80,7 @@ function addproduct() {
   var productstr = "product=" + products[item].getElementsByTagName("productcode")[0].textContent ;
   if (selvar) {productstr = productstr + "?variant=" + selvar;};
   if (colour) {productstr = productstr + "?colour=" + colour;};
+  t.attach({ url: productstr, name: "NO DESCRIPTION YET" })
   alert(productstr);
 }
 
