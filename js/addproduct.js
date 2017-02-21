@@ -100,7 +100,7 @@ function selectproduct() {
     select = document.getElementById('variant');
     for (var i = 0; i < variants.length; i++) {  
         var opt = document.createElement('option');
-        opt.value = i;
+        opt.value = variants[i].getElementsByTagName("code")[0].textContent;
         opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);  
     }
