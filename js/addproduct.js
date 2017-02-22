@@ -84,7 +84,7 @@ function todescription(){
 function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent + selvar + colour
-  var productstr = "?productcode=" +pcode ;
+  var productstr = "product?productcode="+pcode;
   if (selvar) {productstr = productstr + "?variant=" + selvar;};
   if (colour) {productstr = productstr + "?colour="  + colour;};
   if (quantity) {productstr = productstr + "?Qty=" + quantity;};
