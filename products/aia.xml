@@ -2,12 +2,8 @@
 <products>
   <product>
     <productcode>VTF</productcode>
-    <description>Vertiface</description>
-    <colours>Vertiface</colours>
-    <variants>
-      <variant><code>Roll</code><description>Vertiface Roll</description></variant>
-      <variant><code>Pieces</code><description>Vertiface Pieces</description></variant>      
-    </variants>
+    <description>Vertiface®</description>
+    <colours>Vertiface®</colours>
     <unit>Lm</unit>
   </product>
   
@@ -16,13 +12,13 @@
     <description>Quietspace Panel</description>
     <colours>VertifaceN</colours>
     <variants>
-      <variant><code>25    </code><description>25mm White Panel</description></variant>
-      <variant><code>25BLK </code><description>25mm Black Panel</description></variant>
-      <variant><code>50    </code><description>50mm White Panel</description></variant>
-      <variant><code>50BLK </code><description>50mm Black Panel</description></variant>
-      <variant><code>75    </code><description>75mm White Panel</description></variant>
-      <variant><code>75BLK </code><description>75mm Black Panel</description></variant>
-      <variant><code>100   </code><description>100mm White Panel</description></variant>
+      <variant><code>25</code><description>25mm White Panel</description></variant>
+      <variant><code>25BLK</code><description>25mm Black Panel</description></variant>
+      <variant><code>50</code><description>50mm White Panel</description></variant>
+      <variant><code>50BLK</code><description>50mm Black Panel</description></variant>
+      <variant><code>75</code><description>75mm White Panel</description></variant>
+      <variant><code>75BLK</code><description>75mm Black Panel</description></variant>
+      <variant><code>100</code><description>100mm White Panel</description></variant>
       <variant><code>100BLK</code><description>100mm Black Panel</description></variant>
     </variants>
     <unit>Panels</unit>
