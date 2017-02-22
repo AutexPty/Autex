@@ -3,8 +3,12 @@ var colourfile;
 var page = 0;
 var item;
 var productcode;
+var description;
 var selvar;
 var colour;
+var colourcode;
+var quantity;
+var unit;
 
 function nextpage(){
   page = page + 1;
@@ -73,19 +77,26 @@ function changepage(){
 }
 
 function todescription(){
+  quantity = document.getElementById('quantity').value;
   nextpage();
 };
 
 function addproduct() {
-  var productstr = "product=" + products[item].getElementsByTagName("productcode")[0].textContent ;
+  var comment =  document.getElementById('description').value;
+  var pcode = products[item].getElementsByTagName("productcode")[0].textContent + selvar + colour
+  var productstr = "?productcode=" +pcode ;
   if (selvar) {productstr = productstr + "?variant=" + selvar;};
-  if (colour) {productstr = productstr + "?colour=" + colour;};
-  t.attach({ url: productstr, name: "NO DESCRIPTION YET" })
-  alert(productstr);
+  if (colour) {productstr = productstr + "?colour="  + colour;};
+  if (quantity) {productstr = productstr + "?Qty=" + quantity;};
+  if (unit) {productstr = productstr + "?UOM=" + unit;};
+  
+  t.attach({ url: productstr, name: comment })
+  t.closePopup();
 }
 
 function selectcolour() {
-  colour = document.getElementById('colour').selectedOptions[0].value;
+  colourcode = document.getElementById('colour').selectedOptions[0].value;
+  colour = document.getElementById('colour').selectedOptions[0].textContent;
   nextpage();
  };
 
@@ -93,7 +104,10 @@ function selectproduct() {
   selectedproduct = document.getElementById('product').selectedOptions;
   item = selectedproduct[0].value;
   productcode = products[item].getElementsByTagName("productcode")[0].textContent
+  description = products[item].getElementsByTagName("description")[0].textContent
   checkVariants = products[item].getElementsByTagName("variants")[0];
+  unit = products[item].getElementsByTagName("unit")[0].textContent;
+  document.getElementById('unit').innerHTML = unit;
   
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
