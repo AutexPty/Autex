@@ -107,7 +107,7 @@ function selectproduct() {
   description = products[item].getElementsByTagName("description")[0].textContent
   checkVariants = products[item].getElementsByTagName("variants")[0];
   unit = products[item].getElementsByTagName("unit")[0].textContent;
-  document.getElementById('unit').innerHTML = unit;
+  document.getElementById('Unit').innerHTML = unit;
   
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
