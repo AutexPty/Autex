@@ -149,7 +149,7 @@ TrelloPowerUp.initialize({
 
     // we will just claim urls for Yellowstone
     var claimed = options.entries.filter(function(attachment){
-      return attachment.url.indexOf('http://products/') == 0;
+      return attachment.url.indexOf('product/') == 0;
     });
 
     // you can have more than one attachment section on a card
@@ -161,7 +161,7 @@ TrelloPowerUp.initialize({
       // that returns the section title. If you do so, provide a unique id for
       // your section
       return [{
-        id: 'Yellowstone', // optional if you aren't using a function for the title
+        id: 'Products', // optional if you aren't using a function for the title
         claimed: claimed,
         icon: GRAY_ICON,
         title: 'Products Required',
