@@ -5,6 +5,7 @@ var item;
 var productcode;
 var description;
 var selvar;
+var variantdetail;
 var colour;
 var colourcode;
 var quantity;
@@ -85,19 +86,22 @@ function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
   var productstr = "";
-  
+  var productname = ""
   if (selvar) {
-               productstr = productstr + "?variant=" + selvar;
+               productstr = productstr + "?variant=" + variantdetail;
                pcode = pcode +selvar;
+               productname = variantdetail;
               };
   if (colour) {
                productstr = productstr + "?colour="  + colour;
                pcode = pcode + colourcode;
-              };
+               productname =  productname + " " + colour;
+               };
   if (quantity) {productstr = productstr + "?Qty=" + quantity;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
+  if (comment) {productstr = productstr + "?comments=" + comment;};
   
-  t.attach({ url: "product?productcode=" + pcode + productstr, name: comment })
+  t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
   t.closePopup();
 }
 
@@ -167,6 +171,7 @@ function updatecolour() {
 
 function selectvariant() {
   selvar = document.getElementById("variant").value;
+  variantdetail = document.getElementById("variant").textContent;
   updatecolour();
 }
 
