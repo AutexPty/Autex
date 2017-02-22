@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products>
   <product>
-    <productcode>QSP</productcode>
-    <description>Quietspace Panel</description>
+    <productcode>VTF</productcode>
+    <description>Vertiface</description>
     <colours>Vertiface</colours>
     <variants>
-      <variant><code>25</code><description>25mm Panel</description></variant>
-      <variant><code>50</code><description>50mm Panel</description></variant>
-      <variant><code>75</code><description>75mm Panel</description></variant>
-      <variant><code>100</code><description>100mm Panel</description></variant>
+      <variant><code>Roll</code><description>Vertiface Roll</description></variant>
+      <variant><code>Pieces</code><description>Vertiface Pieces</description></variant>      
+    </variants>
+    <unit>Lm</unit>
+  </product>
+  
+  <product>
+    <productcode>QSP</productcode>
+    <description>Quietspace Panel</description>
+    <colours>VertifaceN</colours>
+    <variants>
+      <variant><code>25    </code><description>25mm White Panel</description></variant>
+      <variant><code>25BLK </code><description>25mm Black Panel</description></variant>
+      <variant><code>50    </code><description>50mm White Panel</description></variant>
+      <variant><code>50BLK </code><description>50mm Black Panel</description></variant>
+      <variant><code>75    </code><description>75mm White Panel</description></variant>
+      <variant><code>75BLK </code><description>75mm Black Panel</description></variant>
+      <variant><code>100   </code><description>100mm White Panel</description></variant>
+      <variant><code>100BLK</code><description>100mm Black Panel</description></variant>
     </variants>
     <unit>Panels</unit>
   </product>
+
+  <product>
+    <productcode>QSW</productcode>
+    <description>Quietspace Workstation</description>
+    <colours>VertifaceN</colours>
+    <variants>
+      <variant><code>6</code><description>6mm White Workstation Panel</description></variant>
+      <variant><code>12</code><description>12mm White Workstation Panel</description></variant>
+    </variants>
+    <unit>Panels</unit>
+  </product>
+  
   <product>
     <productcode>QSA</productcode>
     <description>Composition Acoustic Fabric</description>
@@ -22,6 +49,7 @@
       <variant><code>9</code><description>9mm Composition Acoustic Fabric</description></variant>      
     </variants>
   </product>  
+  
   <product>
     <productcode>CUB</productcode>
     <description>Cube Panels</description>
@@ -34,4 +62,5 @@
       <variant><code>24</code><description>24mm Cube Panel</description></variant>
     </variants>
   </product>
+
 </products>
