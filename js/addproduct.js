@@ -171,7 +171,8 @@ function updatecolour() {
 
 function selectvariant() {
   selvar = document.getElementById("variant").value;
-  variantdetail = document.getElementById("variant").textContent;
+  var v = document.getElementById("variant");
+  variantdetail = v.options[v.options.selectedIndex].textContent
   updatecolour();
 }
 
