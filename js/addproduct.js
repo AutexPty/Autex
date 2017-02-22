@@ -84,17 +84,15 @@ function todescription(){
 function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
-  
-  + selvar + colour
   var productstr = "";
   
   if (selvar) {
                productstr = productstr + "?variant=" + selvar;
-               pcode = pcode +selvar
+               pcode = pcode +selvar;
               };
   if (colour) {
                productstr = productstr + "?colour="  + colour;
-               pcode = pcode + colour
+               pcode = pcode + colourcode;
               };
   if (quantity) {productstr = productstr + "?Qty=" + quantity;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
