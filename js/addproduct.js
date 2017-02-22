@@ -77,7 +77,7 @@ function changepage(){
 }
 
 function todescription(){
-  quantity = document.getElementById('quantity').value;
+  quantity = document.getElementById('Quantity').value;
   nextpage();
 };
 
