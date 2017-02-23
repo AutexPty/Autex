@@ -24,9 +24,9 @@ t.render(function(){
       function(a){ 
         b = a.url.split('?'); //divide the url into portions
         for (i = 0; i < b.length; i++) {
-          if (b[i].indexOf("productcode=")) {;pcode = b[i].slice(12)};
-          if (b[i].indexOf("Qty=")) {; = b[i].slice(4)};
-          if (b[i].indexOf("UOM=")) {;uom = b[i].slice(4)};                   
+          if (b[i].indexOf("productcode=")==0) {pcode = b[i].slice(12);};
+          if (b[i].indexOf("Qty=")==0) {qty = b[i].slice(4);};
+          if (b[i].indexOf("UOM=")==0) {uom = b[i].slice(4);};                   
         }
         
         ir = tb.insertRow();
@@ -38,11 +38,7 @@ t.render(function(){
         c.textContent=qty;
         c = ir.insertCell();        
         c.textContent=uom;
-
-        //return a.url; 
       });
-    //document.getElementById('urls').textContent = urls.join(', ');
-    //debugger;
   })
   .then(function(){
     return t.sizeTo('#content');
