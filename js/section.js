@@ -20,12 +20,8 @@ t.render(function(){
       function(a){ 
         ir = tb.insertRow();
         c = ir.insertCell();
-
-        ir = tb.insertRow();
         c = ir.insertCell();
         c.textContent=a.name;
-
-        ir = tb.insertRow();
         c = ir.insertCell();        
         //return a.url; 
       });
