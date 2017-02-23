@@ -3,6 +3,7 @@
   <product>
     <productcode>VTF</productcode>
     <description>Vertiface®</description>
+    <variant><code></code><description>Vertiface®</description></variant>
     <colours>Vertiface</colours>
     <unit>Lm</unit>
   </product>
