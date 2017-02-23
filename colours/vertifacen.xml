@@ -1,5 +1,6 @@
 <colours>
 <colour><code>NUD</code><description>Nude - No Vertiface®</description></colour>
+<colour><code></code><description>------------------------</description></colour>  
 <colour><code>ATL</code><description>Atlantis</description></colour>
 <colour><code>AVO</code><description>Avocado</description></colour>
 <colour><code>AZU</code><description>Azure</description></colour>
@@ -38,4 +39,43 @@
 <colour><code>THE</code><description>Theatre</description></colour>
 <colour><code>VIN</code><description>Vintage</description></colour>
 <colour><code>WAS</code><description>Wasabi</description></colour>
+<colour><code></code><description>------------------------</description></colour>  
+<colour><code>CLATL</code><description>Classic Atlantis</description></colour>
+<colour><code>CLAVO</code><description>Classic Avocado</description></colour>
+<colour><code>CLAZU</code><description>Classic Azure</description></colour>
+<colour><code>CLBAR</code><description>Classic Bark</description></colour>
+<colour><code>CLBLU</code><description>Classic Blush</description></colour>
+<colour><code>CLBOR</code><description>Classic Brilliant Orange</description></colour>
+<colour><code>CLBRE</code><description>Classic Blazing Red</description></colour>
+<colour><code>CLCAL</code><description>Classic Calypso</description></colour>
+<colour><code>CLCHA</code><description>Classic Charcoal</description></colour>
+<colour><code>CLCIN</code><description>Classic Cinder</description></colour>
+<colour><code>CLCIT</code><description>Classic Citrus</description></colour>
+<colour><code>CLCIV</code><description>Classic Civic</description></colour>
+<colour><code>CLCLA</code><description>Classic Clay</description></colour>
+<colour><code>CLCRE</code><description>Classic Chilli Red</description></colour>
+<colour><code>CLEBL</code><description>Classic Electric Blue</description></colour>
+<colour><code>CLFAW</code><description>Classic Fawn</description></colour>
+<colour><code>CLGSM</code><description>Classic Granny Smith</description></colour>
+<colour><code>CLINK</code><description>Classic Ink</description></colour>
+<colour><code>CLJAD</code><description>Classic Jade</description></colour>
+<colour><code>CLKOA</code><description>Classic Koala</description></colour>
+<colour><code>CLLIG</code><description>Classic Lightsout</description></colour>
+<colour><code>CLLIM</code><description>Classic Lime</description></colour>
+<colour><code>CLMYS</code><description>Classic Myst</description></colour>
+<colour><code>CLNOI</code><description>Classic Noir</description></colour>
+<colour><code>CLOCT</code><description>Classic Octane</description></colour>
+<colour><code>CLPHA</code><description>Classic Phantom</description></colour>
+<colour><code>CLPOR</code><description>Classic Porcelain</description></colour>
+<colour><code>CLRAS</code><description>Classic Raspberry</description></colour>
+<colour><code>CLSAG</code><description>Classic Sage</description></colour>
+<colour><code>CLSAN</code><description>Classic Sanz</description></colour>
+<colour><code>CLSIL</code><description>Classic Silver</description></colour>
+<colour><code>CLSIM</code><description>Classic Simba</description></colour>
+<colour><code>CLSPE</code><description>Classic Spearmint</description></colour>
+<colour><code>CLSTA</code><description>Classic Stately</description></colour>
+<colour><code>CLSTW</code><description>Classic Stonewash</description></colour>
+<colour><code>CLTHE</code><description>Classic Theatre</description></colour>
+<colour><code>CLVIN</code><description>Classic Vintage</description></colour>
+<colour><code>CLWAS</code><description>Classic Wasabi</description></colour>
 </colours>
