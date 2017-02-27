@@ -147,8 +147,6 @@ TrelloPowerUp.initialize({
   'card-detail-badges': function(t, options) {
     return getBadges(t);
   },
-  'card-from-url': function(t, options) {;},
-  'format-url': function(t, options) {;},
   'show-settings': function(t, options){
     return t.popup({
       title: 'Settings',
