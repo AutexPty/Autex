@@ -126,7 +126,6 @@ TrelloPowerUp.initialize({
       return [];
     }
   },
-  'attachment-thumbnail': function(t, options){;},
   'board-buttons': function(t, options){
     return [{
       icon: AUTEX_ICON,
