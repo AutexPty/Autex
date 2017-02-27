@@ -3,22 +3,6 @@
 var WHITE_ICON = './images/icon-white.svg';
 var GRAY_ICON = './images/icon-gray.svg';
 
-var parkMap = {
-  acad: 'Acadia National Park',
-  arch: 'Arches National Park',
-  badl: 'Badlands National Park',
-  brca: 'Bryce Canyon National Park',
-  crla: 'Crater Lake National Park',
-  dena: 'Denali National Park',
-  glac: 'Glacier National Park',
-  grca: 'Grand Canyon National Park',
-  grte: 'Grand Teton National Park',
-  olym: 'Olympic National Park',
-  yell: 'Yellowstone National Park',
-  yose: 'Yosemite National Park',
-  zion: 'Zion National Park'
-};
-
 var getBadges = function(t){
   return t.card('name')
   .get('name')
@@ -79,66 +63,8 @@ var formatNPSUrl = function(t, url){
   }
 };
 
-var boardButtonCallback = function(t){
-  return t.popup({
-    title: 'Popup List Example',
-    items: [
-      {
-        text: 'Open Overlay',
-        callback: function(t){
-          return t.overlay({
-            url: './overlay.html',
-            args: { rand: (Math.random() * 100).toFixed(0) }
-          })
-          .then(function(){
-            return t.closePopup();
-          });
-        }
-      },
-      {
-        text: 'Open Board Bar',
-        callback: function(t){
-          return t.boardBar({
-            url: './board-bar.html',
-            height: 200
-          })
-          .then(function(){
-            return t.closePopup();
-          });
-        }
-      }
-    ]
-  });
-};
-
 var productAddCallback = function(t){
   t.popup({title: 'Add Product',url:"./addproduct.html"});
-};
-
-var cardButtonCallback = function(t){
-  var items = Object.keys(parkMap).map(function(parkCode){
-    var urlForCode = 'http://www.nps.gov/' + parkCode + '/';
-    return {
-      text: parkMap[parkCode],
-      url: urlForCode,
-      callback: function(t){
-        return t.attach({ url: urlForCode, name: parkMap[parkCode] })
-        .then(function(){
-          return t.closePopup();
-        })
-      }
-    };
-  });
-
-  return t.popup({
-    title: 'Popup Search Example',
-    items: items,
-    search: {
-      count: 5,
-      placeholder: 'Search National Parks',
-      empty: 'No parks found'
-    }
-  });
 };
 
 TrelloPowerUp.initialize({
@@ -175,33 +101,12 @@ TrelloPowerUp.initialize({
       return [];
     }
   },
-  'attachment-thumbnail': function(t, options){
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      // return an object with some or all of these properties:
-      // url, title, image, openText, modified (Date), created (Date), createdBy, modifiedBy
-      return {
-        url: options.url,
-        title: parkName,
-        image: {
-          url: './images/nps.svg',
-          logo: true // false if you are using a thumbnail of the content
-        },
-        openText: 'Open in NPS'
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
   'board-buttons': function(t, options){
     return [{
       icon: WHITE_ICON,
-      text: 'Template',
+      text: 'Autex',
       callback: boardButtonCallback
     }];
-  },
-  'card-badges': function(t, options){
-    return getBadges(t);
   },
   'card-buttons': function(t, options) {
     return [{
@@ -213,34 +118,6 @@ TrelloPowerUp.initialize({
   },
   'card-detail-badges': function(t, options) {
     return getBadges(t);
-  },
-  'card-from-url': function(t, options) {
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      return {
-        name: parkName,
-        desc: 'An awesome park: ' + options.url
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
-  'format-url': function(t, options) {
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      return {
-        icon: GRAY_ICON,
-        text: parkName
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
-  'show-settings': function(t, options){
-    return t.popup({
-      title: 'Settings',
-      url: './settings.html',
-      height: 184
-    });
+  });
   }
 });
