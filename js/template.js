@@ -60,32 +60,30 @@ var boardButtonCallback = function(t){
     title: 'AUtex Trello EXtensions',
     items: [
       {
-        text: 'Help.',
-        callback: function(t){
-          return t.overlay({
-            url: './overlay.html',
-            args: { rand: (Math.random() * 100).toFixed(0) }
-          })
-          .then(function(){
-            return t.closePopup();
-          });
-        }
-      },
-	  {
-        text: '-------------',		  
-	  },
-      {
-        text: 'About',
+        text: 'Help',
         callback: function(t){
           return t.boardBar({
-            url: './board-bar.html',
+            url: './help.html',
             height: 200
           })
           .then(function(){
             return t.closePopup();
           });
         }
+      },{
+        text: '-------------',		  
+	  },{
+        text: 'About.',
+        callback: function(t){
+          return t.overlay({
+            url: './about.html'
+			})
+          .then(function(){
+            return t.closePopup();
+          });
+        }
       }
+
     ]
   });
 };
