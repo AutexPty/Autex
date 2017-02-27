@@ -73,10 +73,10 @@ var getBadges = function(t){
 
 var boardButtonCallback = function(t){
   return t.popup({
-    title: 'Popup List Example',
+    title: 'AUtex Trello EXtensions',
     items: [
       {
-        text: 'Open Overlay',
+        text: 'Help.',
         callback: function(t){
           return t.overlay({
             url: './overlay.html',
@@ -87,8 +87,11 @@ var boardButtonCallback = function(t){
           });
         }
       },
+	  {
+        text: '-------------',		  
+	  },
       {
-        text: 'Open Board Bar',
+        text: 'About',
         callback: function(t){
           return t.boardBar({
             url: './board-bar.html',
