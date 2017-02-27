@@ -10,7 +10,6 @@ t.render(function(){
   // and then called each time something changes that
   // you might want to react to, such as new data being
   // stored with t.set()
-  alert('hi');
 });
 
 // close overlay if user clicks outside our content
