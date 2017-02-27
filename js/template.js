@@ -68,15 +68,7 @@ var getBadges = function(t){
 };
 
 var formatNPSUrl = function(t, url){
-  if(!/^https?:\/\/www\.nps\.gov\/[a-z]{4}\//.test(url)){
     return null;
-  }
-  var parkShort = /^https?:\/\/www\.nps\.gov\/([a-z]{4})\//.exec(url)[1];
-  if(parkShort && parkMap[parkShort]){
-    return parkMap[parkShort];
-  } else{
-    return null;
-  }
 };
 
 var boardButtonCallback = function(t){
@@ -115,6 +107,7 @@ var productAddCallback = function(t){
   t.popup({title: 'Add Product',url:"./addproduct.html"});
 };
 
+/*
 var cardButtonCallback = function(t){
   var items = Object.keys(parkMap).map(function(parkCode){
     var urlForCode = 'http://www.nps.gov/' + parkCode + '/';
@@ -139,7 +132,7 @@ var cardButtonCallback = function(t){
       empty: 'No parks found'
     }
   });
-};
+};*/
 
 TrelloPowerUp.initialize({
   'attachment-sections': function(t, options){
