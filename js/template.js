@@ -85,9 +85,6 @@ TrelloPowerUp.initialize({
       callback: boardButtonCallback
     }];
   },
-  'card-badges': function(t, options){
-    return getBadges(t);
-  },
   'card-buttons': function(t, options) {
     return [{
       icon: GRAY_ICON,
@@ -95,12 +92,5 @@ TrelloPowerUp.initialize({
       callback: productAddCallback 
       //cardButtonCallback
     }];
-  },
-  'show-settings': function(t, options){
-    return t.popup({
-      title: 'Settings',
-      url: './settings.html',
-      height: 184
-    });
   }
 });
