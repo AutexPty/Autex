@@ -3,7 +3,7 @@
 var WHITE_ICON = './images/icon-white.svg';
 var GRAY_ICON = './images/icon-gray.svg';
 
-var parkMap = {
+/*var parkMap = {
   acad: 'Acadia National Park',
   arch: 'Arches National Park',
   badl: 'Badlands National Park',
@@ -17,7 +17,7 @@ var parkMap = {
   yell: 'Yellowstone National Park',
   yose: 'Yosemite National Park',
   zion: 'Zion National Park'
-};
+};*/
 
 var getBadges = function(t){
   return t.card('name')
@@ -67,9 +67,9 @@ var getBadges = function(t){
   })
 };
 
-var formatNPSUrl = function(t, url){
+/*var formatNPSUrl = function(t, url){
     return null;
-};
+};*/
 
 var boardButtonCallback = function(t){
   return t.popup({
@@ -168,24 +168,7 @@ TrelloPowerUp.initialize({
       return [];
     }
   },
-  'attachment-thumbnail': function(t, options){
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      // return an object with some or all of these properties:
-      // url, title, image, openText, modified (Date), created (Date), createdBy, modifiedBy
-      return {
-        url: options.url,
-        title: parkName,
-        image: {
-          url: './images/nps.svg',
-          logo: true // false if you are using a thumbnail of the content
-        },
-        openText: 'Open in NPS'
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
+  'attachment-thumbnail': function(t, options){;},
   'board-buttons': function(t, options){
     return [{
       icon: WHITE_ICON,
@@ -207,28 +190,8 @@ TrelloPowerUp.initialize({
   'card-detail-badges': function(t, options) {
     return getBadges(t);
   },
-  'card-from-url': function(t, options) {
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      return {
-        name: parkName,
-        desc: 'An awesome park: ' + options.url
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
-  'format-url': function(t, options) {
-    var parkName = formatNPSUrl(t, options.url);
-    if(parkName){
-      return {
-        icon: GRAY_ICON,
-        text: parkName
-      };
-    } else {
-      throw t.NotHandled();
-    }
-  },
+  'card-from-url': function(t, options) {;},
+  'format-url': function(t, options) {;},
   'show-settings': function(t, options){
     return t.popup({
       title: 'Settings',
