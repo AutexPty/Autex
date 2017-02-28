@@ -5,9 +5,10 @@
       <script src="https://trello.com/power-ups/power-up.min.js"></script>
     </head>
     <body>
+	    
 <div id="content">
     <div id="productselect">
-    <div id="dproductcat" >
+      <div id="dproductcat" >
         <label for="category">Select Product Category</label>
         <select id="category" name="category" onchange="selectcategory();">
             <option value="" selected>Please Select Category</option>
@@ -15,49 +16,51 @@
             <option value="GSI">Greenstuf Insulation</option>
             <option value="IND">Industrial Solutions</option>
         </select>
-    </div>
-    
+      </div>   
     <div id="dproduct" onchange="selectproduct();">
         <label for="product">Select Product Group</label>
         <select id = "product" name="product"> 
-            <option value="" selected>Please Select</option>
+        <option value="" selected>Please Select</option>
         </select>
     </div>
-
     <div id="dvariant" onchange="selectvariant();">
         <label for="variant">Select Product Product Variant</label>
         <select id = "variant" name="variant"> 
-            <option value="" selected>Please Select</option>
+        <option value="" selected>Please Select</option>
         </select>
     </div>
-
     <div id="dcolour" onchange="selectcolour();">
         <label for="colour">Select Colour</label>
         <select id = "colour" name="colour"> 
-            <option value="" selected>Please Select</option>
+        <option value="" selected>Please Select</option>
         </select>
     </div>
-    </div>
+	    
+    </div> <!-End Product select-!>
 	
-    <div id = "dquantity" >
+    <div id = "dspecs">
         <div>
- 	      <label for="custom" class="ll">Product Specifications:</label><br>
-		  <input id="custom" type="text" disabled value="Product Not Selected Yet."><button id="customise">&nbsp Edit &nbsp</button>
-		</div>
-
+ 	  <label for="custom" class="ll">Product Specifications:</label><br>
+	  <input id="custom" type="text" disabled value="Product Not Selected Yet.">
+	</div>
         <div id = "size">
 		  <div><label for="Width" class="l"> Width: (m)</label> 
 		  <input id="Width"  type="number" min="0.000" max="3.0"  step="0.001" value="0.000" disabled>
 		  <label for="Length" class="l" > Length: (m)</label>
-          <input id="Length" type="number" min="0.000" max="3.6"  step="0.001" value="0.000" disabled></div>
-	  	  <div><label for="Units" class="l">Per <span id="Unit">Qty</span>:</label>
-          <input id="Units" type="number" min="0.000" max="9999" step="1" value="1" disabled>
+                  <input id="Length" type="number" min="0.000" max="3.6"  step="0.001" value="0.000" disabled>
+	</div>
+	<div>     
+		  <label for="Units" class="l">Per <span id="Unit">Qty</span>:</label>
+                  <input id="Units" type="number" min="0.000" max="9999" step="1" value="1" disabled>
 		  <label for="m2u" class="l">m2/<span id="Unit">Quantity</span>:</label>
-          <input id="m2u" type="number" min="0.000" max="9999" step="1" value="1" disabled>
-		  </div>
+                  <input id="m2u" type="number" min="0.000" max="9999" step="1" value="1" disabled>
         </div>
-	<br><br>
-	<label>Enter Total Quantity:</label>
+	<button id="customise">&nbsp Edit &nbsp</button>
+	<button id="next">&nbsp Next &nbsp</button>
+        </div>
+	
+    <div id = "dquantity" >
+	    <label>Enter Total Quantity:</label>
 	<div> 
 	    <label for="Quantity" class="l"><span id="Unit">Quantity</span>:</label>
         <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00">
