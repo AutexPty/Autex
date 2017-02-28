@@ -15,3 +15,22 @@ body {
  display: inline-block; 
  white-space: nowrap;
 }
+
+.l{
+box-sizing:border-box;
+display: inline-block; 
+white-space: nowrap;
+margin-bottom:0em;
+padding:.1em;
+}
+
+.c{
+background:#EDEFF0;
+border-radius:3px;
+border:1px solid #CDD2D4;
+box-sizing:border-box;
+display: inline-block; 
+white-space: nowrap;
+margin-bottom:0em;
+padding:.1em;
+}
