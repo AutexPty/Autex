@@ -27,29 +27,48 @@ max-width:80%;
 
 .l{
 display: inline-block; 
-width:12.5%;
-max-width:20%;
 }
-#customise {
-  height: 2em;
-  padding: 0em;
-  display: inline-block;
-  width:20%;
-  }
+
 
 #todesc {
   float: right;
   }
 
 #custom {
-  height: 2.2em;
-  padding: 0em;
-  display: inline-block;
-  width:63%;
+background:#EDEFF0;
+border-radius:3px;
+border:1px solid #CDD2D4;
+box-sizing:border-box;
+display:inline-block;
+margin-bottom:1em;
+padding:.5em;
+width:100%;
+max-width:400px
   }
 
-#length, #width, #units, #Quantity, #m2, #m2u {
-  display: inline-block;
-  max-width:15%;
+#customise {
+  box-sizing:border-box;
+  display:inline-block;
+  width:100px;
+  margin-bottom:1em;
+  padding:.5em;
+  }
+  
+  
+input[type="number"] {
   text-align: right; 
+  max-width:100%;
+  width:100%;
+}
+
+select {
+background:#EDEFF0;
+border-radius:3px;
+border:1px solid #CDD2D4;
+box-sizing:border-box;
+display:block;
+margin-bottom:1em;
+padding:.5em;
+width:100%;
+max-width:500px
 }
