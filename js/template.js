@@ -41,7 +41,12 @@ var boardButtonCallback = function(t){
 };
 
 var productAddCallback = function(t){
-  t.popup({title: 'Add Product',url:"./addproduct.html"});
+  t.popup({
+	  title: 'Add Product',
+	  url:"./addproduct.html",
+	  height: 400,
+	  width: 400
+  });
 };
 
 TrelloPowerUp.initialize({
