@@ -11,17 +11,45 @@ body {
   max-width: 600px;
   max-height: 90%;
 }
+
 #size {
  display: inline-block; 
  white-space: nowrap;
  justify-content: none;
  padding: 0px;
+ width:100%;
+}
+
+.ll{
+display: inline-block; 
+max-width:80%;
 }
 
 .l{
-box-sizing:border-box;
 display: inline-block; 
-white-space: nowrap;
-margin-bottom:0em;
-padding:.1em;
+width:12.5%;
+max-width:20%;
+}
+#customise {
+  height: 2em;
+  padding: 0em;
+  display: inline-block;
+  width:20%;
+  }
+
+#todesc {
+  float: right;
+  }
+
+#custom {
+  height: 2.2em;
+  padding: 0em;
+  display: inline-block;
+  width:63%;
+  }
+
+#length, #width, #units, #Quantity, #m2, #m2u {
+  display: inline-block;
+  max-width:15%;
+  text-align: right; 
 }
