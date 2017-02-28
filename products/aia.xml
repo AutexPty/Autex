@@ -13,14 +13,14 @@
     <description>Quietspace Panel</description>
     <colours>VertifaceN</colours>
     <variants>
-      <variant><code>25</code><description>25mm White Panel</description></variant>
-      <variant><code>25BLK</code><description>25mm Black Panel</description></variant>
-      <variant><code>50</code><description>50mm White Panel</description></variant>
-      <variant><code>50BLK</code><description>50mm Black Panel</description></variant>
-      <variant><code>75</code><description>75mm White Panel</description></variant>
-      <variant><code>75BLK</code><description>75mm Black Panel</description></variant>
-      <variant><code>100</code><description>100mm White Panel</description></variant>
-      <variant><code>100BLK</code><description>100mm Black Panel</description></variant>
+      <variant><code>25</code><description>25mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>25BLK</code><description>25mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>50</code><description>50mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>50BLK</code><description>50mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>75</code><description>75mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>75BLK</code><description>75mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>100</code><description>100mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>100BLK</code><description>100mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
     <unit>Panels</unit>
   </product>
@@ -30,8 +30,8 @@
     <description>Quietspace Workstation</description>
     <colours>VertifaceN</colours>
     <variants>
-      <variant><code>6</code><description>6mm White Workstation Panel</description></variant>
-      <variant><code>12</code><description>12mm White Workstation Panel</description></variant>
+      <variant><code>6</code><description>6mm White Workstation Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>12</code><description>12mm White Workstation Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
     <unit>Panels</unit>
   </product>
@@ -42,8 +42,8 @@
     <colours>Vertiface</colours>
     <unit>Lm</unit>
     <variants>
-      <variant><code>5</code><description>5mm Composition Acoustic Fabric</description></variant>
-      <variant><code>9</code><description>9mm Composition Acoustic Fabric</description></variant>      
+      <variant><code>5</code><description>5mm Composition Acoustic Fabric</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>9</code><description>9mm Composition Acoustic Fabric</description><width>1.2</width><length>2.4</length><units>1</units></variant>      
     </variants>
   </product>  
   
@@ -53,10 +53,10 @@
     <unit>Panels</unit>
     <colours>cube</colours>
     <variants>
-      <variant><code>6</code><description>6mm Cube Panel</description></variant>
-      <variant><code>12</code><description>12mm Cube Panel</description></variant>
-      <variant><code>18</code><description>18mm Cube Panel</description></variant>
-      <variant><code>24</code><description>24mm Cube Panel</description></variant>
+      <variant><code>6</code><description>6mm Cube Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>12</code><description>12mm Cube Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>18</code><description>18mm Cube Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>24</code><description>24mm Cube Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
   </product>
 
