@@ -39,15 +39,15 @@
 
     <div id = "dquantity" hidden="true">
         <div id = "size">
-		<table>
-		<tr>
-		<td><label for="Width" > Width:  (m)</label><input id="Width"  type="number" min="0.000" max="3.0"  step="0.001" value="0.000"></td>
-        <td><label for="Length"> Length: (m)</label><input id="Length" type="number" min="0.000" max="3.6"  step="0.001" value="0.000"></td>
-        <td><label for="Units" > Units: </label><input id="Units"  type="number" min="0.000" max="9999" step="1" value="1" disabled></td>		
-		</tr>
-        </table>
+		  <label for="Width" class="l"> Width: (m)</label>
+		  <input id="Width"  class="c" type="number" min="0.000" max="3.0"  step="0.001" value="0.000">
+		  <label for="Length" class="l" > Length: (m)</label>
+          <input id="Length" class="c" type="number" min="0.000" max="3.6"  step="0.001" value="0.000">
+	  	  <label for="Units" class="l"> per UOM:</label>
+          <input id="Units"  class="c" type="number" min="0.000" max="9999" step="1" value="1" disabled>		
         </div>
-        <label for="Quantity">Please enter <span id="Unit">Quantity</span> Required</label>
+	    
+	<label for="Quantity">Please enter <span id="Unit">Quantity</span> Required</label>
         <input id="Quantity" type="number" min="0" max="100" step=".01" value="0.00">
         <input type="button" value="Add Product" onclick="todescription();">
     </div>
