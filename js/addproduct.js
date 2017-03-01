@@ -57,6 +57,35 @@ function hidepages(){
         document.getElementById("ddescription").hidden = true; 
 }
 
+function toquantity(){
+   page = 5;
+  changepage();
+}
+
+function recalcQuantity(){
+    m2u = document.getElementById('m2u');
+    Qty = document.getElementById("Quantity");
+    msq = document.getElementById("m2");
+    if(msq>0 && m2u >0) {
+    Qty.value = msq/m2u;
+    } else {
+    Qty.value = 0;     
+    }
+}
+
+function recalcm2(){
+    m2u = document.getElementById('m2u');
+    Qty = document.getElementById("Quantity");
+    msq = document.getElementById("m2");
+    if(Qty>0 && m2u >0) {
+    msq.value = qty*m2u;
+    } else {
+    msq.value = 0;
+    }
+
+}
+
+    
 function changepage(){
   switch(page) {
     case 0:
@@ -80,16 +109,17 @@ function changepage(){
         document.getElementById("dcolour").hidden = false;
         break;
     case 4:
-        // select quantity
+        // select specs
         hidepages();     
         document.getElementById("dspec").hidden = false;    
         break;
     case 5:
-        // enter description
+        // select quantity
         hidepages();     
         document.getElementById("dquantity").hidden = false;     
       break;
    case 6:
+        // enter description
         hidepages();     
         document.getElementById("ddescription").hidden = false;    
      default:
