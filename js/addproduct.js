@@ -55,7 +55,7 @@ function hidepages(){
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         document.getElementById("ddescription").hidden = true; 
-        document.getElementById("dsize").hidden = true; 
+        document.getElementById("size").hidden = true; 
 }
 
 function toquantity(){
