@@ -11,6 +11,37 @@ var colourcode;
 var quantity;
 var unit;
 
+function selectcategory() {
+ colourfile = "";
+ selcat =  document.getElementById("category").value;
+  if (selcat) {
+    if (window.XMLHttpRequest) {
+      xhttp = new XMLHttpRequest();
+    } else {    // IE 5/6
+      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.open("GET", "./products/" +  selcat.toLowerCase() + ".xml", false);
+    xhttp.send(null);
+    //xhttp.onreadystatechange = function(){
+    //if (xhttp.status == "200") 
+      xmlDoc = xhttp.responseXML; 
+      select = document.getElementById('product');
+      products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
+      var opt = document.createElement('option');
+      opt.innerHTML = "";
+      for (var i = 0; i < products.length; i++) {        
+        opt.value = i;
+        opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("description")[0].textContent+"</option>";
+        select.appendChild(opt);
+      } //end of for loop
+    //} //end of onstate change disabled
+    nextpage();
+    }   //end of if selcart
+  }     //end of function 
+
+
+
+
 function nextpage(){
   page = page + 1;
   changepage();
