@@ -17,19 +17,19 @@
             <option value="IND">Industrial Solutions</option>
         </select>
       </div>   
-    <div id="dproduct" onchange="selectproduct();">
+    <div id="dproduct" onchange="selectproduct();" hidden="true">
         <label for="product">Select Product Group</label>
         <select id = "product" name="product"> 
         <option value="" selected>Please Select</option>
         </select>
     </div>
-    <div id="dvariant" onchange="selectvariant();">
+    <div id="dvariant" onchange="selectvariant();" hidden="true">
         <label for="variant">Select Product Product Variant</label>
         <select id = "variant" name="variant"> 
         <option value="" selected>Please Select</option>
         </select>
     </div>
-    <div id="dcolour" onchange="selectcolour();">
+    <div id="dcolour" onchange="selectcolour();" hidden="true">
         <label for="colour">Select Colour</label>
         <select id = "colour" name="colour"> 
         <option value="" selected>Please Select</option>
@@ -38,7 +38,7 @@
 	    
     </div> <!-End Product select-!>
 	
-    <div id = "dspecs">
+    <div id = "dspecs" hidden="true">
         <div>
  	  <label for="custom" class="ll">Product Specifications:</label><br>
 	  <input id="custom" type="text" disabled value="Product Not Selected Yet.">
@@ -59,7 +59,7 @@
 	<button id="next">&nbsp Next &nbsp</button>
         </div>
 	
-    <div id = "dquantity" >
+    <div id = "dquantity" hidden="true">
 	    <label>Enter Total Quantity:</label>
 	<div> 
 	    <label for="Quantity" class="l"><span id="Unit">Quantity</span>:</label>
