@@ -55,6 +55,7 @@ function hidepages(){
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         document.getElementById("ddescription").hidden = true; 
+        document.getElementById("dspec").hidden = true; 
 }
 
 function toquantity(){
@@ -78,7 +79,7 @@ function recalcm2(){
     Qty = document.getElementById("Quantity");
     msq = document.getElementById("m2");
     if(parseFloat(Qty.value)>0 && parseFloat(m2u.value) >0) {
-    msq.value = parseFloat(qty)*parseFloat(m2u);
+    msq.value = parseFloat(Qty.value)*parseFloat(m2u.value);
     } else {
     msq.value = 0;
     }
