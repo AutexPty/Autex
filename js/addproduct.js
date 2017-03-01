@@ -66,8 +66,8 @@ function recalcQuantity(){
     m2u = document.getElementById('m2u');
     Qty = document.getElementById("Quantity");
     msq = document.getElementById("m2");
-    if(msq>0 && m2u >0) {
-    Qty.value = msq/m2u;
+    if(parseFloat(msq.value)>0 && parseFloat(m2u.value) >0) {
+    Qty.value = parseFloat(msq.value)/parseFloat(m2u.value);
     } else {
     Qty.value = 0;     
     }
@@ -77,8 +77,8 @@ function recalcm2(){
     m2u = document.getElementById('m2u');
     Qty = document.getElementById("Quantity");
     msq = document.getElementById("m2");
-    if(Qty>0 && m2u >0) {
-    msq.value = qty*m2u;
+    if(parseFloat(Qty.value)>0 && parseFloat(m2u.value) >0) {
+    msq.value = parseFloat(qty)*parseFloat(m2u);
     } else {
     msq.value = 0;
     }
@@ -220,9 +220,9 @@ function updatecolour() {
 }
 
 function updatem2() {
-  w = document.getElementById('Width').value; 
-  l = document.getElementById('Length').value; 
-  u = document.getElementById('Units').value;
+  w = parseFloat(document.getElementById('Width').value); 
+  l = parseFloat(document.getElementById('Length').value); 
+  u = parseFloat(document.getElementById('Units').value);
   document.getElementById('m2u').value = w*l*u;
 }
 
