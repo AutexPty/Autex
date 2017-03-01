@@ -55,7 +55,7 @@ function hidepages(){
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         document.getElementById("ddescription").hidden = true; 
-        document.getElementById("dspec").hidden = true; 
+        document.getElementById("dsize").hidden = true; 
 }
 
 function toquantity(){
@@ -112,7 +112,8 @@ function changepage(){
     case 4:
         // select specs
         hidepages();     
-        document.getElementById("dspec").hidden = false;    
+        document.getElementById("dspec").hidden = false;       
+        document.getElementById("dsize").hidden = false; 
         break;
     case 5:
         // select quantity
