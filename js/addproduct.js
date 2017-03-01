@@ -112,6 +112,7 @@ function changepage(){
     case 4:
         // select specs
         hidepages();     
+        getproductstr();
         document.getElementById("dspec").hidden = false;       
         break;
     case 5:
@@ -131,6 +132,13 @@ function changepage(){
 function todesc(){
   nextpage();
 };
+
+function getproductstr() {
+  var productstr = "";
+  if (selvar) {productstr = productstr + variantdetail}
+  if (colour) {productstr = productstr + " " + colour}
+  document.getElementById("custom").value = productstr;
+}
 
 function addproduct() {
   var comment =  document.getElementById('description').value;
