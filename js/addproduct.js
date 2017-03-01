@@ -26,10 +26,11 @@ function selectcategory() {
     //if (xhttp.status == "200") 
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
+      select.innerHTML = "";
       products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
-      var opt = document.createElement('option');
-      opt.innerHTML = "";
+
       for (var i = 0; i < products.length; i++) {        
+        var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
