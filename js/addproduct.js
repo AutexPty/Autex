@@ -48,70 +48,49 @@ function nextpage(){
   changepage();
 }
 
+function hidepages(){
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true; 
+}
+
 function changepage(){
   switch(page) {
     case 0:
         // select category
+        hidepages();     
         document.getElementById("dproductcat").hidden = false;
-        document.getElementById("dproduct").hidden = true; 
-        document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true; 
-        document.getElementById("ddescription").hidden = true;      
-      break;
+    break;
     case 1:
         // select product group
-        document.getElementById("dproductcat").hidden = true;
+        hidepages();     
         document.getElementById("dproduct").hidden = false; 
-        document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;    
-        document.getElementById("ddescription").hidden = true;      
         break;
     case 2:
         // select variant
-        document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true; 
+        hidepages();     
         document.getElementById("dvariant").hidden = false;
-        document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;     
-        document.getElementById("ddescription").hidden = true;      
         break;
     case 3:
         // select colour
-        document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true; 
-        document.getElementById("dvariant").hidden = true;
+        hidepages();     
         document.getElementById("dcolour").hidden = false;
-        document.getElementById("dquantity").hidden = true;     
-        document.getElementById("ddescription").hidden = true;         
         break;
     case 4:
         // select quantity
-        document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true; 
-        document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolour").hidden = true;
+        hidepages();     
         document.getElementById("dspec").hidden = false;    
-        document.getElementById("dquantity").hidden = true;    
-        document.getElementById("ddescription").hidden = true;      
         break;
     case 5:
         // enter description
-        document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true; 
-        document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolour").hidden = true;
-        document.getElementById("dspec").hidden = true;       
+        hidepages();     
         document.getElementById("dquantity").hidden = false;     
-        document.getElementById("ddescription").hidden = true;
       break;
    case 6:
-        document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true; 
-        document.getElementById("dvariant").hidden = true;
-        document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;     
+        hidepages();     
         document.getElementById("ddescription").hidden = false;    
      default:
         break;
@@ -209,6 +188,19 @@ function updatecolour() {
     changepage();
   }
 }
+
+function updatem2() {
+  w = document.getElementById('Width').value; 
+  l = document.getElementById('Length').value; 
+  u = document.getElementById('Units').value;
+  document.getElementById('m2').value = w*l*u;
+}
+
+function editspecs() {
+  document.getElementById('Width').disabled = false; 
+  document.getElementById('Length').disabled = false; 
+  document.getElementById('Units').disabled = false; 
+};
 
 function selectvariant() {
   selvar = document.getElementById("variant").value;
