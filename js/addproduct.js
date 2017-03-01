@@ -190,11 +190,10 @@ function updatecolour() {
 }
 
 function updatem2() {
- debugger;
   w = document.getElementById('Width').value; 
   l = document.getElementById('Length').value; 
   u = document.getElementById('Units').value;
-  document.getElementById('m2').value = w*l*u;
+  document.getElementById('m2u').value = w*l*u;
 }
 
 function editspecs() {
