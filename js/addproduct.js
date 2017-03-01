@@ -55,29 +55,71 @@ function changepage(){
         documnet.getElementById("productselect").hidden = false;
         document.getElementById("dspecs").hidden = true;
         document.getElementById("dquantity").hidden = true; 
+function changepage(){
+  switch(page) {
+    case 0:
+        // select category
+        document.getElementById("dproductcat").hidden = false;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dquantity").hidden = true; 
         document.getElementById("ddescription").hidden = true;      
       break;
     case 1:
         // select product group
-        documnet.getElementById("productselect").hidden = true;
-        document.getElementById("dspecs").hidden = false;
-        document.getElementById("dquantity").hidden = true; 
-        document.getElementById("ddescription").hidden = true;       
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = false; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dquantity").hidden = true;    
+        document.getElementById("ddescription").hidden = true;      
         break;
     case 2:
-        // select quantities
-        documnet.getElementById("productselect").hidden = true;
-        document.getElementById("dspecs").hidden = true;
-        document.getElementById("dquantity").hidden = false; 
-        document.getElementById("ddescription").hidden = true;          
+        // select variant
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = false;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true;      
         break;
     case 3:
-        // select descriptions
-        documnet.getElementById("productselect").hidden = true;
-        document.getElementById("dspecs").hidden = true;
-        document.getElementById("dquantity").hidden = true; 
-        document.getElementById("ddescription").hidden = false;       
+        // select colour
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = false;
+        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true;         
         break;
+    case 4:
+        // select quantity
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dspec").hidden = false;    
+        document.getElementById("dquantity").hidden = true;    
+        document.getElementById("ddescription").hidden = true;      
+        break;
+    case 5:
+        // enter description
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dspec").hidden = true;       
+        document.getElementById("dquantity").hidden = false;     
+        document.getElementById("ddescription").hidden = true;
+      break;
+   case 6:
+        document.getElementById("dproductcat").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
+        document.getElementById("dvariant").hidden = true;
+        document.getElementById("dcolour").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = false;    
      default:
         break;
   }
