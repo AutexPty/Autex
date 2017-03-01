@@ -58,8 +58,13 @@
 	<button id="customise" class="mod-danger" onclick="editspecs();">&nbsp Edit &nbsp</button>
 	<button id="next" onclick="toquantity();">&nbsp Next &nbsp</button>
         </div>
+	</div>
 	
     <div id = "dquantity" hidden="true">
+      <div>
+ 	    <label for="custom" class="ll">Product Specifications:</label><br>
+	    <input id="custom" type="text" disabled value="Product Not Selected Yet.">
+	  </div>	
 	    <label>Enter Total Quantity:</label>
 	<div> 
 	    <label for="Quantity" class="l"><span id="Unit">Quantity</span>:</label>
@@ -80,7 +85,7 @@
         <input  id="description" type="text" maxlength="200">
         <input type="button" value="Add Product" onclick="addproduct();">
     </div>        
-</div>
+
  <script src="./js/section.js"></script>
  <script src="./js/addproduct.js"></script>    
     </body>
