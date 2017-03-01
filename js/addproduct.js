@@ -52,13 +52,6 @@ function changepage(){
   switch(page) {
     case 0:
         // select category
-        documnet.getElementById("productselect").hidden = false;
-        document.getElementById("dspecs").hidden = true;
-        document.getElementById("dquantity").hidden = true; 
-function changepage(){
-  switch(page) {
-    case 0:
-        // select category
         document.getElementById("dproductcat").hidden = false;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
