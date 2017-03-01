@@ -74,16 +74,14 @@
         <input id="m2" type="number" min="0" max="100" step=".01" value="0.00" oninput=" recalcQuantity();">
     </div>	
     <br>
-        <label for="description">Please enter any Production Details/Comments Required.</label>
-        <textarea id="description" type="text" maxlength="200"></textarea>
-    <button id="todesc" class="mod-primary" value="Add Product" onclick="addproduct();">Add Product</button>
+        <button id="todesc" value="Next" onclick="todesc();">Next</button>
 	</div>
 	
     
     <div id = "ddescription" hidden="true">
         <label for="description">Please enter any Production Details/Comments Required.</label>
         <input  id="description" type="text" maxlength="200">
-        <input type="button" value="Add Product" onclick="addproduct();">
+        <input type="button" class="mod-primary" value="Add Product" onclick="addproduct();">
     </div>        
 
  <script src="./js/section.js"></script>
