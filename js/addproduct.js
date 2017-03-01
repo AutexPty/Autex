@@ -68,7 +68,7 @@ function recalcQuantity(){
     Qty = document.getElementById("Quantity");
     msq = document.getElementById("m2");
     if(parseFloat(msq.value)>0 && parseFloat(m2u.value) >0) {
-    Qty.value = parseFloat(msq.value)/parseFloat(m2u.value);
+    Qty.value = (parseFloat(msq.value)/parseFloat(m2u.value)).toFixed(3);
     } else {
     Qty.value = 0;     
     }
@@ -79,7 +79,7 @@ function recalcm2(){
     Qty = document.getElementById("Quantity");
     msq = document.getElementById("m2");
     if(parseFloat(Qty.value)>0 && parseFloat(m2u.value) >0) {
-    msq.value = parseFloat(Qty.value)*parseFloat(m2u.value);
+    msq.value = (parseFloat(Qty.value)*parseFloat(m2u.value)).toFixed(3);
     } else {
     msq.value = 0;
     }
@@ -128,8 +128,7 @@ function changepage(){
   }
 }
 
-function todescription(){
-  quantity = document.getElementById('Quantity').value;
+function todesc(){
   nextpage();
 };
 
