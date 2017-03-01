@@ -138,6 +138,8 @@ function getproductstr() {
   if (selvar) {productstr = productstr + variantdetail}
   if (colour) {productstr = productstr + " " + colour}
   document.getElementById("custom").value = productstr;
+  document.getElementById("custom2").value = productstr;
+
 }
 
 function addproduct() {
@@ -177,6 +179,9 @@ function selectproduct() {
   checkVariants = products[item].getElementsByTagName("variants")[0];
   unit = products[item].getElementsByTagName("unit")[0].textContent;
   document.getElementById('Unit').innerHTML = unit;
+  document.getElementById('Unit2').innerHTML = unit;
+  document.getElementById('Unit3').innerHTML = unit;
+ 
   
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
