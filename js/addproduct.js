@@ -190,6 +190,7 @@ function updatecolour() {
 }
 
 function updatem2() {
+ debugger;
   w = document.getElementById('Width').value; 
   l = document.getElementById('Length').value; 
   u = document.getElementById('Units').value;
