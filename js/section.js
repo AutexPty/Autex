@@ -23,7 +23,7 @@ t.render(function(){
     var m2 = "";
     var w = "";
     var l = "";
-    var c = "";
+    var cmnt = "";
     
     var urls = yellowstoneAttachments.map(
       function(a){ 
@@ -35,7 +35,7 @@ t.render(function(){
           if (b[i].indexOf("m2=")==0)  {m2 =  b[i].slice(3);};   
           if (b[i].indexOf("w=")==0)   {w =   b[i].slice(2);};   
           if (b[i].indexOf("l=")==0)   {l =   b[i].slice(2);};             
-          if (b[i].indexOf("comments=")==0)   {c =   b[i].slice(9);};             
+          if (b[i].indexOf("comments=")==0)   {cmnt =   b[i].slice(9);};             
         }
         
         ir = tb.insertRow();
@@ -54,7 +54,7 @@ t.render(function(){
         c = ir.insertCell();        
         c.textContent=l;        
         c = ir.insertCell();        
-        c.textContent=c;       
+        c.textContent=cmnt;       
       });
   })
   .then(function(){
