@@ -147,7 +147,7 @@ function addproduct() {
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
   var productstr = "";
   var productname = ""
-  var m2 = document.getElementById('m2u').value;
+  var m2 = document.getElementById('m2').value;
   var w = document.getElementById('Width').value;
   var l = document.getElementById('Length').value;
   var u = document.getElementById('Units').value;
