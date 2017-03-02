@@ -23,6 +23,7 @@ t.render(function(){
     var m2 = "";
     var w = "";
     var l = "";
+    var u = "";
     var cmnt = "";
     
     var urls = yellowstoneAttachments.map(
@@ -32,6 +33,7 @@ t.render(function(){
           if (b[i].indexOf("productcode=")==0) {pcode = b[i].slice(12);};
           if (b[i].indexOf("Qty=")==0) {qty = b[i].slice(4);};
           if (b[i].indexOf("UOM=")==0) {uom = b[i].slice(4);};   
+          if (b[i].indexOf("PPK=")==0) {u  =  b[i].slice(4);};   
           if (b[i].indexOf("m2=")==0)  {m2 =  b[i].slice(3);};   
           if (b[i].indexOf("w=")==0)   {w =   b[i].slice(2);};   
           if (b[i].indexOf("l=")==0)   {l =   b[i].slice(2);};             
@@ -50,11 +52,8 @@ t.render(function(){
         c = ir.insertCell();        
         c.textContent=m2;
         c = ir.insertCell();        
-        c.textContent=w;
-        c = ir.insertCell();        
-        c.textContent=l;        
-        c = ir.insertCell();        
-        c.textContent=cmnt;       
+        c.textContent=w+" x " + l + " x " + u;    
+       
       });
   })
   .then(function(){
