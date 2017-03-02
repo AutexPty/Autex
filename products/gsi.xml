@@ -4,53 +4,78 @@
     <productcode>GSC</productcode>
     <description>GreenStuf Ceiling Batts</description>
     <variants>
-      <variant><code>10480</code><description>Ceiling Batts R1.0 480s</description></variant>
-      <variant><code>10720</code><description>Ceiling Batts R1.0 720s</description></variant>
-      <variant><code>15480</code><description>Ceiling Batts R1.5 480s</description></variant>
-      <variant><code>15720</code><description>Ceiling Batts R1.5 720s</description></variant>
-      <variant><code>20480</code><description>Ceiling Batts R2.0 480s</description></variant>
-      <variant><code>20720</code><description>Ceiling Batts R2.0 720s</description></variant>
-      <variant><code>25480</code><description>Ceiling Batts R2.5 480s</description></variant>
-      <variant><code>25720</code><description>Ceiling Batts R2.5 720s</description></variant>
-      <variant><code>30480</code><description>Ceiling Batts R3.0 480s</description></variant>
-      <variant><code>30720</code><description>Ceiling Batts R3.0 720s</description></variant>
-      <variant><code>35480</code><description>Ceiling Batts R3.5 480s</description></variant>
-      <variant><code>35720</code><description>Ceiling Batts R3.5 720s</description></variant>
-      <variant><code>40480</code><description>Ceiling Batts R4.0 480s</description></variant>
-      <variant><code>40720</code><description>Ceiling Batts R4.0 720s</description></variant>
-      <variant><code>45480</code><description>Ceiling Batts R4.5 480s</description></variant>
-      <variant><code>45720</code><description>Ceiling Batts R4.5 720s</description></variant>
+      <variant><code>20480</code><description>Ceiling Batts R2.0 430s</description><width>0.430</width><length>1.16</length><units>12</units></variant>
+      <variant><code>20720</code><description>Ceiling Batts R2.0 580s</description><width>0.580</width><length>1.16</length><units>12</units></variant>
+      <variant><code>25480</code><description>Ceiling Batts R2.5 430s</description><width>0.430</width><length>1.16</length><units>8</units></variant>
+      <variant><code>25720</code><description>Ceiling Batts R2.5 580s</description><width>0.580</width><length>1.16</length><units>8</units></variant>
+      <variant><code>30480</code><description>Ceiling Batts R3.0 430s</description><width>0.430</width><length>1.16</length><units>8</units></variant>
+      <variant><code>30720</code><description>Ceiling Batts R3.0 580s</description><width>0.580</width><length>1.16</length><units>8</units></variant>
+      <variant><code>35480</code><description>Ceiling Batts R3.5 430s</description><width>0.430</width><length>1.16</length><units>6</units></variant>
+      <variant><code>35720</code><description>Ceiling Batts R3.5 580s</description><width>0.580</width><length>1.16</length><units>6</units></variant>
+      <variant><code>40480</code><description>Ceiling Batts R4.0 430s</description><width>0.430</width><length>1.16</length><units>4</units></variant>
+      <variant><code>40720</code><description>Ceiling Batts R4.0 580s</description><width>0.580</width><length>1.16</length><units>4</units></variant>
+      <variant><code>45480</code><description>Ceiling Batts R4.5 430s</description><width>0.430</width><length>1.16</length><units>4</units></variant>
+      <variant><code>45720</code><description>Ceiling Batts R4.5 580s</description><width>0.580</width><length>1.16</length><units>4</units></variant>
     </variants>
     <unit>Packs</unit>
-  </product>
-  <product>
+    </product>
+    <product>
     <productcode>GSW</productcode>
     <description>GreenStuf Wall Batts</description>
     <variants>
-      <variant><code>10480</code><description>Wall Batts R1.0 480s</description></variant>
-      <variant><code>10720</code><description>Wall Batts R1.0 720s</description></variant>
-      <variant><code>15480</code><description>Wall Batts R1.5 480s</description></variant>
-      <variant><code>15720</code><description>Wall Batts R1.5 720s</description></variant>
-      <variant><code>20480</code><description>Wall Batts R2.0 480s</description></variant>
-      <variant><code>20720</code><description>Wall Batts R2.0 720s</description></variant>
-      <variant><code>25480</code><description>Wall Batts R2.5 480s</description></variant>
-      <variant><code>25720</code><description>Wall Batts R2.5 720s</description></variant>
-      <variant><code>30480</code><description>Wall Batts R3.0 480s</description></variant>
-      <variant><code>30720</code><description>Wall Batts R3.0 720s</description></variant>
-      <variant><code>35480</code><description>Wall Batts R3.5 480s</description></variant>
-      <variant><code>35720</code><description>Wall Batts R3.5 720s</description></variant>
-      <variant><code>40480</code><description>Wall Batts R4.0 480s</description></variant>
-      <variant><code>40720</code><description>Wall Batts R4.0 720s</description></variant>
-      <variant><code>45480</code><description>Wall Batts R4.5 480s</description></variant>
-      <variant><code>45720</code><description>Wall Batts R4.5 720s</description></variant>
+      <variant><code>10480</code><description>Wall Batts R1.0 430s</description><width>0.430</width><length>1.16</length><units>21</units></variant>
+      <variant><code>10720</code><description>Wall Batts R1.0 580s</description><width>0.580</width><length>1.16</length><units>21</units></variant>
+      <variant><code>15480</code><description>Wall Batts R1.5 430s</description><width>0.430</width><length>1.16</length><units>16</units></variant>
+      <variant><code>15720</code><description>Wall Batts R1.5 580s</description><width>0.580</width><length>1.16</length><units>16</units></variant>
+      <variant><code>20480</code><description>Wall Batts R2.0 430s</description><width>0.430</width><length>1.16</length><units>12</units></variant>
+      <variant><code>20720</code><description>Wall Batts R2.0 580s</description><width>0.580</width><length>1.16</length><units>12</units></variant>
+      <variant><code>25480</code><description>Wall Batts R2.5 430s</description><width>0.430</width><length>1.16</length><units>6</units></variant>
+      <variant><code>25720</code><description>Wall Batts R2.5 580s</description><width>0.580</width><length>1.16</length><units>6</units></variant>
     </variants>
     <unit>Packs</unit>
-  </product>  
+    </product>  
 
-  <product>
-    <productcode>IND</productcode>
-    <description>Industrial Bespoke Product</description>
+    <product>
+    <productcode>GSU</productcode>
+    <description>GreenStuf UnderFloor</description>
+    <variants>
+      <variant><code>15450</code><description>R1.5 450mm Underfloor</description><width>0.450</width><length>11.6</length><units>3</units></variant>
+      <variant><code>20450</code><description>R2.0 450mm Underfloor</description><width>0.550</width><length>11.6</length><units>3</units></variant>
+    </variants>
     <unit>Packs</unit>
-  </product>
-
+    </product>  
+  
+    <product>
+    <productcode>SSN</productcode>
+    <description>Sound Solution</description>
+    <variants>
+      <variant><code>75430</code><description>Sound Solution 75 430mm Batts</description><width>0.430</width><length>1.16</length><units>8</units></variant>
+      <variant><code>75580</code><description>Sound Solution 75 580mm Batts</description><width>0.580</width><length>1.16</length><units>8</units></variant>
+      <variant><code>90430</code><description>Sound Solution 90 430mm Batts</description><width>0.430</width><length>1.16</length><units>8</units></variant>
+      <variant><code>90580</code><description>Sound Solution 90 580mm Batts</description><width>0.580</width><length>1.16</length><units>8</units></variant>
+      <variant><code>100430</code><description>Sound Solution 100 430mm Batts</description><width>0.430</width><length>1.16</length><units>8</units></variant>
+      <variant><code>100580</code><description>Sound Solution 100 580mm Batts</description><width>0.580</width><length>1.16</length><units>8</units></variant>
+    </variants>
+    <unit>Packs</unit>
+    </product>   
+  
+    <product>
+    <productcode>ASB</productcode>
+    <description>Acoustic Sound Blanket</description>
+    <variants>
+      <variant><code>145016.5</code><description>Acoustic Sound Blanket 1 450mm</description><width>0.450</width><length>16.5</length><units>3</units></variant>
+	  <variant><code>161016.5</code><description>Acoustic Sound Blanket 1 610mm</description><width>0.610</width><length>16.5</length><units>2</units></variant>
+      <variant><code>245016.5</code><description>Acoustic Sound Blanket 2 450mm</description><width>0.450</width><length>16.5</length><units>3</units></variant>
+	  <variant><code>261016.5</code><description>Acoustic Sound Blanket 2 610mm</description><width>0.610</width><length>16.5</length><units>2</units></variant>
+      <variant><code>345016.5</code><description>Acoustic Sound Blanket 3 450mm</description><width>0.450</width><length>16.5</length><units>3</units></variant>
+	  <variant><code>361016.5</code><description>Acoustic Sound Blanket 3 610mm</description><width>0.610</width><length>16.5</length><units>2</units></variant>
+      <variant><code>445016.5</code><description>Acoustic Sound Blanket 4 450mm</description><width>0.450</width><length>16.5</length><units>3</units></variant>
+	  <variant><code>461016.5</code><description>Acoustic Sound Blanket 4 610mm</description><width>0.610</width><length>16.5</length><units>2</units></variant>
+      <variant><code>545016.5</code><description>Acoustic Sound Blanket 5 450mm</description><width>0.450</width><length>16.5</length><units>3</units></variant>
+	  <variant><code>561016.5</code><description>Acoustic Sound Blanket 5 610mm</description><width>0.610</width><length>16.5</length><units>2</units></variant>
+      <variant><code>645016.5</code><description>Acoustic Sound Blanket 6 450mm</description><width>0.450</width><length>12</length><units>3</units></variant>
+	  <variant><code>661016.5</code><description>Acoustic Sound Blanket 6 610mm</description><width>0.610</width><length>12</length><units>2</units></variant>
+	  </variants>
+    <unit>Packs</unit>
+    </product> 
 </products>
