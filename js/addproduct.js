@@ -259,8 +259,7 @@ function selectvariant() {
   document.getElementById('Width').value = dw;
   document.getElementById('Length').value = dl;
   document.getElementById('Units').value = du;
- 
-  
+  updatem2();
   updatecolour();
 }
 
