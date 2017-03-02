@@ -145,6 +145,8 @@ function getproductstr() {
 function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
+  var mqty = products[item].getElementsByTagName("quantity")[0].textContent 
+
   var productstr = "";
   var productname = ""
   var m2 = document.getElementById('m2').value;
@@ -162,7 +164,7 @@ function addproduct() {
                pcode = pcode + colourcode;
                productname =  productname + " " + colour;
                };
-  if (quantity) {productstr = productstr + "?Qty=" + quantity;};
+  if (mqty) {productstr = productstr + "?Qty=" + mqty;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
   if (u)  {productstr = productstr + "?PPK=" + u;};
   if (w)  {productstr = productstr + "?w=" + w;};
