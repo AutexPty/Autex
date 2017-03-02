@@ -145,7 +145,7 @@ function getproductstr() {
 function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
-  var mqty = document.getElementById("quantity").value; 
+  var mqty = document.getElementById("Quantity").value; 
 
   var productstr = "";
   var productname = ""
