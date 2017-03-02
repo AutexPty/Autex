@@ -254,7 +254,7 @@ function selectvariant() {
   var selected = v.options[v.options.selectedIndex];
   variantdetail = selected.textContent;
   var dw = selected.getAttribute('dw');
-  var dl = selected.getAttribute('dw');
+  var dl = selected.getAttribute('dl');
   var du = selected.getAttribute('du');
   document.getElementById('Width').value = dw;
   document.getElementById('Length').value = dl;
