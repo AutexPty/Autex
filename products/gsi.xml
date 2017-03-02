@@ -40,7 +40,7 @@
     <description>GreenStuf UnderFloor</description>
     <variants>
       <variant><code>15450</code><description>R1.5 450mm Underfloor</description><width>0.450</width><length>11.6</length><units>3</units></variant>
-      <variant><code>20450</code><description>R2.0 450mm Underfloor</description><width>0.550</width><length>11.6</length><units>3</units></variant>
+      <variant><code>20450</code><description>R2.0 450mm Underfloor</description><width>0.450</width><length>11.6</length><units>3</units></variant>
     </variants>
     <unit>Packs</unit>
     </product>  
