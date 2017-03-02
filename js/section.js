@@ -49,10 +49,14 @@ t.render(function(){
         c.textContent=qty;
         c = ir.insertCell();        
         c.textContent=uom;
+        c = ir.insertCell();
+        if (u==1) {
+        c.textContent=w+" x " + l;    
+        } else {
+        c.textContent=w+" x " + l + " x " + u;    
+        }
         c = ir.insertCell();        
         c.textContent=m2;
-        c = ir.insertCell();        
-        c.textContent=w+" x " + l + " x " + u;    
        
       });
   })
