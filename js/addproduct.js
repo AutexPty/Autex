@@ -168,7 +168,10 @@ function addproduct() {
   if (w)  {productstr = productstr + "?w=" + w;};
   if (l)  {productstr = productstr + "?l=" + l;};
   if (m2)  {productstr = productstr + "?m2=" + m2;};
-  if (comment) {productstr = productstr + "?comments=" + comment;};
+  if (comment) {
+     var gc = comment.replace(/[^a-z\d\s]+/gi, "");
+     productstr = productstr + "?comments=" + gc;
+  };
   
   t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
   t.closePopup();
