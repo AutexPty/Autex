@@ -193,8 +193,12 @@ function selectproduct() {
     for (var i = 0; i < variants.length; i++) {  
         var opt = document.createElement('option');
         opt.value = variants[i].getElementsByTagName("code")[0].textContent;
-        opt.innerHTML = "<option value="+variants[i].getElementsByTagName("code")[0].textContent+">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
-        select.appendChild(opt);  
+        opt.innerHTML = "<option value='"+variants[i].getElementsByTagName("code")[0].textContent+"' "+
+                        " dw='" + variants[i].getElementsByTagName("width")[0].textContent+ "' " +
+                        " dl='" + variants[i].getElementsByTagName("length")[0].textContent+ "' " +
+                        " du='" + variants[i].getElementsByTagName("units")[0].textContent+  "' "+
+                        ">"+variants[i].getElementsByTagName("description")[0].textContent+"</option>";
+       select.appendChild(opt);  
     }
     nextpage();
   } else {
@@ -280,11 +284,7 @@ function selectcategory() {
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+i+
-                        " dw=" + products[i].getElementsByTagName("width")[0].textContent+ 
-                        " dl=" + products[i].getElementsByTagName("length")[0].textContent+ 
-                        " du=" + products[i].getElementsByTagName("units")[0].textContent+
-                        " > "  + products[i].getElementsByTagName("description")[0].textContent+"</option>";
+        opt.innerHTML = "<option value="+i+">"  + products[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
       } //end of for loop
     //} //end of onstate change disabled
