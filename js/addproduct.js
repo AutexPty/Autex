@@ -147,6 +147,11 @@ function addproduct() {
   var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
   var productstr = "";
   var productname = ""
+  var m2 = document.getElementById('m2u').value;
+  var w = document.getElementById('Width').value;
+  var l = document.getElementById('Length').value;
+  var u = document.getElementById('Units').value;
+ 
   if (selvar) {
                productstr = productstr + "?variant=" + variantdetail;
                pcode = pcode +selvar;
@@ -159,6 +164,10 @@ function addproduct() {
                };
   if (quantity) {productstr = productstr + "?Qty=" + quantity;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
+  if (u)  {productstr = productstr + "?PPK=" + u;};
+  if (w)  {productstr = productstr + "?w=" + w;};
+  if (l)  {productstr = productstr + "?l=" + l;};
+  if (m2)  {productstr = productstr + "?m2=" + m2;};
   if (comment) {productstr = productstr + "?comments=" + comment;};
   
   t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
