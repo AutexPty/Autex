@@ -194,9 +194,9 @@ function selectproduct() {
         var opt = document.createElement('option');
         opt.value = variants[i].getElementsByTagName("code")[0].textContent;
         opt.innerHTML = variants[i].getElementsByTagName("description")[0].textContent;     
-        opt.setAttribute('dw=',variants[i].getElementsByTagName("width")[0].textContent);      
-        opt.setAttribute('dl=',variants[i].getElementsByTagName("length")[0].textContent);
-        opt.setAttribute('du=',variants[i].getElementsByTagName("units")[0].textContent);            
+        opt.setAttribute('dw',variants[i].getElementsByTagName("width")[0].textContent);      
+        opt.setAttribute('dl',variants[i].getElementsByTagName("length")[0].textContent);
+        opt.setAttribute('du',variants[i].getElementsByTagName("units")[0].textContent);            
        select.appendChild(opt);  
     }
     nextpage();
