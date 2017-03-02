@@ -46,9 +46,7 @@ t.render(function(){
         c = ir.insertCell();
         c.textContent=a.name;
         c = ir.insertCell();        
-        c.textContent=qty;
-        c = ir.insertCell();        
-        c.textContent=uom;
+        c.textContent=qty +" "+uom;
         c = ir.insertCell();
         if (u==1) {
         c.textContent=w+" x " + l;    
