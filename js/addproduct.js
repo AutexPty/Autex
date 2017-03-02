@@ -248,7 +248,16 @@ function editspecs() {
 function selectvariant() {
   selvar = document.getElementById("variant").value;
   var v = document.getElementById("variant");
-  variantdetail = v.options[v.options.selectedIndex].textContent
+  var selected = v.options[v.options.selectedIndex];
+  variantdetail = selected.textContent;
+  var dw = selected.getAttribute('width');
+  var dl = selected.getAttribute('length');
+  var du = selected.getAttribute('units');
+  document.getElementById('Width').value = dw;
+  document.getElementById('Length').value = dl;
+  document.getElementById('Units').value = du;
+ 
+  
   updatecolour();
 }
 
@@ -271,7 +280,11 @@ function selectcategory() {
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
-        opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("description")[0].textContent+"</option>";
+        opt.innerHTML = "<option value="+i+
+                        " dw=" + products[i].getElementsByTagName("width")[0].textContent+ 
+                        " dl=" + products[i].getElementsByTagName("length")[0].textContent+ 
+                        " du=" + products[i].getElementsByTagName("units")[0].textContent+
+                        " > "  + products[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
       } //end of for loop
     //} //end of onstate change disabled
