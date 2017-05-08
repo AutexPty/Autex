@@ -79,7 +79,7 @@
   </product>
 	
  <product>
-    <productcode>QSF</productcode>
+    <productcode>QSH</productcode>
     <description>Quietspace® Horizon</description>
     <colours>Vertiface</colours>
     <unit>Pack</unit>
@@ -89,6 +89,18 @@
 	<variant><code>720BLK</code><description>Quietspace® Horizon 720 Black</description><width>1.2</width><length>2.4</length><units>1</units></variant>
 	<variant><code>720WHI</code><description>Quietspace® Horizon 720 White</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
+  </product>  
+	
+<product>
+    <productcode>QSL</productcode>
+    <description>Quietspace® Lattice Baffle</description>
+    <colours>Cube</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code>ECL</code><description>Quietspace® Lattice Baffle Eclipse</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>TOR</code><description>Quietspace® Lattice Baffle Torus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>TRA</code><description>Quietspace® Lattice Baffle Trapezium</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  </variants>
   </product>  
    
 </products>
