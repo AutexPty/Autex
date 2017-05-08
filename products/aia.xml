@@ -63,7 +63,7 @@
   <product>
     <productcode>QSF</productcode>
     <description>Quietspace® Frontier</description>
-    <unit>Panels</unit>
+    <unit>Pack</unit>
     <colours>cube</colours>
     <variants>
       <variant><code>AXS12</code><description>12mm Axis</description><width>1.2</width><length>2.4</length><units>1</units></variant>
@@ -77,5 +77,18 @@
 	  <variant><code>TUN24</code><description>24mm Tundra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
   </product>
+	
+ <product>
+    <productcode>QSF</productcode>
+    <description>Quietspace® Horizon</description>
+    <colours>Vertiface</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code>480BLK</code><description>Quietspace® Horizon 480 Black</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>480WHI</code><description>Quietspace® Horizon 480 White</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	<variant><code>720BLK</code><description>Quietspace® Horizon 720 Black</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	<variant><code>720WHI</code><description>Quietspace® Horizon 720 White</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    </variants>
+  </product>  
    
 </products>
