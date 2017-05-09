@@ -112,6 +112,33 @@
       <variant><code></code><description>Quietspace® Symphony™ </description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
   </product>  
+
+   <product>
+    <productcode>THC</productcode>
+    <description>Quietspace® 3D Ceiling Tiles</description>
+    <colours>3d</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code>26</code><description>Quietspace® 3D Ceiling Tiles S-5.26</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>34</code><description>Quietspace® 3D Ceiling Tiles S-5.34</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>37</code><description>Quietspace® 3D Ceiling Tiles S-5.37</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>53</code><description>Quietspace® 3D Ceiling Tiles S-5.53</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  </variants>
+  </product>  
+  
+  <product>
+    <productcode>THD</productcode>
+    <description>Quietspace® 3D Tiles</description>
+    <colours>3d</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code>26</code><description>Quietspace® 3D Tiles S-5.26</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>34</code><description>Quietspace® 3D Tiles S-5.34</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>37</code><description>Quietspace® 3D Tiles S-5.37</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>50</code><description>Quietspace® 3D Tiles S-5.50</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  <variant><code>53</code><description>Quietspace® 3D Tiles S-5.53</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+	  </variants>
+  </product>  
   
    
 </products>
