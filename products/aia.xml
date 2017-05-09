@@ -102,5 +102,16 @@
 	  <variant><code>TRA</code><description>Quietspace® Lattice Baffle Trapezium</description><width>1.2</width><length>2.4</length><units>1</units></variant>
 	  </variants>
   </product>  
+	
+   <product>
+    <productcode>QSS</productcode>
+    <description>Symphony™</description>
+    <colours>Vertiface</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code></code><description>Quietspace® Symphony™ </description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    </variants>
+  </product>  
+  
    
 </products>
