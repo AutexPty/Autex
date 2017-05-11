@@ -139,6 +139,17 @@
 	  <variant><code>53</code><description>Quietspace® 3D Tiles S-5.53</description><width>1.2</width><length>2.4</length><units>1</units></variant>
 	  </variants>
   </product>  
+
+ <product>
+    <productcode>QST</productcode>
+    <description>Peel 'N' Stick Tiles</description>
+    <colours>Vertiface</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code></code><description>Acoustic Fabric™ Peel 'N' Stick Tiles</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>BP</code><description>Acoustic Fabric™ Peel 'N' Stick Tiles Bulk Pack</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+   </variants>
+  </product> 
   
    
 </products>
