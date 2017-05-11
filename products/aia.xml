@@ -150,6 +150,16 @@
       <variant><code>BP</code><description>Acoustic Fabric™ Peel 'N' Stick Tiles Bulk Pack</description><width>1.2</width><length>2.4</length><units>1</units></variant>
    </variants>
   </product> 
+	
+<product>
+    <productcode>QSCA</productcode>
+    <description>Accent Ceiling Tiles</description>
+    <colours>3d</colours>
+    <unit>Pack</unit>
+    <variants>
+      <variant><code></code><description>Quietspace Accent Ceiling Tiles</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    </variants>
+  </product>  
   
    
 </products>
