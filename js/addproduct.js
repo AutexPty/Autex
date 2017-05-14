@@ -10,6 +10,7 @@ var colour;
 var colourcode;
 var quantity;
 var unit;
+var slccode;
 
 function selectcategory() {
  colourfile = "";
@@ -154,11 +155,15 @@ function addproduct() {
   var l = document.getElementById('Length').value;
   var u = document.getElementById('Units').value;
  
-  if (selvar) {
-               productstr = productstr + "?variant=" + variantdetail;
-               pcode = pcode +selvar;
-               productname = variantdetail;
-              };
+ if (selvar) {
+              productstr = productstr + "?variant=" + variantdetail;
+              productname = variantdetail;
+              slccode= selvar.slice(-3);
+               if (slccode == "BLK") || (slccode == "WHI")
+               { pcode= pcode + slccode; }
+               else
+               { pcode = pcode + selvar ;}
+              }
   if (colour) {
                productstr = productstr + "?colour="  + colour;
                pcode = pcode + colourcode;
