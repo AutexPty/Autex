@@ -23,13 +23,13 @@ function selectcategory() {
     xhttp.open("GET", "./products/" +  selcat.toLowerCase() + ".xml", false);
     xhttp.send(null);
     //xhttp.onreadystatechange = function(){
-    //if (xhttp.status == "200")
-      xmlDoc = xhttp.responseXML;
+    //if (xhttp.status == "200") 
+      xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
       select.innerHTML = "";
       products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
 
-      for (var i = 0; i < products.length; i++) {
+      for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("description")[0].textContent+"</option>";
@@ -38,7 +38,7 @@ function selectcategory() {
     //} //end of onstate change disabled
     nextpage();
     }   //end of if selcart
-  }     //end of function
+  }     //end of function 
 
 
 
@@ -50,12 +50,12 @@ function nextpage(){
 
 function hidepages(){
         document.getElementById("dproductcat").hidden = true;
-        document.getElementById("dproduct").hidden = true;
+        document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
         document.getElementById("dcolour").hidden = true;
-        document.getElementById("dquantity").hidden = true;
-        document.getElementById("ddescription").hidden = true;
-        document.getElementById("dspec").hidden = true;
+        document.getElementById("dquantity").hidden = true;     
+        document.getElementById("ddescription").hidden = true; 
+        document.getElementById("dspec").hidden = true; 
 }
 
 function toquantity(){
@@ -70,7 +70,7 @@ function recalcQuantity(){
     if(parseFloat(msq.value)>0 && parseFloat(m2u.value) >0) {
     Qty.value = (parseFloat(msq.value)/parseFloat(m2u.value)).toFixed(3);
     } else {
-    Qty.value = 0;
+    Qty.value = 0;     
     }
 }
 
@@ -86,44 +86,44 @@ function recalcm2(){
 
 }
 
-
+    
 function changepage(){
   switch(page) {
     case 0:
         // select category
-        hidepages();
+        hidepages();     
         document.getElementById("dproductcat").hidden = false;
     break;
     case 1:
         // select product group
-        hidepages();
-        document.getElementById("dproduct").hidden = false;
+        hidepages();     
+        document.getElementById("dproduct").hidden = false; 
         break;
     case 2:
         // select variant
-        hidepages();
+        hidepages();     
         document.getElementById("dvariant").hidden = false;
         break;
     case 3:
         // select colour
-        hidepages();
+        hidepages();     
         document.getElementById("dcolour").hidden = false;
         break;
     case 4:
         // select specs
-        hidepages();
+        hidepages();     
         getproductstr();
-        document.getElementById("dspec").hidden = false;
+        document.getElementById("dspec").hidden = false;       
         break;
     case 5:
         // select quantity
-        hidepages();
-        document.getElementById("dquantity").hidden = false;
+        hidepages();     
+        document.getElementById("dquantity").hidden = false;     
       break;
    case 6:
         // enter description
-        hidepages();
-        document.getElementById("ddescription").hidden = false;
+        hidepages();     
+        document.getElementById("ddescription").hidden = false;    
      default:
         break;
   }
@@ -144,36 +144,25 @@ function getproductstr() {
 
 function addproduct() {
   var comment =  document.getElementById('description').value;
-  var pcode = products[item].getElementsByTagName("productcode")[0].textContent
-  var mqty = document.getElementById("Quantity").value;
+  var pcode = products[item].getElementsByTagName("productcode")[0].textContent 
+  var mqty = document.getElementById("Quantity").value; 
 
   var productstr = "";
-  var productname = "";
-  var slccode="";
-
+  var productname = ""
   var m2 = document.getElementById('m2').value;
   var w = document.getElementById('Width').value;
   var l = document.getElementById('Length').value;
   var u = document.getElementById('Units').value;
-
+ 
   if (selvar) {
-              productstr = productstr + "?variant=" + variantdetail;
-              productname = variantdetail;
-              slccode= selvar.slice(-3);
-               if (slccode == "BLK") || (slccode == "WHI")
-               { pcode=pcode+ slccode; }
-               else
-               { pcode = pcode +selvar ;}
+               productstr = productstr + "?variant=" + variantdetail;
+               pcode = pcode +selvar;
+               productname = variantdetail;
               };
   if (colour) {
                productstr = productstr + "?colour="  + colour;
+               pcode = pcode + colourcode;
                productname =  productname + " " + colour;
-               if (slccode == "BLK")
-               { pcode = pcode + colourcode+ "BLK"; }
-               elseif (slccode == "WHI")
-               { pcode = pcode + colourcode+ "WHI"; ;}
-               else
-               { pcode = pcode + colourcode;}
                };
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
@@ -185,7 +174,7 @@ function addproduct() {
      var gc = comment.replace(/[^a-z\d\s]+/gi, "");
      productstr = productstr + "?comments=" + gc;
   };
-
+  
   t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
   t.closePopup();
 }
@@ -206,32 +195,32 @@ function selectproduct() {
   document.getElementById('Unit').innerHTML = unit;
   document.getElementById('Unit2').innerHTML = unit;
   document.getElementById('Unit3').innerHTML = unit;
-
-
+ 
+  
   if (products[item].getElementsByTagName("colours")[0]) {
   colourfile = products[item].getElementsByTagName("colours")[0].textContent
   }
-
+  
   if (checkVariants) {
     variants = checkVariants.getElementsByTagName('variant')
     select = document.getElementById('variant');
-    for (var i = 0; i < variants.length; i++) {
+    for (var i = 0; i < variants.length; i++) {  
         var opt = document.createElement('option');
         opt.value = variants[i].getElementsByTagName("code")[0].textContent;
-        opt.innerHTML = variants[i].getElementsByTagName("description")[0].textContent;
-        opt.setAttribute('dw',variants[i].getElementsByTagName("width")[0].textContent);
+        opt.innerHTML = variants[i].getElementsByTagName("description")[0].textContent;     
+        opt.setAttribute('dw',variants[i].getElementsByTagName("width")[0].textContent);      
         opt.setAttribute('dl',variants[i].getElementsByTagName("length")[0].textContent);
-        opt.setAttribute('du',variants[i].getElementsByTagName("units")[0].textContent);
-       select.appendChild(opt);
+        opt.setAttribute('du',variants[i].getElementsByTagName("units")[0].textContent);            
+       select.appendChild(opt);  
     }
     nextpage();
   } else {
       if (colourfile) {
       updatecolour();
       } else {
-
+        
       }
-  }
+  }    
 }
 
 function updatecolour() {
@@ -239,21 +228,21 @@ function updatecolour() {
     if (window.XMLHttpRequest) {
       xhttp = new XMLHttpRequest();
     } else {
-      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      xhttp = new ActiveXObject("Microsoft.XMLHTTP");  
     }
     xhttp.open("GET", "./colours/" +  colourfile.toLowerCase() + ".xml", false);
     xhttp.send(null);
-    xmlDoc = xhttp.responseXML;
-      select = document.getElementById('colour');
+    xmlDoc = xhttp.responseXML; 
+      select = document.getElementById('colour');    
       colours = xmlDoc.getElementsByTagName("colours")[0].getElementsByTagName("colour")
-      for (var i = 0; i < colours.length; i++) {
+      for (var i = 0; i < colours.length; i++) {        
         var opt = document.createElement('option');
         opt.value = colours[i].getElementsByTagName("code")[0].textContent;
         opt.innerHTML = "<option value='"+colours[i].getElementsByTagName("code")[0].textContent+"'>"+colours[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
         page = 3;
         changepage();
-      } //end of for loop
+      } //end of for loop    
   } else {
     page = 4;
     changepage();
@@ -261,16 +250,16 @@ function updatecolour() {
 }
 
 function updatem2() {
-  w = parseFloat(document.getElementById('Width').value);
-  l = parseFloat(document.getElementById('Length').value);
+  w = parseFloat(document.getElementById('Width').value); 
+  l = parseFloat(document.getElementById('Length').value); 
   u = parseFloat(document.getElementById('Units').value);
   document.getElementById('m2u').value = w*l*u;
 }
 
 function editspecs() {
-  document.getElementById('Width').disabled = false;
-  document.getElementById('Length').disabled = false;
-  document.getElementById('Units').disabled = false;
+  document.getElementById('Width').disabled = false; 
+  document.getElementById('Length').disabled = false; 
+  document.getElementById('Units').disabled = false; 
 };
 
 function selectvariant() {
@@ -300,11 +289,11 @@ function selectcategory() {
     xhttp.open("GET", "./products/" +  selcat.toLowerCase() + ".xml", false);
     xhttp.send(null);
     //xhttp.onreadystatechange = function(){
-    //if (xhttp.status == "200")
-      xmlDoc = xhttp.responseXML;
+    //if (xhttp.status == "200") 
+      xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
       products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
-      for (var i = 0; i < products.length; i++) {
+      for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"  + products[i].getElementsByTagName("description")[0].textContent+"</option>";
@@ -313,4 +302,4 @@ function selectcategory() {
     //} //end of onstate change disabled
     nextpage();
     }   //end of if selcart
-  }     //end of function
+  }     //end of function 
