@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+  <productcode>QSF</productcode>
+  <description>Quietspace® Frontier</description>
+  <unit>Pack</unit>
+  <colours>cube</colours>
+  <variants>
+    <variant><code>AXS12</code><description>12mm Axis</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>DUN12</code><description>12mm Dune</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>DUN24</code><description>24mm Dune</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>SIE12</code><description>12mm Sierra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  <variant><code>SIE24</code><description>12mm Sierra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>TAL12</code><description>12mm Talus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>TAL24</code><description>24mm Talus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>TUN12</code><description>12mm Tundra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  <variant><code>TUN24</code><description>24mm Tundra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  </variants>
+</product>
+
+<product>
+  <productcode>QSH</productcode>
+  <description>Quietspace® Horizon</description>
+  <colours>Vertiface</colours>
+  <unit>Pack</unit>
+  <variants>
+    <variant><code>480BLK</code><description>Quietspace® Horizon 480 Black</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>480WHI</code><description>Quietspace® Horizon 480 White</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+<variant><code>720BLK</code><description>Quietspace® Horizon 720 Black</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+<variant><code>720WHI</code><description>Quietspace® Horizon 720 White</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  </variants>
+</product>
+
+<product>
+  <productcode>QSL</productcode>
+  <description>Quietspace® Lattice Baffle</description>
+  <colours>Cube</colours>
+  <unit>Pack</unit>
+  <variants>
+    <variant><code>ECL</code><description>Quietspace® Lattice Baffle Eclipse</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    <variant><code>TOR</code><description>Quietspace® Lattice Baffle Torus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  <variant><code>TRA</code><description>Quietspace® Lattice Baffle Trapezium</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+  </variants>
+</product>  
