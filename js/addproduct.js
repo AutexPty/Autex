@@ -160,17 +160,22 @@ function addproduct() {
               productstr = productstr + "?variant=" + variantdetail;
               productname = variantdetail;
               slccode= selvar.slice(-3);
-               if (slccode == "BLK")
-               { slccode1= selvar.substring(0, selvar.length - 2)
+               if (slccode == "BLK" || slccode == "WHI" )
+               { slccode1= selvar.substring(0, selvar.length - 3)
                 pcode= pcode + slccode1;
                }
                else
                { pcode = pcode + selvar ;}
               }
-  if (colour) {
+if (colour)  {
                productstr = productstr + "?colour="  + colour;
-               pcode = pcode + colourcode;
                productname =  productname + " " + colour;
+               if (slccode == "BLK")
+               { pcode = pcode + colourcode + "BLK"; }
+               elseif (slccode == "WHI")
+               { pcode = pcode + colourcode+ "WHI"; ;}
+               else
+               { pcode = pcode + colourcode;}
                };
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
