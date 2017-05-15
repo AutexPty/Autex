@@ -4,6 +4,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+#buttonsdiv{
+display: flex;
+}
 #content {
   background: white;
   padding: 24px;
