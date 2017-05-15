@@ -5,7 +5,25 @@
       <script src="https://trello.com/power-ups/power-up.min.js"></script>
     </head>
     <body>
-	    
+<button type="button" onclick="MakeVisible('content');"> Select Products </button>
+<button type="button" onclick="MakeVisible('VNumber');"> Add VNumber </button>
+<button type="button" onclick="MakeVisible('Region');"> Add Region </button>
+
+<div id="VNumber" visible="false" style="display:none">
+    <b> Please Enter Vnumber </b>
+    <input type="text" name="txtvnumber"> 
+</div>
+
+ <div id="Region" hidden="true" style="display:none">
+     <select id="regionsel" name="region" >
+            <option value="" selected>Please Select Region</option>
+            <option value="3000">Melbourne</option>
+            <option value="2000">Sydney</option>
+            <option value="4000">Perth</option>
+            <option value="5000">Brisbane</option>
+        </select>
+</div>
+	 	    
 <div id="content">
     <div id="productselect">
       <div id="dproductcat" >
@@ -87,5 +105,26 @@
 
  <script src="./js/section.js"></script>
  <script src="./js/addproduct.js"></script>    
-    </body>
-        </html>
+   <script>
+ function MakeVisible(divname)
+ {
+   var x = document.getElementById(divname);
+   var a =  document.getElementById('VNumber');
+   var b =  document.getElementById('Region');
+   var c = document.getElementById('content');
+   if (x!=a){a.style.display = 'none';}
+   if (x!=b){b.style.display = 'none';}
+   if (x!=c){c.style.display = 'none';}
+     if (x.style.display === 'none')
+     {
+         x.style.display = 'block';
+     } else
+     {
+         x.style.display = 'none';
+     }
+ }
+ </script>
+	
+	
+</body>
+ </html>
