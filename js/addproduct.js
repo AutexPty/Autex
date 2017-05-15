@@ -11,6 +11,7 @@ var colourcode;
 var quantity;
 var unit;
 var slccode;
+var slccode1;
 
 function selectcategory() {
  colourfile = "";
@@ -160,7 +161,8 @@ function addproduct() {
               productname = variantdetail;
               slccode= selvar.slice(-3);
                if (slccode == "BLK")
-               { pcode= pcode + selvar.substring(0, s.length - 3);
+               { slccode1= selvar.substring(0, s.length - 3)
+                pcode= pcode + slccode1;
                }
                else
                { pcode = pcode + selvar ;}
