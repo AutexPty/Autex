@@ -159,7 +159,7 @@ function addproduct() {
               productstr = productstr + "?variant=" + variantdetail;
               productname = variantdetail;
               slccode= selvar.slice(-3);
-               if (slccode == "BLK") || (slccode == "WHI")
+               if (slccode == "BLK")
                { pcode= pcode + slccode; }
                else
                { pcode = pcode + selvar ;}
