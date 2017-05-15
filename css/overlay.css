@@ -5,7 +5,13 @@ body {
 }
 #buttonsdiv{
 display: flex;
+padding: 0px;
 }
+
+button{
+	 text-align: left; 
+  padding: 0 50px 5px 5px; }
+
 #content {
   background: white;
   padding: 24px;
