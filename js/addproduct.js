@@ -161,7 +161,7 @@ function addproduct() {
               productname = variantdetail;
               slccode= selvar.slice(-3);
                if (slccode == "BLK")
-               { slccode1= selvar.substring(0, s.length - 3)
+               { slccode1= selvar.substring(0, selvar.length - 2)
                 pcode= pcode + slccode1;
                }
                else
