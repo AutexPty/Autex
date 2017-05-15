@@ -172,11 +172,11 @@ if (colour)  {
                productname =  productname + " " + colour;
                if (slccode == "BLK")
                { pcode = pcode + colourcode + "BLK"; }
-               elseif (slccode == "WHI")
-               { pcode = pcode + colourcode+ "WHI"; ;}
+               else if (slccode == "WHI")
+               { pcode = pcode + colourcode+ "WHI"; }
                else
                { pcode = pcode + colourcode;}
-               };
+               }
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
   if (u)  {productstr = productstr + "?PPK=" + u;};
