@@ -40,7 +40,7 @@ var boardButtonCallback = function(t){
   });
 };
 
-var mapAddCallback = function(t){
+var mapAddCallbackold = function(t){
   t.overlay({
 	  title: 'Add Region',
 	  url:"./map.html",
@@ -49,6 +49,15 @@ var mapAddCallback = function(t){
   });
 };
 
+
+var mapAddCallback = function(t) {
+  return t.overlay({
+    url: './map.html'
+  })
+  .then(function(){
+    return t.closePopup();
+  })
+}
 
 var productAddCallback = function(t){
   t.popup({
