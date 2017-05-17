@@ -7,57 +7,7 @@
     <body>
 	 	    
 <div id="content">
-  <div id="buttonsdiv">
-    <center>
-	  <i>Please Select from the following options;</i>
-	  <hr>
-    <button id="mprod" type="button" style="display: block; width: 100%;" onclick="MakeVisible('addproduct');"> Products </button>
-	  <i>Specify Autex Products</i>
-	  <hr>
-    <button id = "modoc" type="button" style="display: block; width: 100%;" onclick="MakeVisible('VNumber');"> Order Document </button>
-	  <i>Assign Order Documents 
-		  (V-Number/Picking list #)</i>
-	  <hr>
-    <button id = "mregion" type="button" style="display: block; width: 100%;" onclick="MakeVisible('Region');" > Sales Region </button>
-	  <i>Assign Geographic Region of project</i>
-	  <hr>
-	  </center>
-	  <button id="test" type="button" onclick="Test()"> Test </button>	  
-  </div>
-		
-  <div id="VNumber" visible="false" hidden="true" style="top: 100" >
-    <form>
-    <label for="txtvnumber"> Please Enter Order Document Number: </label>
-    <input type="text" name="txtvnumber">
-	    <button type="button" onclick=""> Add Document Number </button>
-     </form>
-  </div>
-
-	<div id="Region" hidden="true" hidden="true">
-     <form>
-     <select id="regionsel" name="region" >
-            <option value="0" selected>Please Select Region</option>
-            <option value="1">Mallee</option>
-            <option value="2">Wimmera Southern Mallee</option>
-            <option value="3">Great South Coast</option>
-            <option value="4">Barwon</option>
-			<option value="5">Central Highlands</option>
-			<option value="6">loddon campaspe</option>
-			<option value="7">Goulburn</option>
-			<option value="8">Ovens Murray</option>
-			<option value="9">Gippsland</option>
-			<option value="10">North-West Melbourne Metro</option>
-			<option value="11">South-West Melbourne Metro</option>
-			<option value="12">North-East Melbourne Metro</option>
-			<option value="13">South-East Melbourne Metro</option>
-	</select>
-	    <button type="button" onclick=""> Add Region </button>
-    </form>
-</div>
-	
-
-	
-<div id="addproduct" hidden="true">
+<div id="addproduct" hidden="false">
     <div id="productselect">
       <div id="dproductcat" >
         <label for="category">Select Product Category</label>
