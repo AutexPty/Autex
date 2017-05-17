@@ -42,10 +42,10 @@ var boardButtonCallback = function(t){
 
 var productAddCallback = function(t){
   t.popup({
-	  title: 'Add Product',
+	  title: 'Add Items',
 	  url:"./addproduct.html",
 	  height: 400,
-	  width: 400
+	  width: 800
   });
 };
 
@@ -93,7 +93,7 @@ TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
     return [{
       icon: GRAY_ICON,
-      text: 'Add Product',
+      text: 'Add Items',
       callback: productAddCallback 
       //cardButtonCallback
     }];
