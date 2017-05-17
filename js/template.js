@@ -44,8 +44,7 @@ var productAddCallback = function(t){
   t.popup({
 	  title: 'Add Items',
 	  url:"./addproduct.html",
-	  height: 400,
-	  width: 800
+	  height: 600
   });
 };
 
