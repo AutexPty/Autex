@@ -5,17 +5,34 @@
     <script src="https://trello.com/power-ups/power-up.min.js"></script>
   </head>
 <body>
-<div id="content">
-      <h2>Please Select Region</h2>
-      <hr/>
 
-        <button id="VIC" onclick="selectstate('VIC');">Victoria</button>
-        <button id="NSW" onclick="selectstate('NSW');">New South Wales</button>
-        <button id="QLD" onclick="selectstate('QLD');">Queensland</button>
-        <button id="WA" onclick="selectstate('WA');">Western Australia</button>
-        <button id="SA" onclick="selectstate('SA');">South Australia</button>
-        <button id="NT" onclick="selectstate('NT');">N.T.</button>
-      </div>      
-      <script src="./js/addmap.js"></script>
-      </body>
-</html>
+
+<div id="content">
+
+<select id="regionsel" name="region" >
+      <option value="0" selected>Please Select Region</option>
+      <option value="1">Mallee</option>
+      <option value="2">Wimmera Southern Mallee</option>
+      <option value="3">Great South Coast</option>
+      <option value="4">Barwon</option>
+			<option value="5">Central Highlands</option>
+			<option value="6">loddon campaspe</option>
+			<option value="7">Goulburn</option>
+			<option value="8">Ovens Murray</option>
+			<option value="9">Gippsland</option>
+			<option value="10">North-West Melbourne Metro</option>
+			<option value="11">South-West Melbourne Metro</option>
+			<option value="12">North-East Melbourne Metro</option>
+			<option value="13">South-East Melbourne Metro</option>
+			
+</select>
+
+    <img src="C:\Users\nehap\Desktop\victoria.PNG" alt="" usemap="#logos" />
+	  <script src="./js/addmap.js"></script>
+		<map name="logos">
+		<area shape="poly" onclick="addregion(1)" coords="27,26,28,201,177,146,135,46"/>
+		</map>	
+   
+ </div>
+ </body>
+ </html>
