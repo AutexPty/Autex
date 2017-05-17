@@ -39,6 +39,17 @@ var boardButtonCallback = function(t){
     ]
   });
 };
+
+var mapAddCallback = function(t){
+  t.overlay({
+	  title: 'Add Items',
+	  url:"./Map.html",
+	  height: 450,
+	  width: 800
+  });
+};
+
+
 var productAddCallback = function(t){
   t.popup({
 	  title: 'Add Items',
@@ -52,15 +63,15 @@ return t.popup({
 	title: 'Menu',
 	items: [
 		{
-			text: "Add a Product",
+			text: "Add Autex Products",
 			callback:  productAddCallback
 		},
 		{
-			text: "Add a Region",
-			callback:  productAddCallback
+			text: "Add Project Regions",
+			callback:  mapAddCallback
 		},
 		{
-			text: "Add a Document",
+			text: "Add Document Number (V-Number)",
 			callback:  productAddCallback
 		}
 		]
