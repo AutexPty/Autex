@@ -15,6 +15,7 @@ var slccode1;
 
 function MakeVisible(divname)
 {
+   var x = document.getElementById("buttonsdiv").hidden = true;
    var x = document.getElementById(divname).hidden = false;
 }
 
