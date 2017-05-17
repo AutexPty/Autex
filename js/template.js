@@ -44,7 +44,10 @@ var boardButtonCallback = function(t){
 var mapAddCallback = function(t) {
   return t.overlay({
     url: './addmap.html'
-  })
+  }) 
+	  .then(function(){
+	  return t.closeOverlay();
+  });
 }
 
 var productAddCallback = function(t){
