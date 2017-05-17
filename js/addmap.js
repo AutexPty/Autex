@@ -34,3 +34,17 @@ document.addEventListener('keyup', function(e) {
 function close(){
 t.closeOverlay();
 }
+
+
+function addregion(region)
+{
+	reg= document.getElementById('regionsel');
+	 for (var i = 0; i < reg.length; i++) 
+	 {  
+		if ((reg.options[i].value) == region)
+		 
+		 {
+		 reg.value= region;
+		 }
+	 }
+}
