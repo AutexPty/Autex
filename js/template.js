@@ -18,9 +18,9 @@ var boardButtonCallback = function(t){
             url: './help.html',
             height: 200
           })
-          .then(function(){
-            return t.closePopup();
-          });
+          //.then(function(){
+          //  return t.closePopup();
+          //});
         }
       },{
         text: '-------------',		  
