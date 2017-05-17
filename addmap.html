@@ -8,15 +8,15 @@
 <div id="content">
       <h2>Please Select Region</h2>
       <hr/>
-      <ol>
-        <li>Victoria</li>
-        <li>New South Wales</li>
-        <li>Queensland</li>
-        <li>Western Australia</li>
-        <li>South Australia</li>
-        <li>N.T.</li>
-  </ol>
-        <button type="button" onclick="close()">Close Map</button>
+
+        <button id="VIC" onclick="selectstate('VIC');">Victoria</button>
+        <button id="NSW" onclick="selectstate('NSW');">>New South Wales</button>
+        <button id="QLD" onclick="selectstate('QLD');">Queensland</button>
+        <button id="WA" onclick="selectstate('WA');">Western Australia</button>
+        <button id="SA" onclick="selectstate('SA');">South Australia</button>
+        <button id="NT" onclick="selectstate('NT');">N.T.</button>
+        <hr>
+        <button type="button" onclick="close()">Cancel</button>
       </div>      
       <script src="./js/addmap.js"></script>
       </body>
