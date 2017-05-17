@@ -41,11 +41,8 @@ var boardButtonCallback = function(t){
 };
 
 var mapAddCallbackold = function(t){
-  t.overlay({
-	  title: 'Add Region',
-	  url:"./map.html",
-	  height: 450,
-	  width: 800
+  return t.overlay({
+	  url:"./map.html"
   });
 };
 
