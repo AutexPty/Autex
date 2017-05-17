@@ -17,7 +17,7 @@ function Test()
 {
   var Map = function(t) {
     return t.overlay({
-      url: 'map.html'
+      url: 'Map.html'
     })
     .then(function(){
       return t.closePopup();
