@@ -41,14 +41,14 @@ var boardButtonCallback = function(t){
 };
 
 var mapAddCallbackold = function(t){
-  return t.overlay({
+  t.overlay({
 	  url:"./map.html"
   });
 };
 
 
 var mapAddCallback = function(t) {
-  t.overlay({
+  return t.overlay({
     url: './map.html'
   })
 }
