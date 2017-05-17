@@ -51,11 +51,8 @@ var mapAddCallbackold = function(t){
 
 
 var mapAddCallback = function(t) {
-  return t.overlay({
+  t.overlay({
     url: './map.html'
-  })
-  .then(function(){
-    return t.closePopup();
   })
 }
 
