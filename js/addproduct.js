@@ -13,6 +13,18 @@ var unit;
 var slccode;
 var slccode1;
 
+function Test()
+{
+  var Map = function(t) {
+    return t.overlay({
+      url: 'map.html'
+    })
+    .then(function(){
+      return t.closePopup();
+    })
+  }	
+}
+
 function MakeVisible(divname)
 {
    var x = document.getElementById("buttonsdiv").hidden = true;
