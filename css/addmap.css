@@ -1,97 +1,13 @@
 body {
   background: rgba(0,0,0,.5);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-#buttonsdiv{
-display: flex;
-padding: 0px;
-padding-left: 5px;
-}
-
-button{
-	 text-align: left; 
-  padding: 0 50px 5px 5px; }
-
 #content {
   background: white;
   padding: 24px;
   width: 80%;
   max-width: 600px;
   max-height: 90%;
-}
-#VNumber {
-  background: white;
-  padding: 24px;
-  width: 80%;
-  max-width: 600px;
-  max-height: 90%;
-}
-#Region {
-  background: white;
-  padding: 24px;
-  width: 80%;
-  max-width: 600px;
-  max-height: 90%;
-} 
-
-#size {
- display: inline-block; 
- white-space: nowrap;
- justify-content: none;
- padding: 0px;
- width:100%;
-}
-
-.ll{
-display: inline-block; 
-max-width:80%;
-}
-
-.l{
-display: inline-block; 
-}
-
-
-#todesc {
-  float: right;
-  }
-
-#custom {
-background:#EDEFF0;
-border-radius:3px;
-border:1px solid #CDD2D4;
-box-sizing:border-box;
-display:inline-block;
-margin-bottom:1em;
-padding:.5em;
-width:100%;
-max-width:400px
-  }
-
-#customise {
-  box-sizing:border-box;
-  display:inline-block;
-  width:100px;
-  margin-bottom:1em;
-  padding:.5em;
-  }
-  
-  
-input[type="number"] {
-  text-align: right; 
-  max-width:100%;
-  width:100%;
-}
-
-select {
-background:#EDEFF0;
-border-radius:3px;
-border:1px solid #CDD2D4;
-box-sizing:border-box;
-display:block;
-margin-bottom:1em;
-padding:.5em;
-width:100%;
-max-width:500px
 }
