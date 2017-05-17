@@ -1,11 +1,9 @@
 body {
-  background: rgba(0,0,0,1);
   align-items: center;
   justify-content: center;
 }
 
 #buttonsdiv{
-display: flex;
 padding: 0px;
 padding-left: 5px;
 }
