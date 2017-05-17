@@ -7,18 +7,22 @@
     <body>
 	 	    
 <div id="content">
-<div id="buttonsdiv">
-<button type="button" onclick="MakeVisible('content');" style="width:80px" style="text-align:left"> Select Products </button>
-<button type="button" onclick="MakeVisible('VNumber');" style="width:80px" style="text-align:left"> Add VNumber </button>
-<button type="button" onclick="MakeVisible('Region');"  style="width:80px" style="text-align:left"> Add Region </button><br>
-</div>
-<p>
-<div id="VNumber" visible="false" style="display:none" style="top: 100" >
-    <b> Please Vnumber </b>
-    <input type="text" name="txtvnumber"> 
-</div>
+  <div id="buttonsdiv">
+    <button type="button" onclick="MakeVisible('content');"> Products </button>
+    <button type="button" onclick="MakeVisible('VNumber');"> Order Document </button>
+    <button type="button" onclick="MakeVisible('Region');" > Sales Region </button><br>
+  </div>
+		
+  <div id="VNumber" visible="false" style="display:none" style="top: 100" >
+    <form>
+    <label for="txtvnumber"> Please Enter Order Document Number: </label>
+    <input type="text" name="txtvnumber">
+    <input type="button" onclick="">
+     </form>
+  </div>
 
  <div id="Region" hidden="true" style="display:none">
+     <form>
      <select id="regionsel" name="region" >
             <option value="" selected>Please Select Region</option>
             <option value="3000">Melbourne</option>
@@ -26,6 +30,8 @@
             <option value="4000">Perth</option>
             <option value="5000">Brisbane</option>
         </select>
+    <input type="button" onclick="">
+    </form>
 </div>
 	
 	
