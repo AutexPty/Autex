@@ -15,20 +15,7 @@ var slccode1;
 
 function MakeVisible(divname)
 {
-   var x = document.getElementById(divname);
-   var a =  document.getElementById('VNumber');
-   var b =  document.getElementById('Region');
-   var c = document.getElementById('content');
-   if (x!=a){a.style.display = 'none';}
-   if (x!=b){b.style.display = 'none';}
-   if (x!=c){c.style.display = 'none';}
-     if (x.style.display === 'none')
-     {
-         x.style.display = 'block';
-     } else
-     {
-         x.style.display = 'none';
-     }
+   var x = document.getElementById(divname).hidden = false;
 }
 
 
