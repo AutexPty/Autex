@@ -39,7 +39,6 @@ var boardButtonCallback = function(t){
     ]
   });
 };
-
 var productAddCallback = function(t){
   t.popup({
 	  title: 'Add Items',
@@ -47,6 +46,29 @@ var productAddCallback = function(t){
 	  height: 450
   });
 };
+
+var menu = function(t) {
+return t.popup({
+	title: 'Menu',
+	items: [
+		{
+			text: "Add a Product",
+			callback:  productAddCallback
+		},
+		{
+			text: "Add a Region",
+			callback:  productAddCallback
+		},
+		{
+			text: "Add a Document",
+			callback:  productAddCallback
+		}
+		]
+})
+		
+}
+
+
 
 TrelloPowerUp.initialize({
   'attachment-sections': function(t, options){
@@ -93,7 +115,7 @@ TrelloPowerUp.initialize({
     return [{
       icon: GRAY_ICON,
       text: 'Add Items',
-      callback: productAddCallback 
+      callback: menu
       //cardButtonCallback
     }];
   }
