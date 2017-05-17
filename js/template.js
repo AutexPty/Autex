@@ -42,8 +42,8 @@ var boardButtonCallback = function(t){
 
 var mapAddCallback = function(t){
   t.overlay({
-	  title: 'Add Items',
-	  url:"./Map.html",
+	  title: 'Add Region',
+	  url:"./map.html",
 	  height: 450,
 	  width: 800
   });
@@ -52,7 +52,15 @@ var mapAddCallback = function(t){
 
 var productAddCallback = function(t){
   t.popup({
-	  title: 'Add Items',
+	  title: 'Add Product',
+	  url:"./addproduct.html",
+	  height: 450
+  });
+};
+
+var documentAddCallback = function(t){
+  t.popup({
+	  title: 'Add Document',
 	  url:"./addproduct.html",
 	  height: 450
   });
