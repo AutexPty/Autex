@@ -41,7 +41,7 @@ var boardButtonCallback = function(t){
 };
 
 
-var mapAddCallback = function(t) {
+var oldmapAddCallback = function(t) {
   return t.overlay({
     url: './addmap.html'
   }) 
@@ -49,6 +49,15 @@ var mapAddCallback = function(t) {
 	  return t.closeOverlay();
   });
 }
+
+var mapAddCallback = function(t){
+          return t.overlay({
+            url: './addmap.html',
+          })
+          .then(function(){
+            return t.closePopup();
+          });
+        }
 
 var productAddCallback = function(t){
   t.popup({
