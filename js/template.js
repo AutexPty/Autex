@@ -40,16 +40,10 @@ var boardButtonCallback = function(t){
   });
 };
 
-var mapAddCallbackold = function(t){
-  t.overlay({
-	  url:"./map.html"
-  });
-};
-
 
 var mapAddCallback = function(t) {
   return t.overlay({
-    url: './map.html'
+    url: './addmap.html'
   })
 }
 
