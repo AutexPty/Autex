@@ -1,13 +1,14 @@
 <html>
     <head>
       <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
-      <!link rel="stylesheet" href="./css/overlay.css"!>
+      <link rel="stylesheet" href="./css/addproduct.css">
       <script src="https://trello.com/power-ups/power-up.min.js"></script>
     </head>
     <body>
 	 	    
 <div id="content">
   <div id="buttonsdiv">
+    <center>
 	  <i>Please Select from the following options;</i>
 	  <hr>
     <button id="mprod" type="button" style="display: block; width: 100%;" onclick="MakeVisible('addproduct');"> Products </button>
@@ -19,13 +20,14 @@
     <button id = "mregion" type="button" style="display: block; width: 100%;" onclick="MakeVisible('Region');" > Sales Region </button>
 	  <i>Assign Geographic Region of project</i>
 	  <hr>
+	  </center>
   </div>
 		
   <div id="VNumber" visible="false" hidden="true" style="top: 100" >
     <form>
     <label for="txtvnumber"> Please Enter Order Document Number: </label>
     <input type="text" name="txtvnumber">
-    <input type="button" onclick="">
+    <input type="button" onclick="" value="Add Document Number">
      </form>
   </div>
 
@@ -38,7 +40,7 @@
             <option value="4000">Perth</option>
             <option value="5000">Brisbane</option>
         </select>
-    <input type="button" onclick="">
+    <input type="button" onclick="" value="Add Region">
     </form>
 </div>
 	
