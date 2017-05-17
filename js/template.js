@@ -61,7 +61,7 @@ var productAddCallback = function(t){
 var documentAddCallback = function(t){
   t.popup({
 	  title: 'Add Document',
-	  url:"./addproduct.html",
+	  url:"./adddocument.html",
 	  height: 450
   });
 };
@@ -80,7 +80,7 @@ return t.popup({
 		},
 		{
 			text: "Add Document Number (V-Number)",
-			callback:  productAddCallback
+			callback:  documentAddCallback
 		}
 		]
 })
