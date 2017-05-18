@@ -7,24 +7,7 @@
 <body>
 
 <div id="content">
-	<label for="regionsel">Select Region:</label>
-<select id="regionsel" name="region" >
-      <option value="0" selected>Please Select Region</option>
-      <option value="1">Mallee</option>
-      <option value="2">Wimmera Southern Mallee</option>
-      <option value="3">Great South Coast</option>
-      <option value="4">Barwon</option>
-			<option value="5">Central Highlands</option>
-			<option value="6">loddon campaspe</option>
-			<option value="7">Goulburn</option>
-			<option value="8">Ovens Murray</option>
-			<option value="9">Gippsland</option>
-			<option value="10">South-West Melbourne Metro</option>
-			<option value="11">South-East Melbourne Metro</option>
-			<option value="12">North-East Melbourne Metro</option>
-			<option value="13">North-west Melbourne Metro</option>
-			
-</select>
+	<h3>Victorian Regional Map</h3>
 	<button type="button" onclick="save();"> Add Region to Card </button>
     <img src="./images/victoria.PNG" alt="" usemap="#logos" />
 		<map name="logos">
@@ -47,7 +30,26 @@
 		<area onclick="addregion(11)" shape="poly" coords="299,360,293,337,328,335,328,364,311,367" />
 		 <area onclick="addregion(12)" shape="poly" coords="285,333,285,292,329,311,343,303,338,330,313,335" />
 		</map>	
-   
+	<div id="fields">
+	<label for="regionsel">Select Region:</label>
+        <select id="regionsel" name="region" >
+          <option value="0" selected>Please Select Region</option>
+          <option value="1">Mallee</option>
+          <option value="2">Wimmera Southern Mallee</option>
+          <option value="3">Great South Coast</option>
+          <option value="4">Barwon</option>
+	  <option value="5">Central Highlands</option>
+	  <option value="6">loddon campaspe</option>
+	  <option value="7">Goulburn</option>
+	  <option value="8">Ovens Murray</option>
+	  <option value="9">Gippsland</option>
+	  <option value="10">South-West Melbourne Metro</option>
+	  <option value="11">South-East Melbourne Metro</option>
+	  <option value="12">North-East Melbourne Metro</option>
+	  <option value="13">North-west Melbourne Metro</option>
+			
+      </select>
+	</div>
  </div>
  </body>
  <script src="./js/addmap.js"></script>
