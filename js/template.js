@@ -63,7 +63,7 @@ var productAddCallback = function(t){
   t.popup({
 	  title: 'Add Product',
 	  url:"./addproduct.html",
-	  height: 450
+	  height: 410
   });
 };
 
@@ -71,7 +71,7 @@ var documentAddCallback = function(t){
   t.popup({
 	  title: 'Add Document',
 	  url:"./adddocument.html",
-	  height: 450
+	  height: 250
   });
 };
 
