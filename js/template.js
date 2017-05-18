@@ -46,30 +46,35 @@ var getBadges = function(t){
   return t.card('attachments')
   .get('attachments')
   .then(function(attachments){
-    var badgeColor;
-    var icon = GRAY_ICON;
-    //var lowercaseName = cardName.toLowerCase();
 
     z = attachments.filter((function(attachment){
       return attachment.url.indexOf('http://product?') == 0;
     }));
+
+    r = attachments.filter((function(attachment){
+      return attachment.url.indexOf('region/?') == 0;
+    }));
+    
+    var badges = [];
 	  
-      badgeColor = 'green';
-      icon = AUTEX_ICON;	  
 if (z.length >0) {
-return [{
+    badges.push({
         title: 'Product Badge', // for detail badges only
         text: z.length,
-        icon: icon, // for card front badges only
-        color: badgeColor
-      },{
+        icon: AUTEX_ICON, // for card front badges only
+        color: 'green'
+      })	
+}; 
+if (r.length >0) {
+    badges.push({
         title: 'Region Badge', // for detail badges only
         text: 'R',
-        icon: icon, // for card front badges only
-        color: badgeColor	      
-      }];	  } else { 
-	return [];      
-      };
+        icon: GRAY_ICON, // for card front badges only
+        color: ''	      
+      });
+};
+
+    return [badges];	  
 /* 
     if(lowercaseName.indexOf('green') > -1){
       badgeColor = 'green';
