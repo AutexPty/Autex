@@ -43,8 +43,8 @@ var boardButtonCallback = function(t){
 // ----------------------------
 
 var getBadges = function(t){
-  return t.card('name')
-  .get('name')
+  return t.card('attachments')
+  .get('attachments')
   .then(function(cardName){
     var badgeColor;
     var icon = GRAY_ICON;
