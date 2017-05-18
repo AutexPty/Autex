@@ -51,7 +51,7 @@ function addregion(region)
 
 function save() {
   var reg= document.getElementById('regionsel');
-  var selected = reg.selectedOptions[0]
+  var selected = reg.options[reg.selectedIndex];
   if(selected.value=="0") {
 	  t.closeOverlay().done();
   } else {
