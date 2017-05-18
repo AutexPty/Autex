@@ -55,7 +55,7 @@ function save() {
   if(selected.value=="0") {
 	  t.closeOverlay().done();
   } else {
-    t.attach({ url: "region?=" + selected.text, name: "Sales Region " + selected.text})
+    t.attach({ url: "http://region?" + selected.text, name: selected.text})
     t.closeOverlay().done();  
   }
 }
