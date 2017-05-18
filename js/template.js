@@ -84,7 +84,7 @@ if (r.length >0) {
     };
 };
 if (d.length >0) {
-    for(c = 0; c < r.length; c++) {
+    for(c = 0; c < d.length; c++) {
     badges.push({
         title: 'Document Badge', // for detail badges only
         text: d[c].name,
