@@ -11,3 +11,14 @@ body {
   max-width: 600px;
   max-height: 90%;
 }
+
+#fields {
+  width: 100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-grow: 1;
+}
+
+select {
+ flex-grow: 3; 
+}
