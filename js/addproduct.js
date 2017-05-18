@@ -330,7 +330,7 @@ function selectcategory() {
       select = document.getElementById('product');
       prset = xmlDoc.getElementsByTagName("products");
       fprset = prset[0];	  
-      products = fprset.getElementsByTagName("product")
+      products = fprset.getElementsByTagName("product");
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
