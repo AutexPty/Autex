@@ -45,10 +45,24 @@ var boardButtonCallback = function(t){
 var getBadges = function(t){
   return t.card('attachments')
   .get('attachments')
-  .then(function(cardName){
+  .then(function(attachments){
     var badgeColor;
     var icon = GRAY_ICON;
-    var lowercaseName = cardName.toLowerCase();
+    //var lowercaseName = cardName.toLowerCase();
+
+    z = attachments.filter((function(attachment){
+      return attachment.url.indexOf('http://product?') == 0;
+    }));
+	  
+      badgeColor = 'green';
+      icon = WHITE_ICON;	  
+return [{
+        title: 'Detail Badge', // for detail badges only
+        text: z,
+        icon: icon, // for card front badges only
+        color: badgeColor
+      }];	  
+/* 
     if(lowercaseName.indexOf('green') > -1){
       badgeColor = 'green';
       icon = WHITE_ICON;
@@ -59,7 +73,6 @@ var getBadges = function(t){
       badgeColor = 'red';
       icon = WHITE_ICON;
     }
-
     if(lowercaseName.indexOf('dynamic') > -1){
       // dynamic badges can have their function rerun after a set number
       // of seconds defined by refresh. Minimum of 10 seconds.
@@ -75,7 +88,6 @@ var getBadges = function(t){
         }
       }]
     }
-
     if(lowercaseName.indexOf('static') > -1){
       // return an array of badge objects
       return [{
@@ -87,7 +99,8 @@ var getBadges = function(t){
     } else {
       return [];
     }
-  })
+*/
+})
 };
 
 // ----------------------------
