@@ -55,7 +55,7 @@ var getBadges = function(t){
     }));
 	  
       badgeColor = 'green';
-      icon = WHITE_ICON;	  
+      icon = AUTEX_ICON;	  
 if (z.length >0) {
 return [{
         title: 'Detail Badge', // for detail badges only
