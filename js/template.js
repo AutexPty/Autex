@@ -56,12 +56,15 @@ var getBadges = function(t){
 	  
       badgeColor = 'green';
       icon = WHITE_ICON;	  
+if (z.length >0) {
 return [{
         title: 'Detail Badge', // for detail badges only
-        text: z,
+        text: z.length,
         icon: icon, // for card front badges only
         color: badgeColor
-      }];	  
+      }];	  } else { 
+	return [];      
+      };
 /* 
     if(lowercaseName.indexOf('green') > -1){
       badgeColor = 'green';
