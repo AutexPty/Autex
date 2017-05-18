@@ -56,6 +56,10 @@ var getBadges = function(t){
               return attachment.url;
 	    }
 	    
+    d = attachments.filter((function(attachment){
+	    if (attachment.url.indexOf('http://document?') == 0) {
+              return attachment.url;
+	    }	    
       //return attachment.url.indexOf('http://region?') == 0;
     }));
     
@@ -74,51 +78,20 @@ if (r.length >0) {
     badges.push({
         title: 'Region Badge', // for detail badges only
         text: r[c].name,
-        icon: GRAY_ICON, // for card front badges only
-        color: ''	      
+        color: 'yellow'	      
       });
     };
 };
-
+if (d.length >0) {
+    for(c = 0; c < r.length; c++) {
+    badges.push({
+        title: 'Document Badge', // for detail badges only
+        text: d[c].name,
+        color: 'red'	      
+      });
+    };
+};	    
     return badges;	  
-/* 
-    if(lowercaseName.indexOf('green') > -1){
-      badgeColor = 'green';
-      icon = WHITE_ICON;
-    } else if(lowercaseName.indexOf('yellow') > -1){
-      badgeColor = 'yellow';
-      icon = WHITE_ICON;
-    } else if(lowercaseName.indexOf('red') > -1){
-      badgeColor = 'red';
-      icon = WHITE_ICON;
-    }
-    if(lowercaseName.indexOf('dynamic') > -1){
-      // dynamic badges can have their function rerun after a set number
-      // of seconds defined by refresh. Minimum of 10 seconds.
-      return [{
-        dynamic: function(){
-          return {
-            title: 'Detail Badge', // for detail badges only
-            text: 'Dynamic ' + (Math.random() * 100).toFixed(0).toString(),
-            icon: icon, // for card front badges only
-            color: badgeColor,
-            refresh: 10
-          }
-        }
-      }]
-    }
-    if(lowercaseName.indexOf('static') > -1){
-      // return an array of badge objects
-      return [{
-        title: 'Detail Badge', // for detail badges only
-        text: 'Static',
-        icon: icon, // for card front badges only
-        color: badgeColor
-      }];
-    } else {
-      return [];
-    }
-*/
 })
 };
 
