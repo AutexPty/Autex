@@ -224,17 +224,18 @@ function selectproduct() {
   item = po.options[spi];	
   //selectedproduct = po.selectedOptions;
   //item = selectedproduct[0].value;
-  productcode = products[item].getElementsByTagName("productcode")[0].textContent
-  description = products[item].getElementsByTagName("description")[0].textContent
-  checkVariants = products[item].getElementsByTagName("variants")[0];
-  unit = products[item].getElementsByTagName("unit")[0].textContent;
+  product = products[item];
+  productcode = product.getElementsByTagName("productcode")[0].textContent
+  description = product.getElementsByTagName("description")[0].textContent
+  checkVariants = product.getElementsByTagName("variants")[0];
+  unit = product.getElementsByTagName("unit")[0].textContent;
   document.getElementById('Unit').innerHTML = unit;
   document.getElementById('Unit2').innerHTML = unit;
   document.getElementById('Unit3').innerHTML = unit;
  
   
-  if (products[item].getElementsByTagName("colours")[0]) {
-  colourfile = products[item].getElementsByTagName("colours")[0].textContent
+  if (product.getElementsByTagName("colours")[0]) {
+  colourfile = product.getElementsByTagName("colours")[0].textContent
   }
   
   if (checkVariants) {
