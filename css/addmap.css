@@ -16,9 +16,9 @@ body {
   width: 100%;
   display: -webkit-flex; /* Safari */
   display: flex;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 select {
- flex-grow: 3; 
+ flex-grow: 4; 
 }
