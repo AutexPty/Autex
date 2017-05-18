@@ -197,10 +197,9 @@ TrelloPowerUp.initialize({
       text: 'Add Items',
       callback: menu
       //cardButtonCallback
-    },
-    'card-badges': function(t, options){
-    return getBadges(t);
+    }];
   },
-	   ];
+  'card-badges': function(t, options) {
+    return getBadges(t);
   }
 });
