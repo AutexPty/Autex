@@ -1,0 +1,16 @@
+input[type="number"] {
+  text-align: right; 
+  max-width:100%;
+  width:100%;
+}
+
+select {
+background:#EDEFF0;
+border-radius:3px;
+border:1px solid #CDD2D4;
+box-sizing:border-box;
+display:block;
+margin-bottom:1em;
+padding:.5em;
+width:100%;
+}
