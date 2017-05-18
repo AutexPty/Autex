@@ -325,7 +325,9 @@ function selectcategory() {
     //if (xhttp.status == "200") 
       xmlDoc = xhttp.responseXML; 
       select = document.getElementById('product');
-      products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
+      prset = xmlDoc.getElementsByTagName("products");
+      fprset = prset[0];	  
+      products = fprset.getElementsByTagName("product")
       for (var i = 0; i < products.length; i++) {        
         var opt = document.createElement('option');
         opt.value = i;
