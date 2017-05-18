@@ -48,3 +48,15 @@ function addregion(region)
 		 }
 	 }
 }
+
+function save() {
+  var reg= document.getElementById('regionsel');
+  var selected = reg.selectedOptions[0]
+  if(selected.value=="0") {
+	  t.closePopup();
+  } else {
+    t.attach({ url: "region?=" + selected.text, name: "Sales Region " + selected.text})
+    t.closePopup();	  
+  }
+}
+
