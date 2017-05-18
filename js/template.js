@@ -71,7 +71,7 @@ var documentAddCallback = function(t){
   t.popup({
 	  title: 'Add Document',
 	  url:"./adddocument.html",
-	  height: 250
+	  height: 200
   });
 };
 
