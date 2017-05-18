@@ -14,3 +14,14 @@ margin-bottom:1em;
 padding:.5em;
 width:100%;
 }
+
+body {
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+button {
+  max-width:100%;
+  width:100%; 
+}
