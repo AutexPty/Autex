@@ -32,7 +32,7 @@ document.addEventListener('keyup', function(e) {
 });
 
 function close(){
-t.closeOverlay();
+t.closeOverlay().done();
 }
 
 
@@ -53,10 +53,10 @@ function save() {
   var reg= document.getElementById('regionsel');
   var selected = reg.selectedOptions[0]
   if(selected.value=="0") {
-	  t.closePopup();
+	  t.closeOverlay().done();
   } else {
     t.attach({ url: "region?=" + selected.text, name: "Sales Region " + selected.text})
-    t.closePopup();	  
+    t.closeOverlay().done();  
   }
 }
 
