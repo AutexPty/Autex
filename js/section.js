@@ -2,7 +2,7 @@
 
 var t = TrelloPowerUp.iframe();
 
-if (document.getElementById('producttable')==null) {
+if (document.getElementById('producttable')) {
   var tb = document.getElementById('producttable').createTBody();
 }
 
@@ -13,7 +13,7 @@ t.render(function(){
   // make sure your rendering logic lives here, since we will
   // recall this method as the user adds and removes attachments
   // from your section
-  tb.innerHTML = "";
+  if (tb) {tb.innerHTML = "";}
   t.card('attachments')
   .get('attachments')
   .filter(function(attachment){
