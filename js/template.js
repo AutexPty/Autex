@@ -61,7 +61,7 @@ var mapAddCallback = function(t){
 
 var productAddCallback = function(t){
   t.popup({
-	  title: 'Add Product',
+	  title: 'Add Autex Product',
 	  url:"./addproduct.html",
 	  height: 410
   });
@@ -69,9 +69,9 @@ var productAddCallback = function(t){
 
 var documentAddCallback = function(t){
   t.popup({
-	  title: 'Add Document',
+	  title: 'Add Document Number',
 	  url:"./adddocument.html",
-	  height: 200
+	  height: 180
   });
 };
 
