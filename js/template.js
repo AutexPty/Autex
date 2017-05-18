@@ -70,12 +70,14 @@ if (z.length >0) {
       })	
 }; 
 if (r.length >0) {
+    for(c = 0; c < r.length; c++) {
     badges.push({
         title: 'Region Badge', // for detail badges only
-        text: 'R',
+        text: r[c].name,
         icon: GRAY_ICON, // for card front badges only
         color: ''	      
       });
+    };
 };
 
     return badges;	  
