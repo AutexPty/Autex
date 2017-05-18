@@ -21,13 +21,16 @@ body {
 button {
   flex-grow: 2;
   -webkit-flex-grow: 2;
+  height: 50px;
 }
 
 label {
  flex-grow: 2;   
  -webkit-flex-grow: 2;
+  height: 50px;
 }
 select {
  flex-grow: 3; 
--webkit-flex-grow: 3;
+  -webkit-flex-grow: 3;
+  height: 50px;
 }
