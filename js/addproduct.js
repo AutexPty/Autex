@@ -219,8 +219,11 @@ function selectcolour() {
 
 function selectproduct() {
   po = document.getElementById('product');
-  selectedproduct = po.selectedOptions;
-  item = selectedproduct[0].value;
+  // IE Changes
+  spi = po.selectedIndex;
+  item = po.options[spi];	
+  //selectedproduct = po.selectedOptions;
+  //item = selectedproduct[0].value;
   productcode = products[item].getElementsByTagName("productcode")[0].textContent
   description = products[item].getElementsByTagName("description")[0].textContent
   checkVariants = products[item].getElementsByTagName("variants")[0];
