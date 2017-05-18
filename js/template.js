@@ -58,10 +58,15 @@ var getBadges = function(t){
       icon = AUTEX_ICON;	  
 if (z.length >0) {
 return [{
-        title: 'Detail Badge', // for detail badges only
+        title: 'Product Badge', // for detail badges only
         text: z.length,
         icon: icon, // for card front badges only
         color: badgeColor
+      },{
+        title: 'Region Badge', // for detail badges only
+        text: 'R',
+        icon: icon, // for card front badges only
+        color: badgeColor	      
       }];	  } else { 
 	return [];      
       };
