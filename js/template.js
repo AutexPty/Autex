@@ -52,7 +52,11 @@ var getBadges = function(t){
     }));
 
     r = attachments.filter((function(attachment){
-      return attachment.url.indexOf('http://region?') == 0;
+	    if (attachment.url.indexOf('http://region?') == 0) {
+              return attachment.url;
+	    }
+	    
+      //return attachment.url.indexOf('http://region?') == 0;
     }));
     
     var badges = [];
