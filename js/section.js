@@ -1,7 +1,10 @@
 /* global TrelloPowerUp */
 
 var t = TrelloPowerUp.iframe();
-var tb = document.getElementById('producttable').createTBody();
+
+if (document.getElementById('producttable')==null) {
+  var tb = document.getElementById('producttable').createTBody();
+}
 
 // you can access arguments passed to your iframe like so
 var arg = t.arg('arg');
