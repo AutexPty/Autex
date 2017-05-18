@@ -74,7 +74,7 @@ if (r.length >0) {
       });
 };
 
-    return [badges];	  
+    return badges;	  
 /* 
     if(lowercaseName.indexOf('green') > -1){
       badgeColor = 'green';
