@@ -54,7 +54,7 @@ var getBadges = function(t){
       return attachment.url.indexOf('http://product?') == 0;
     }));
 	  
-      badgeColor = 'blue';
+      badgeColor = 'green';
       icon = AUTEX_ICON;	  
 if (z.length >0) {
 return [{
