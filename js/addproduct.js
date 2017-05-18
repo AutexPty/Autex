@@ -224,7 +224,7 @@ function selectproduct() {
   item = po.options[spi];	
   //selectedproduct = po.selectedOptions;
   //item = selectedproduct[0].value;
-  product = products.item(item.value);
+  product = products.item(Number(item.value));
   productcode = product.getElementsByTagName("productcode")[0].textContent
   description = product.getElementsByTagName("description")[0].textContent
   checkVariants = product.getElementsByTagName("variants")[0];
