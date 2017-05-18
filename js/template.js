@@ -55,6 +55,7 @@ var getBadges = function(t){
 	    if (attachment.url.indexOf('http://region?') == 0) {
               return attachment.url;
 	    }
+       }));
 	    
     d = attachments.filter((function(attachment){
 	    if (attachment.url.indexOf('http://document?') == 0) {
