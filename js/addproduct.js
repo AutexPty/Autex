@@ -218,7 +218,8 @@ function selectcolour() {
  };
 
 function selectproduct() {
-  selectedproduct = document.getElementById('product').selectedOptions;
+  po = document.getElementById('product');
+  selectedproduct = po.selectedOptions;
   item = selectedproduct[0].value;
   productcode = products[item].getElementsByTagName("productcode")[0].textContent
   description = products[item].getElementsByTagName("description")[0].textContent
