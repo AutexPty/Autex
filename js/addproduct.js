@@ -215,8 +215,8 @@ if (colour)  {
 
 function selectcolour() {
   col = document.getElementById('colour');
-  colourcode = col.options(col.selectedIndex).value;
-  colour =  col.options(col.selectedIndex).textContent;
+  colourcode = col.options[col.selectedIndex].value;
+  colour =  col.options[col.selectedIndex].textContent;
   nextpage();
  };
 
