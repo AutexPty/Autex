@@ -214,8 +214,9 @@ if (colour)  {
 }
 
 function selectcolour() {
-  colourcode = document.getElementById('colour').selectedOptions[0].value;
-  colour = document.getElementById('colour').selectedOptions[0].textContent;
+  col = document.getElementById('colour');
+  colourcode = col.options(col.selectedIndex).value;
+  colour =  col.options(col.selectedIndex).textContent;
   nextpage();
  };
 
