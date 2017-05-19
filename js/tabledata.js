@@ -10,10 +10,10 @@ function tabledata() {
             //for (ii=0; ii<promiseResult[i].attachments.length;ii++) {      
             //    var sql="INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");"
             //    alasql(sql);
-              console.log(i&","&ii);
+            // };   
+              console.log(i);
             };
          console.log('ok');
-         //};    
      };
     //console.log( alasql("SELECT * FROM data ORDER BY due") );
     
