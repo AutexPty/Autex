@@ -3,11 +3,14 @@ var t = TrelloPowerUp.iframe();
 function tabledata() {
 t.cards('id', 'name', 'url','due','attachments')
 .then(function(promiseResult) {
-  console.log(promiseResult);
-    alasql("CREATE TABLE test (language INT, hello STRING)");
-    alasql("INSERT INTO test VALUES (1,'Hello!')");
-    alasql("INSERT INTO test VALUES (2,'Aloha!')");
-    alasql("INSERT INTO test VALUES (3,'Bonjour!')");
-    console.log( alasql("SELECT * FROM test WHERE language > 1") );
+  alasql("CREATE TABLE data (due DATETIME, url STRING,name STRING)");
+  for (i=0; i<promiseResult.length;i++) {    
+    if (promiseResult[i].attachments.length > 0) {
+      for (ii=0; ii<promiseResult[i].attachments.length;ii++) {      
+        alasql("INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");");
+      }
+    }    
+  }
+    console.log( alasql("SELECT * FROM data ORDER BY due") );
 });
 }
