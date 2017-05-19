@@ -14,6 +14,8 @@ function processrecord(data) {
 };
 
 function tabledata() {
+  tbl = document.getElementById('table');
+    
   t.cards('id', 'name', 'url','due','attachments')
    .then(function(promiseResult) {
     
@@ -24,9 +26,17 @@ function tabledata() {
                 if (promiseResult[i].attachments[ii].url.indexOf('http://product?') == 0 ) 
                 {
                    var data = promiseResult[i].attachments[ii].url.split('?');
-                   var pdata = processrecord(data);                    
-                   console.log(pdata);                          
+                   var pdata = processrecord(data);      
+                   var row = tbl.insertRow(0);
+                   var prc = row.insertCell(0) 
+                   var des = row.insertCell(0) 
+                   var qty = row.insertCell(0) 
+                   var msq = row.insertCell(0) 
+                   prc.innerHTML = pcode.productcode;
+                   qty.innerHTML = pcode.qty
+                   des.innerHTML = pcode.variant + " " + pcode.colour                                           
                 };
+                
                 //var sql="INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");"
             //    alasql(sql);
              };   //end of attachment loop
@@ -34,7 +44,7 @@ function tabledata() {
               console.log(i);       
      }; //end loop of cards.
          console.log('ok');
-    
+     tbl.hidden = false;    
     //console.log( alasql("SELECT * FROM data ORDER BY due") );
     
     //alert('hi');
