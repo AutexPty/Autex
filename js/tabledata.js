@@ -12,7 +12,7 @@ function tabledata() {
             //    alasql(sql);
          //   };
          console.log('ok');
-         };    
+         //};    
      };
     //console.log( alasql("SELECT * FROM data ORDER BY due") );
     
