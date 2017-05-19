@@ -3,10 +3,11 @@
       <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
       <link rel="stylesheet" href="./css/tabledata.css">
       <script src="https://trello.com/power-ups/power-up.min.js"></script>
+        <script src="./js/alasql.min.js"></script>
     </head>
   <body>
   <div id="content">
-    <table>
+    <table id="table" hidden>
     <tr>
       <th>PRCODE</th>
       <th>Description</th>
@@ -20,7 +21,7 @@
       <td>TEST</td>
     </tr>
     </table>
-    <button type="button"  onclick="tabledata();"> Add Document </button>  
+    <button type="button"  onclick="tabledata();"> Load Data </button>  
     </div>
   </body>
   <script src="./js/tabledata.js"></script>    
