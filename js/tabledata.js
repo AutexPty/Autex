@@ -16,11 +16,14 @@ function tabledata() {
      for (i=0; i<promiseResult.length;i++) {    
          if (promiseResult[i].attachments.length > 0) {
             for (ii=0; ii<promiseResult[i].attachments.length;ii++) {
-              var data = promiseResult[i].attachments[ii].url.split('?');
-              var pdata = processrecord(data);
+                if (promiseResult[i].attachments[ii].url.indexOf('http://product?') == 0 ) 
+                {
+                   var data = promiseResult[i].attachments[ii].url.split('?');
+                   var pdata = processrecord(data);                    
+                   console.log(pdata);                          
+                };
                 //var sql="INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");"
             //    alasql(sql);
-                console.log(pdata);                          
              };   //end of attachment loop
             }; // end if attachment length > 0 
               console.log(i);       
