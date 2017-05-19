@@ -1,10 +1,10 @@
 var t = TrelloPowerUp.iframe();
 
 function processrecord(data) {
-    var v = data.filter(function(text){ return text.indexOf('variant=') == 0 });
-    var p = data.filter(function(text){ return text.indexOf('productcode=') == 0 });
-    var q = data.filter(function(text){ return text.indexOf('qty=') == 0 });
-    var c = data.filter(function(text){ return text.indexOf('colour=') == 0 });  
+    var v = data.filter(function(text){ return text.indexOf('variant=') == 0 })[0];
+    var p = data.filter(function(text){ return text.indexOf('productcode=') == 0 })[0];
+    var q = data.filter(function(text){ return text.indexOf('qty=') == 0 })[0];
+    var c = data.filter(function(text){ return text.indexOf('colour=') == 0 })[0];  
     return { variant: v.split('=')[1] , productcode: p.split('=')[1] ,qty: q.split('=')[1],colour: c.split('=')[1] } 
 };
 
