@@ -13,6 +13,14 @@ function processrecord(data) {
     return output; 
 };
 
+function listdata() {
+  t.lists('all')
+   .then(function(promiseResult) {
+      console.log(promiseResult);
+  });
+
+}
+
 function tabledata() {
   tbl = document.getElementById('table');
     
