@@ -3,7 +3,8 @@
 var WHITE_ICON = './images/icon-white.svg';
 var GRAY_ICON = './images/icon-gray.svg';
 var AUTEX_ICON = './images/autex.svg';
-
+var MAP_ICON = './images/map.svg';
+var ORDER_ICON = './images/order.svg';
 // This is the script for the Overhead menu.
 //
 //
@@ -17,6 +18,18 @@ var boardButtonCallback = function(t){
           return t.boardBar({
             url: './help.html',
             height: 200
+          })
+          //.then(function(){
+          //  return t.closePopup();
+          //});
+        }
+      },{
+        text: 'Table Data',
+        callback: function(t){
+          return t.boardBar({
+            url: './tabledata.html',
+            height: 200,
+	    icon: ORDER_ICON
           })
           //.then(function(){
           //  return t.closePopup();
@@ -78,8 +91,9 @@ if (r.length >0) {
     for(c = 0; c < r.length; c++) {
     badges.push({
         title: 'Region Badge', // for detail badges only
-        text: r[c].name,
-        color: 'yellow'	      
+	icon: MAP_ICON, 
+        text: r[c].name
+        //,color: 'yellow'	      
       });
     };
 };
@@ -88,7 +102,8 @@ if (d.length >0) {
     badges.push({
         title: 'Document Badge', // for detail badges only
         text: d[c].name,
-        color: 'red'	      
+	icon: ORDER_ICON
+        //,color: 'red'	      
       });
     };
 };	    
