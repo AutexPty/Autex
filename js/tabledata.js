@@ -28,13 +28,13 @@ function tabledata() {
                    var data = promiseResult[i].attachments[ii].url.split('?');
                    var pdata = processrecord(data);      
                    var row = tbl.insertRow(0);
-                   var prc = row.insertCell(0) 
-                   var des = row.insertCell(0) 
-                   var qty = row.insertCell(0) 
-                   var msq = row.insertCell(0) 
-                   prc.innerHTML = pcode.productcode;
-                   qty.innerHTML = pcode.qty
-                   des.innerHTML = pcode.variant + " " + pcode.colour                                           
+                   var prc = row.insertCell(0); 
+                   var des = row.insertCell(0);
+                   var qty = row.insertCell(0); 
+                   var msq = row.insertCell(0); 
+                   prc.innerHTML = pdata.productcode;
+                   qty.innerHTML = pdata.qty;
+                   des.innerHTML = pdata.variant + " " + pdata.colour;                                           
                 };
                 
                 //var sql="INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");"
