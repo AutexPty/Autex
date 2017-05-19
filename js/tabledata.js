@@ -1,7 +1,7 @@
 var t = TrelloPowerUp.iframe();
 
 function tabledata() {
-t.cards('id', 'name', 'url','due')
+t.cards('id', 'name', 'url','due','attachments')
 .then(function(promiseResult) {
   console.log(promiseResult);
     alasql("CREATE TABLE test (language INT, hello STRING)");
