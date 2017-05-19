@@ -2,7 +2,7 @@ var t = TrelloPowerUp.iframe();
 
 function tabledata() {
   alert('hi');
-  t.cards('id', 'name', 'desc', 'due').get('name').then(function(name){
+  t.cards('id').get('id').then(function(id){
   var n = name;
     
   });
