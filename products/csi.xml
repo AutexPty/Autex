@@ -3,18 +3,18 @@
   <product>
     <productcode>QSF</productcode>
     <description>Quietspace® Frontier</description>
-    <unit>Pack</unit>
+      <unit>Fin</unit>
     <colours>cube</colours>
     <variants>
-      <variant><code>AXS12</code><description>12mm Axis</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>DUN12</code><description>12mm Dune</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>DUN24</code><description>24mm Dune</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>SIE12</code><description>12mm Sierra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	  <variant><code>SIE24</code><description>12mm Sierra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>TAL12</code><description>12mm Talus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>TAL24</code><description>24mm Talus</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>TUN12</code><description>12mm Tundra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	  <variant><code>TUN24</code><description>24mm Tundra</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>AXS12</code><description>12mm Axis</description><width>150mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>DUN12</code><description>12mm Dune</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>DUN24</code><description>24mm Dune</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>SIE12</code><description>12mm Sierra</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+	  <variant><code>SIE24</code><description>24mm Sierra</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>TAL12</code><description>12mm Talus</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>TAL24</code><description>24mm Talus</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+      <variant><code>TUN12</code><description>12mm Tundra</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
+	  <variant><code>TUN24</code><description>24mm Tundra</description><width>300mm</width><length>2400mm</length><units>1</units></variant>
     </variants>
   </product>
 	
