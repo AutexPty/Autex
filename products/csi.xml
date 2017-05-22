@@ -5,16 +5,16 @@
     <description>Quietspace® Frontier</description>
       <unit>Fin</unit>
     <colours>cube</colours>
-    <variants>
-      <variant><code>AXS12</code><description>12mm Axis</description><width>150</width><length>2400</length><units>1</units></variant>
-      <variant><code>DUN12</code><description>12mm Dune</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>DUN24</code><description>24mm Dune</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>SIE12</code><description>12mm Sierra</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>SIE24</code><description>24mm Sierra</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>TAL12</code><description>12mm Talus</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>TAL24</code><description>24mm Talus</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>TUN12</code><description>12mm Tundra</description><width>300</width><length>2400</length><units>1</units></variant>
-      <variant><code>TUN24</code><description>24mm Tundra</description><width>300</width><length>2400</length><units>1</units></variant>
+   <variants>
+      <variant><code>AXS12</code><description>12mm Axis</description><width>0.15</width><length>2.4</length><units>8</units></variant>
+      <variant><code>DUN12</code><description>12mm Dune</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>DUN24</code><description>24mm Dune</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>SIE12</code><description>12mm Sierra</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>SIE24</code><description>24mm Sierra</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>TAL12</code><description>12mm Talus</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>TAL24</code><description>24mm Talus</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>TUN12</code><description>12mm Tundra</description><width>0.30</width><length>2.4</length><units>8</units></variant>
+      <variant><code>TUN24</code><description>24mm Tundra</description><width>0.30</width><length>2.4</length><units>8</units></variant>
     </variants>
   </product>
 	
