@@ -3,7 +3,7 @@
   <product>
     <productcode>QSF</productcode>
     <description>Quietspace® Frontier</description>
-      <unit>Fin</unit>
+      <unit>Fins</unit>
     <colours>cube</colours>
    <variants>
       <variant><code>AXS12</code><description>12mm Axis</description><width>0.15</width><length>2.4</length><units>8</units></variant>
