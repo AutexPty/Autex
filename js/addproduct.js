@@ -15,24 +15,6 @@ var slccode1;
 
 var t = TrelloPowerUp.iframe();
 
-function Test()
-{
-  var Map = function(t) {
-    return t.overlay({
-      url: 'Map.html'
-    })
-    .then(function(){
-      return t.closePopup();
-    })
-  }	
-}
-
-function MakeVisible(divname)
-{
-   var x = document.getElementById("buttonsdiv").hidden = true;
-   var x = document.getElementById(divname).hidden = false;
-}
-
 function selectcategory() {
  colourfile = "";
  selcat =  document.getElementById("category").value;
@@ -55,36 +37,6 @@ function selectcategory() {
         var opt = document.createElement('option');
         opt.value = i;
         opt.innerHTML = "<option value="+i+">"  + products[i].getElementsByTagName("description")[0].textContent+"</option>";
-        select.appendChild(opt);
-      } //end of for loop
-    //} //end of onstate change disabled
-    nextpage();
-    }   //end of if selcart
-  }     //end of function 
-
-
-function oldselectcategory() {
- colourfile = "";
- selcat =  document.getElementById("category").value;
-  if (selcat) {
-    if (window.XMLHttpRequest) {
-      xhttp = new XMLHttpRequest();
-    } else {    // IE 5/6
-      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xhttp.open("GET", "./products/" +  selcat.toLowerCase() + ".xml", false);
-    xhttp.send(null);
-    //xhttp.onreadystatechange = function(){
-    //if (xhttp.status == "200") 
-      xmlDoc = xhttp.responseXML; 
-      select = document.getElementById('product');
-      select.innerHTML = "";
-      products = xmlDoc.getElementsByTagName("products")[0].getElementsByTagName("product")
-
-      for (var i = 0; i < products.length; i++) {        
-        var opt = document.createElement('option');
-        opt.value = i;
-        opt.innerHTML = "<option value="+i+">"+products[i].getElementsByTagName("description")[0].textContent+"</option>";
         select.appendChild(opt);
       } //end of for loop
     //} //end of onstate change disabled
@@ -258,6 +210,12 @@ function selectproduct() {
   //item = selectedproduct[0].value;
   product = products.item(Number(item.value));
   productcode = product.getElementsByTagName("productcode")[0].textContent
+  
+  if (productcode == "QSF") {
+   lblwidth = document.getElementById('lblwidth');
+   lblwidth.textContent = "Fin Height (m)";
+  }
+  
   description = product.getElementsByTagName("description")[0].textContent
   checkVariants = product.getElementsByTagName("variants")[0];
   unit = product.getElementsByTagName("unit")[0].textContent;
