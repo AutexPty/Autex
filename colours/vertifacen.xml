@@ -78,4 +78,6 @@
 <colour><code>CLTHE</code><description>Classic Theatre</description></colour>
 <colour><code>CLVIN</code><description>Classic Vintage</description></colour>
 <colour><code>CLWAS</code><description>Classic Wasabi</description></colour>
+<colour><code>___</code><description>UNKNOWN</description></colour>  
+
 </colours>
