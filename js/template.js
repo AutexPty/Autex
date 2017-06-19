@@ -36,6 +36,18 @@ var boardButtonCallback = function(t){
           //});
         }
       },{
+        text: 'Region Report',
+        callback: function(t){
+          return t.boardBar({
+            url: './reports/region.html',
+            height: 200,
+	    icon: ORDER_ICON
+          })
+          //.then(function(){
+          //  return t.closePopup();
+          //});
+        }
+      },{
         text: '-------------',		  
 	  },{
         text: 'About.',
