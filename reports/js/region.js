@@ -26,7 +26,7 @@ function getregiondata() {
                      if (list.item(list.selectedIndex).text == currentattachment.name) 
                         {
                         var row = tbl.tBodies[0].insertRow(0);
-                        var cardregion = row.insertCell(0); 
+                        var cardstage = row.insertCell(0); 
                         var carddue = row.insertCell(0); 
                         var cardname = row.insertCell(0);
                         //cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
@@ -36,7 +36,7 @@ function getregiondata() {
                         ank.onclick=function(){t.showCard(currentcard["id"])};
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = currentcard["due"];
-                        cardregion.innerHTML = currentattachment.name;
+                        cardstage.innerHTML = currentlist.name;
                         };                                                             
                      };
                  };   //end of attachment loop
