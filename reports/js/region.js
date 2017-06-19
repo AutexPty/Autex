@@ -24,9 +24,9 @@ function getregiondata() {
                         var cardname = row.insertCell(0);
                         var carddue = row.insertCell(0); 
                         var cardregion = row.insertCell(0); 
-                        cardname.innerHTML = "<a href=" + promiseResult[i]["url"] + ">"+ promiseResult[i]["name"]+"</a>";
-                        carddue.innerHTML = promiseResult[i]["due"];
-                        cardregion.innerHTML = promiseResult[i].attachments[ii].name;
+                        cardname.innerHTML = "<a href=" + currentcard["url"] + ">"+ currentcard["name"]+"</a>";
+                        carddue.innerHTML = currentcard["due"];
+                        cardregion.innerHTML = currentattachment.name;
                         };                                                             
                      };
                  };   //end of attachment loop
