@@ -1,6 +1,5 @@
 var t = TrelloPowerUp.iframe();
 
-/*
 function processrecord(data) {
     var output = {}
     var v = data.filter(function(text){ return text.indexOf('variant=') == 0 })[0];
@@ -13,7 +12,6 @@ function processrecord(data) {
     if (c) {output.colour = c.split('=')[1];};
     return output; 
 };
-*/
 
 function listdata() {
   t.lists('all')
@@ -36,14 +34,14 @@ function getregiondata() {
                 if (promiseResult[i].attachments[ii].url.indexOf('http://region/') == 0 ) 
                 {
                    var data = promiseResult[i].attachments[ii].url.split('?');
-                   //var pdata = processrecord(data);      
+                   var pdata = processrecord(data);      
                    var row = tbl.insertRow(0);
                    var cardid = row.insertCell(0); 
                    var cardname = row.insertCell(0);
                    var cardurl = row.insertCell(0); 
                    var carddue = row.insertCell(0); 
                    var cardcl = row.insertCell(0); 
-                   console.log('i');
+                   //console.log('i');
                    //cardname.innerHTML = promiseResult[i].name;
                    //qty.innerHTML = pdata.qty;
                    //des.innerHTML = pdata.variant + " " + pdata.colour;                                           
