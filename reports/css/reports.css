@@ -1,11 +1,11 @@
 body {
   background: rgb(111,119,123);
-  color: grey;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-body.h3 {
+h3 {
    color: white; 
 }
