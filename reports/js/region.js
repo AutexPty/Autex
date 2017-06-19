@@ -1,7 +1,8 @@
 var t = TrelloPowerUp.iframe();
 
+/*
 function processrecord(data) {
-    /*var output = {}
+    var output = {}
     var v = data.filter(function(text){ return text.indexOf('variant=') == 0 })[0];
     var p = data.filter(function(text){ return text.indexOf('productcode=') == 0 })[0];
     var q = data.filter(function(text){ return text.indexOf('Qty=') == 0 })[0];
@@ -11,8 +12,8 @@ function processrecord(data) {
     if (q) {output.qty = q.split('=')[1];};
     if (c) {output.colour = c.split('=')[1];};
     return output; 
-    */
 };
+*/
 
 function listdata() {
   t.lists('all')
@@ -25,7 +26,7 @@ function listdata() {
 function getregiondata() {
   tbl = document.getElementById('table');
     
-  t.cards('id', 'name', 'url','due','attachments','checklists')
+  t.cards('id', 'name', 'url','due','attachments')
    .then(function(promiseResult) {
     
      //alasql("CREATE TABLE data (due DATETIME, url STRING,name STRING)");
