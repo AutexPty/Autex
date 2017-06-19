@@ -1,7 +1,7 @@
 var t = TrelloPowerUp.iframe();
 
 function processrecord(data) {
-    var output = {}
+    /*var output = {}
     var v = data.filter(function(text){ return text.indexOf('variant=') == 0 })[0];
     var p = data.filter(function(text){ return text.indexOf('productcode=') == 0 })[0];
     var q = data.filter(function(text){ return text.indexOf('Qty=') == 0 })[0];
@@ -11,6 +11,7 @@ function processrecord(data) {
     if (q) {output.qty = q.split('=')[1];};
     if (c) {output.colour = c.split('=')[1];};
     return output; 
+    */
 };
 
 function listdata() {
@@ -24,25 +25,27 @@ function listdata() {
 function getregiondata() {
   tbl = document.getElementById('table');
     
-  t.cards('id', 'name', 'url','due','attachments')
+  t.cards('id', 'name', 'url','due','attachments','checklists')
    .then(function(promiseResult) {
     
      //alasql("CREATE TABLE data (due DATETIME, url STRING,name STRING)");
      for (i=0; i<promiseResult.length;i++) {    
          if (promiseResult[i].attachments.length > 0) {
             for (ii=0; ii<promiseResult[i].attachments.length;ii++) {
-                if (promiseResult[i].attachments[ii].url.indexOf('http://product?') == 0 ) 
+                if (promiseResult[i].attachments[ii].url.indexOf('http://region/') == 0 ) 
                 {
                    var data = promiseResult[i].attachments[ii].url.split('?');
-                   var pdata = processrecord(data);      
+                   //var pdata = processrecord(data);      
                    var row = tbl.insertRow(0);
-                   var prc = row.insertCell(0); 
-                   var des = row.insertCell(0);
-                   var qty = row.insertCell(0); 
-                   var msq = row.insertCell(0); 
-                   prc.innerHTML = pdata.productcode;
-                   qty.innerHTML = pdata.qty;
-                   des.innerHTML = pdata.variant + " " + pdata.colour;                                           
+                   var cardid = row.insertCell(0); 
+                   var cardname = row.insertCell(0);
+                   var cardurl = row.insertCell(0); 
+                   var carddue = row.insertCell(0); 
+                   var cardcl = row.insertCell(0); 
+                   
+                   cardname.innerHTML = promiseResult[i].name;
+                   //qty.innerHTML = pdata.qty;
+                   //des.innerHTML = pdata.variant + " " + pdata.colour;                                           
                 };
                 
                 //var sql="INSERT INTO data VALUES (" & promiseResult[i].due & "," & promiseResult[i].attachments[ii].url & "," & promiseResult[i].name & ");"
