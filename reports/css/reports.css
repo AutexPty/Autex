@@ -1,5 +1,7 @@
+h1 {color:white !important;}
+
 body {
-  background: rgb(255,255,128);
+  background: rgb(111,119,123);
   display: flex;
   align-items: center;
   justify-content: center;
