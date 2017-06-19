@@ -1,7 +1,6 @@
-h1 {color:white !important;}
-
 body {
   background: rgb(111,119,123);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
