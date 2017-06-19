@@ -42,8 +42,8 @@ function getregiondata() {
                    var cardurl = row.insertCell(0); 
                    var carddue = row.insertCell(0); 
                    var cardcl = row.insertCell(0); 
-                   
-                   cardname.innerHTML = promiseResult[i].name;
+                   console.log('i');
+                   //cardname.innerHTML = promiseResult[i].name;
                    //qty.innerHTML = pdata.qty;
                    //des.innerHTML = pdata.variant + " " + pdata.colour;                                           
                 };
