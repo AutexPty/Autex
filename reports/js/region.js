@@ -1,5 +1,9 @@
 var t = TrelloPowerUp.iframe();
 
+function loadid(id){
+  t.showCard(id);
+}
+
 function getregiondata() {
   tbl = document.getElementById('table');
   t.lists('all')
@@ -24,7 +28,7 @@ function getregiondata() {
                         var cardname = row.insertCell(0);
                         var carddue = row.insertCell(0); 
                         var cardregion = row.insertCell(0); 
-                        cardname.innerHTML = "<a href=" + currentcard["url"] + ">"+ currentcard["name"]+"</a>";
+                        cardname.innerHTML = '<a href="#" onlick="loadid(' + currentcard["id"] + ')">'+ currentcard["name"]+'</a>';
                         carddue.innerHTML = currentcard["due"];
                         cardregion.innerHTML = currentattachment.name;
                         };                                                             
