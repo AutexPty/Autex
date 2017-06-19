@@ -15,16 +15,12 @@ function getregiondata() {
                    if (list.item(list.selectedIndex).text == promiseResult[i].attachments[ii].name) 
                    {
                      var row = tbl.insertRow(0);
-                     var cardid = row.insertCell(0); 
                      var cardname = row.insertCell(0);
-                     var cardurl = row.insertCell(0); 
                      var carddue = row.insertCell(0); 
-                     var cardcl = row.insertCell(0); 
-                     cardid.innerHTML = promiseResult[i]["id"];
-                     cardname.innerHTML = promiseResult[i]["name"];
-                     cardurl.innerHTML = promiseResult[i]["url"];
+                     var cardregion = row.insertCell(0); 
+                     cardname.innerHTML = "<a href=" + promiseResult[i]["url"] + ">"+ promiseResult[i]["name"]+"</a>";
                      carddue.innerHTML = promiseResult[i]["due"];
-                     cardcl.innerHTML = promiseResult[i].attachments[ii].name;
+                     cardregion.innerHTML = promiseResult[i].attachments[ii].name;
                    };                                                             
                 };
               };   //end of attachment loop
