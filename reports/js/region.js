@@ -31,7 +31,7 @@ function getregiondata() {
      for (i=0; i<promiseResult.length;i++) {    
          if (promiseResult[i].attachments.length > 0) {
             for (ii=0; ii<promiseResult[i].attachments.length;ii++) {
-                if (promiseResult[i].attachments[ii].url.indexOf('http://region/') == 0 ) 
+                if (promiseResult[i].attachments[ii].url.indexOf('http://region') == 0 ) 
                 {
                    var data = promiseResult[i].attachments[ii].url.split('?');
                    //var pdata = processrecord(data);      
