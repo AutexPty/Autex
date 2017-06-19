@@ -26,9 +26,11 @@ function getregiondata() {
                      if (list.item(list.selectedIndex).text == currentattachment.name) 
                         {
                         var row = tbl.tBodies[0].insertRow(0);
-                        var cardstage = row.insertCell(0); 
+                        // inserted cells are backwards (last first) because of reasons..
                         var carddue = row.insertCell(0); 
                         var cardname = row.insertCell(0);
+                        var cardstage = row.insertCell(0); 
+
                         //cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
                         var ank = document.createElement('a');
                         var linkText = document.createTextNode(currentcard["name"]);
