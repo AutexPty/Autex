@@ -29,7 +29,12 @@ function getregiondata() {
                         var cardname = row.insertCell(0);
                         var carddue = row.insertCell(0); 
                         var cardregion = row.insertCell(0); 
-                        cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
+                        //cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
+                        var ank = document.createElement('a');
+                        var linkText = document.createTextNode(currentcard["name"]);
+                        ank.appendChild(linkText);
+                        ank.onclick=function(){t.showCard(currentcard["id"])};
+                        cardname.appendChild(ank);                          
                         carddue.innerHTML = currentcard["due"];
                         cardregion.innerHTML = currentattachment.name;
                         };                                                             
