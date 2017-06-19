@@ -8,7 +8,7 @@
   <body>
   <div id="content">
       <h3>Regional Reports</h3>
-      <select id="list">
+      <select id="list" onchange="getregiondata();">
           <option value="0" selected>Please Select Region</option>
           <option value="1">Mallee</option>
           <option value="2">Wimmera Southern Mallee</option>
@@ -24,16 +24,14 @@
 	  <option value="12">North-East Melbourne Metro</option>
 	  <option value="13">North-west Melbourne Metro</option>
       </select>
-      <button type="button"  onclick="getregiondata();"> Load Data </button>  
     <br>
     <table id="table">
 	    <thead>
-	    <tr><th>Card Region</th><th>Due Date</th><th>Card Details</th></tr>
+	    <tr><th>Stage</th><th>Due Date</th><th>Card Details</th></tr>
 	    </thead>
 	    <tbody>
 	    </tbody>		    
     </table>	
-    <br>
     </div>
     </body>
   <script src="./js/region.js"></script>    
