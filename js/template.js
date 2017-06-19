@@ -24,7 +24,7 @@ var boardButtonCallback = function(t){
           //});
         }
       },{
-        text: 'Table Data',
+        text: 'Product List',
         callback: function(t){
           return t.boardBar({
             url: './tabledata.html',
@@ -36,7 +36,7 @@ var boardButtonCallback = function(t){
           //});
         }
       },{
-        text: 'Region Report',
+        text: 'Regional List',
         callback: function(t){
           return t.boardBar({
             url: './reports/region.html',
