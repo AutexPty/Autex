@@ -48,7 +48,7 @@ function getregiondata() {
                             var ul = document.createElement('ul');
                             cardproducts.appendChild(ul);
                             var li = document.createElement('li');
-                            li.appendChild(document.createTextNode(ccau.name));
+                            li.appendChild(document.createTextNode(ccao.name));
                             ul.appendChild(li);
                             
                             var qty = 0;
