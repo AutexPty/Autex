@@ -50,7 +50,7 @@ function getregiondata() {
                         ank.appendChild(linkText);
                         ank.onclick=function(){t.showCard(currentcard["id"])};
                         cardname.appendChild(ank);                          
-                        carddue.innerHTML = currentcard["due"];
+                        carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
                         cardstage.innerHTML = currentlist.name;
                         
                         for (cca=0; cca < currentcard.attachments.length;cca++)
