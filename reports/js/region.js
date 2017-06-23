@@ -67,7 +67,7 @@ function getregiondata() {
                             var uom = "";
                             var m2 = 0;
                             var w = 0;
-                            var l = 0; 
+                            var lx = 0; 
                             var cmnt = "";
                             varpcode = "";
                             var u = 0;
@@ -80,7 +80,7 @@ function getregiondata() {
                               if (b[i].indexOf("PPK=")==0)         {u  =  b[i].slice(4);};   
                               if (b[i].indexOf("m2=")==0)          {m2 =  b[i].slice(3);};   
                               if (b[i].indexOf("w=")==0)           {w =   b[i].slice(2);};   
-                              if (b[i].indexOf("l=")==0)           {l =   b[i].slice(2);};             
+                              if (b[i].indexOf("l=")==0)           {lx =   b[i].slice(2);};             
                               if (b[i].indexOf("comments=")==0)    {cmnt =   b[i].slice(9);};             
                             };
                             
