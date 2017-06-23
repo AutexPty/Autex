@@ -2,13 +2,13 @@ var t = TrelloPowerUp.iframe();
 
 function addline(parent,header,body)
 {
-  var li = document.createElement('li');
+  var tli = document.createElement('li');
   var h = document.createTextNode(header);
   //h.style.fontWeight = 'bold';
-  li.appendChild(h);
+  tli.appendChild(h);
   var b = document.createTextNode(body);
   //b.style.fontStyle = "italic";
-  li.appendChild(b);  
+  tli.appendChild(b);  
   parent.appendChild(parent);
 }
 
