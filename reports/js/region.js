@@ -84,6 +84,10 @@ function getregiondata() {
                               if (b[i].indexOf("comments=")==0)    {cmnt =   b[i].slice(9);};             
                             };
                             
+                            // check for zeroes, remove if required.
+                            if (qty=="0.00") {qty=null;};
+                            if (m2=="0.00") {m2=null;};
+                            
                             //generate sublist
                             sublist =  document.createElement('ul');
                             if (pcode) {addline(sublist,"Product Code:",pcode);};
