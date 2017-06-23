@@ -4,10 +4,10 @@ function addline(parent,header,body)
 {
   var li = document.createElement('li');
   var h = document.createTextNode(header);
-  h.style.fontWeight = 'bold';
+  //h.style.fontWeight = 'bold';
   li.appendChild(h);
   var b = document.createTextNode(body);
-  b.style.fontStyle = "italic";
+  //b.style.fontStyle = "italic";
   li.appendChild(b);  
   parent.appendChild(parent);
 }
