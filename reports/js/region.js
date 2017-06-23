@@ -9,7 +9,7 @@ function addline(parent,header,body)
   var b = document.createTextNode(body);
   //b.style.fontStyle = "italic";
   tli.appendChild(b);  
-  parent.appendChild(parent);
+  parent.appendChild(tli);
 }
 
 function loadid(id){
