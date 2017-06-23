@@ -1,5 +1,17 @@
 var t = TrelloPowerUp.iframe();
 
+function addline(parent,header,body)
+{
+  var li = document.createElement('li');
+  var h = document.createTextNode(header);
+  h.style.fontWeight = 'bold';
+  li.appendChild(h);
+  var b = document.createTextNode(body);
+  b.style.fontStyle = "italic";
+  li.appendChild(b);  
+  parent.appendChild(parent);
+}
+
 function loadid(id){
   t.showCard(id);
 }
@@ -72,9 +84,15 @@ function getregiondata() {
                               if (b[i].indexOf("comments=")==0)    {cmnt =   b[i].slice(9);};             
                             };
                             
-                            
-                            
-                            
+                            //generate sublist
+                            sublist =  document.createElement('ul');
+                            addline(sublist,"Product Code:",pcode);
+                            addline(sublist,"Quantity:",qty + ' ' + uom);
+                            addline(sublist,"Units Per Pack:",u);                            
+                            addline(sublist,"Meters Squared:",m2);
+                            addline(sublist,"Dimensions:",w+' x '+l);
+                            addline(sublist,"Comments:",cmnt);
+                            li.appendChild(sublist);                           
                           }
                         }
                         
