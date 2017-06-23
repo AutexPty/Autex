@@ -90,7 +90,7 @@ function getregiondata() {
                             addline(sublist,"Quantity:",qty + ' ' + uom);
                             addline(sublist,"Units Per Pack:",u);                            
                             addline(sublist,"Meters Squared:",m2);
-                            addline(sublist,"Dimensions:",w+' x '+l);
+                            addline(sublist,"Dimensions:",w+' x '+lx);
                             addline(sublist,"Comments:",cmnt);
                             li.appendChild(sublist);                           
                           }
