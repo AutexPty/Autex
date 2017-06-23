@@ -63,14 +63,14 @@ function getregiondata() {
                             li.appendChild(document.createTextNode(ccao.name));
                             ul.appendChild(li);
                             
-                            var qty = 0;
-                            var uom = "";
-                            var m2 = 0;
-                            var w = 0;
-                            var lx = 0; 
-                            var cmnt = "";
-                            varpcode = "";
-                            var u = 0;
+                            var qty = null;
+                            var uom = null;
+                            var m2 = null;
+                            var w = null;
+                            var lx = null; 
+                            var cmnt = null;
+                            var pcode = null;
+                            var u = null;
                             
                             b = ccao.url.split('?'); //divide the url into portions
                             for (i = 0; i < b.length; i++) {
@@ -86,12 +86,12 @@ function getregiondata() {
                             
                             //generate sublist
                             sublist =  document.createElement('ul');
-                            addline(sublist,"Product Code:",pcode);
-                            addline(sublist,"Quantity:",qty + ' ' + uom);
-                            addline(sublist,"Units Per Pack:",u);                            
-                            addline(sublist,"Meters Squared:",m2);
-                            addline(sublist,"Dimensions:",w+' x '+lx);
-                            addline(sublist,"Comments:",cmnt);
+                            if (pcode) {addline(sublist,"Product Code:",pcode);};
+                            if (qty) {addline(sublist,"Quantity:",qty + ' ' + uom);};
+                            if (u) {addline(sublist,"Units Per Pack:",u);};                            
+                            if (m2) {addline(sublist,"Meters Squared:",m2);};
+                            if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
+                            if (cmnt) {addline(sublist,"Comments:",cmnt);};
                             li.appendChild(sublist);                           
                           }
                         }
