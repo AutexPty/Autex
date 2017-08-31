@@ -147,7 +147,7 @@ var mapAddCallback = function(t){
 	}
 	  if (!mapurl=="") {
           return t.overlay({
-            url: './addmap.html',
+            url: mapurl,
           })
           .then(function(){
             return t.closePopup();
