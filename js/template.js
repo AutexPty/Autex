@@ -139,7 +139,7 @@ var mapAddCallback = function(t){
 	boardid = t.getContext().board
 	switch (boardid){
 		case "592206f75fb9913fb6ec7f88":
-			mapurl = './addmap/vic.html';
+			mapurl = './add/mapvic.html';
 			break;
 		default:
 			alert('This board has not got a map set, please contact it with this reference:' + boardid);
