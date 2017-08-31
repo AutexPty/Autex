@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
+    <link rel="stylesheet" href="./css/addmap.css">
+    <script src="https://trello.com/power-ups/power-up.min.js"></script>
+  </head>
+<body>
+
+
+<div id="content">
+
+
+<select id="regionsel" name="region" >
+            <option value="0" selected>Please Select Region</option>
+            <option value="1">Great Southern</option>
+            <option value="2">SouthWest</option>
+            <option value="3">Peel</option>
+            <option value="4">Perth</option>
+			<option value="5">Wheatbelt</option>
+			<option value="6">Goldfield</option>
+			<option value="7">Midwest</option>
+			<option value="8">Gascoyne</option>
+			<option value="9">Pilbara</option>
+			<option value="10">Kimberley</option>
+			
+			
+</select>
+
+ <img src="./images/mapwa.png" alt="" usemap="#logos" />
+	  <script src="./js/addmap.js"></script>
+	
+		<map name="logos">
+		<area  onclick="addregion(1)" shape="poly" coords="186,723,188,683,259,672,272,692,267,708,222,726" /> 
+		
+		<!    great southern--->
+		<area  onclick="addregion(2)" shape="poly" coords="126,700,124,679,137,680,148,664,149,658,166,668,168,682,179,695,182,726"/>
+		
+		<!    southWest--->
+		<area  onclick="addregion(3)" shape="poly" coords="147,653,148,643,157,636,161,638,173,647,173,657" />
+		
+		<!    peel--->
+		
+		<area  onclick="addregion(4)" shape="poly" coords="151,630,140,607,165,614,165,633" />
+		<!    perth--->
+		
+		<area  onclick="addregion(5)" shape="poly" coords="179,651,165,635,170,622,165,610,141,605,124,560,226,546,291,565,276,674,218,676,173,679" />
+		<!    Wheatbelt--->
+		
+				<area  onclick="addregion(6)" shape="poly" coords="300,688,292,558,243,538,295,502,353,466,447,447,456,332,598,331,600,609,435,657,409,689" />
+		        <area  onclick="addregion(6)" shape="poly" coords="305,488,297,462,357,465" />
+		
+		<!    Goldfield--->
+		
+		
+		<area  onclick="addregion(7)" shape="poly" coords="122,552,125,534,89,464,128,465,149,411,218,407,214,332,323,340,450,337,451,442,389,439,341,448,296,458,296,500,268,528,183,547,146,559"/>
+		<!    Midwest--->
+		
+		<area  onclick="addregion(8)" shape="poly" coords="88,282,114,307,113,327,148,342,183,337,214,350,211,365,211,395,174,405,139,413,135,442,129,460,90,459,81,441,94,399,77,378,73,355" />
+		<!    gascoyne--->
+		<area  onclick="addregion(9)" shape="poly" coords="110,319,118,298,117,277,181,243,265,220,316,214,389,214,452,201,498,199,499,256,598,256,598,332,212,329,213,343,191,344,153,333,147,338,114,329" />
+		
+		<!  Pilbara--->
+		
+		
+		
+		 <area  onclick="addregion(10)" shape="poly" coords="304,211,374,149,371,125,398,98,415,128,431,111,452,77,532,3,570,40,598,54,598,111,600,254,501,255,499,193,415,188,414,208" />
+		 <!  Kimberley--->
+		 
+</map>
+   
+<div id="content">   
+      </body>
+</html>
