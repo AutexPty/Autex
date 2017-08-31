@@ -67,6 +67,45 @@ var boardButtonCallback = function(t){
 
 // ----------------------------
 
+/*var getClass = function(t) {
+  return t.card('name')
+  .get('name')
+  .then(function(cardName){
+    var badgeColor;
+    var classi = "";
+    var icon = GRAY_ICON;
+    var lowercaseName = cardName.toLowerCase();
+    if(lowercaseName.indexOf('(A)') > -1){
+      badgeColor = 'green';
+      icon = A_ICON;
+      classi = "A";
+    } else if(lowercaseName.indexOf('yellow') > -1){
+      badgeColor = 'yellow';
+      icon = B_ICON;
+      classi = "B";
+    } else if(lowercaseName.indexOf('red') > -1){
+      badgeColor = 'red';
+      icon = C_ICON;
+      classi = "C";
+    }
+}
+      // dynamic badges can have their function rerun after a set number
+      // of seconds defined by refresh. Minimum of 10 seconds.
+      return [{
+        dynamic: function(){
+          return {
+            title: 'Class', // for detail badges only
+            text: classi ,
+            icon: icon, // for card front badges only
+            color: badgeColor,
+            refresh: 10
+          }
+        }
+      }]
+    };
+	
+*/	
+	
 var getBadges = function(t){
   return t.card('attachments')
   .get('attachments')
