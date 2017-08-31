@@ -136,12 +136,23 @@ var oldmapAddCallback = function(t) {
 }
 
 var mapAddCallback = function(t){
+	boardid = t.getContext().board
+	switch (boardid){
+		case "592206f75fb9913fb6ec7f88":
+			mapurl = './addmap/vic.html';
+			break;
+		default:
+			alert('This board has not got a map set, please contact it with this reference:' + boardid);
+			mapurl = '';
+	}
+	  if (!mapurl=="") {
           return t.overlay({
             url: './addmap.html',
           })
           .then(function(){
             return t.closePopup();
           });
+	  }
         }
 
 var productAddCallback = function(t){
