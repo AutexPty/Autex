@@ -160,6 +160,14 @@ var documentAddCallback = function(t){
   });
 };
 
+var classificationAddCallback = function(t){
+  t.popup({
+	  title: 'Add Classification',
+	  url:"./addclassification.html",
+	  height: 180
+  });
+};
+
 var menu = function(t) {
 return t.popup({
 	title: 'Menu',
@@ -175,6 +183,10 @@ return t.popup({
 		{
 			text: "Add Document Number (V-Number)",
 			callback:  documentAddCallback
+		},
+		{
+			text: "Add Classification (A/B/C)",
+			callback: classificationAddCallback	
 		}
 		]
 })
