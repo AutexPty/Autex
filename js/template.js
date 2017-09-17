@@ -180,6 +180,15 @@ var mapAddCallback = function(t){
 		case "592206f75fb9913fb6ec7f88":
 			mapurl = './add/mapvic.html';
 			break;
+		case "59bdcb161503ceb771f19079":
+			mapurl = './add/mapnsw.html';
+			break;		
+		case "59bdcc5faca06fde5eaf8565":
+			mapurl = './add/mapqld.html';
+			break;					
+		case "59bdcd18ba29e2733ce122be":
+			mapurl = './add/mapwa.html';
+			break;		
 		default:
 			alert('This board has not got a map set, please contact it with this reference:' + boardid);
 			mapurl = '';
