@@ -132,7 +132,7 @@ if (cardclasses.length >0) {
     for(c = 0; c < cardclasses.length; c++) {
     badges.push({
         title: 'Class Badge', // for detail badges only
-        text: cardclasses[c].name,
+        text: cardclasses[0].name.substr(1),
 	icon: ORDER_ICON
         ,color: 'yellow'	      
       });
