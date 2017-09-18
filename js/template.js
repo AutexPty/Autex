@@ -5,6 +5,12 @@ var GRAY_ICON = './images/icon-gray.svg';
 var AUTEX_ICON = './images/autex.svg';
 var MAP_ICON = './images/map.svg';
 var ORDER_ICON = './images/order.svg';
+
+var VICID= "592206f75fb9913fb6ec7f88";
+var NSWID= "59bdcb161503ceb771f19079";
+var QLDID= "59bdcc5faca06fde5eaf8565";
+var WAID = "59bdcd18ba29e2733ce122be";
+
 // This is the script for the Overhead menu.
 //
 //
@@ -177,16 +183,16 @@ var oldmapAddCallback = function(t) {
 var mapAddCallback = function(t){
 	boardid = t.getContext().board
 	switch (boardid){
-		case "592206f75fb9913fb6ec7f88":
+		case VICID:
 			mapurl = './add/mapvic.html';
 			break;
-		case "59bdcb161503ceb771f19079":
+		case NSWID:
 			mapurl = './add/mapnsw.html';
 			break;		
-		case "59bdcc5faca06fde5eaf8565":
+		case QLDID:
 			mapurl = './add/mapqld.html';
 			break;					
-		case "59bdcd18ba29e2733ce122be":
+		case WAID:
 			mapurl = './add/mapwa.html';
 			break;		
 		default:
@@ -212,9 +218,31 @@ var productAddCallback = function(t){
 };
 
 var documentAddCallback = function(t){
-  t.popup({
-	  title: 'Add Document Number',
-	  url:"./adddocument.html",
+	switch (boardid){
+		case VICID:
+			title = "Add Document # (V Number)";
+			docurl = './add/adddocumentv.html';
+			break;
+		case NSWID:
+			title = "Add Document # (N Number)";
+			docurl = './add/adddocumentn.html';
+			break;		
+		case QLDID:
+			title = "Add Document # (Q Number)";
+			docurl = './add//adddocumentq.html';
+			break;					
+		case WAID:
+			title = "Add Document # (W Number)";
+			docurl = './add/adddocumentw.html';
+			break;		
+		default:
+			title = "Add Document #";
+			docurl = "./adddocument.html";
+	}
+	
+	t.popup({
+	  title: title,
+	  url: docurl,
 	  height: 180
   });
 };
@@ -240,7 +268,7 @@ return t.popup({
 			callback:  mapAddCallback
 		},
 		{
-			text: "Add Document Number (V-Number)",
+			text: "Add Document Number",
 			callback:  documentAddCallback
 		}
 		//,
