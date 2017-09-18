@@ -1,0 +1,20 @@
+html>
+    <head>
+      <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
+      <link rel="stylesheet" href="./css/adddocument.css">
+      <script src="https://trello.com/power-ups/power-up.min.js"></script>
+    </head>
+  <body>
+  <div id="content">
+    <select id="StatePrefix">
+      <option value="V" selected >Victorian Document Number</option>
+      <option value="N"          >N.S.W. Wales Document Number</option>
+      <option value="W"          >W.A. Document Number</option>
+      <option value="Q"          >Queensland Document Number</option>
+    </select>
+    <input type="number" id="DocumentNo">
+    <button type="button"  onclick="save();"> Add Document </button>  
+  </div>
+  </body>
+  <script src="./js/adddocument.js"></script>    
+</html>
