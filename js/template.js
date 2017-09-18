@@ -133,7 +133,7 @@ if (cardclasses.length >0) {
     badges.push({
         title: 'Class Badge', // for detail badges only
         text: cardclasses[0].name.substr(1),
-	icon: ORDER_ICON
+	icon: CLASS_ICON
         ,color: 'yellow'	      
       });
     };
