@@ -272,11 +272,11 @@ return t.popup({
 			text: "Add Document Number",
 			callback:  documentAddCallback
 		}
-		//,
-		//{
-		//	text: "Add Classification (A/B/C)",
-		//	callback: classificationAddCallback	
-		//}
+		,
+		{
+			text: "Add Classification (A/B/C)",
+			callback: classificationAddCallback	
+		}
 		]
 })
 		
