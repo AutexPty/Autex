@@ -5,6 +5,7 @@ var GRAY_ICON = './images/icon-gray.svg';
 var AUTEX_ICON = './images/autex.svg';
 var MAP_ICON = './images/map.svg';
 var ORDER_ICON = './images/order.svg';
+var CLASS_ICON = './images/class.svg';
 
 var VICID= "592206f75fb9913fb6ec7f88";
 var NSWID= "59bdcb161503ceb771f19079";
@@ -133,6 +134,13 @@ var getBadges = function(t){
 	    }	    
       //return attachment.url.indexOf('http://region?') == 0;
     }));
+
+    cardclasses = attachments.filter((function(attachment){
+	    if (attachment.url.indexOf('http://classification/?') == 0) {
+              return attachment.url;
+	    }	    
+    }));
+	    
     
     var badges = [];
 	  
@@ -164,6 +172,16 @@ if (d.length >0) {
       });
     };
 };	    
+if (cardclasses.length >0) {
+    for(c = 0; c < cardclasses.length; c++) {
+    badges.push({
+        title: 'Class Badge', // for detail badges only
+        text: cardclasses[c].name,
+	icon: ORDER_ICON
+        ,color: 'yellow'	      
+      });
+    };
+};		  
     return badges;	  
 })
 };
