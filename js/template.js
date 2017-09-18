@@ -72,47 +72,6 @@ var boardButtonCallback = function(t){
   });
 };
 
-// ----------------------------
-
-/*var getClass = function(t) {
-  return t.card('name')
-  .get('name')
-  .then(function(cardName){
-    var badgeColor;
-    var classi = "";
-    var icon = GRAY_ICON;
-    var lowercaseName = cardName.toLowerCase();
-    if(lowercaseName.indexOf('(A)') > -1){
-      badgeColor = 'green';
-      icon = A_ICON;
-      classi = "A";
-    } else if(lowercaseName.indexOf('yellow') > -1){
-      badgeColor = 'yellow';
-      icon = B_ICON;
-      classi = "B";
-    } else if(lowercaseName.indexOf('red') > -1){
-      badgeColor = 'red';
-      icon = C_ICON;
-      classi = "C";
-    }
-}
-      // dynamic badges can have their function rerun after a set number
-      // of seconds defined by refresh. Minimum of 10 seconds.
-      return [{
-        dynamic: function(){
-          return {
-            title: 'Class', // for detail badges only
-            text: classi ,
-            icon: icon, // for card front badges only
-            color: badgeColor,
-            refresh: 10
-          }
-        }
-      }]
-    };
-	
-*/	
-	
 var getBadges = function(t){
   return t.card('attachments')
   .get('attachments')
@@ -132,11 +91,10 @@ var getBadges = function(t){
 	    if (attachment.url.indexOf('http://document?') == 0) {
               return attachment.url;
 	    }	    
-      //return attachment.url.indexOf('http://region?') == 0;
     }));
 
     cardclasses = attachments.filter((function(attachment){
-	    if (attachment.url.indexOf('http://classification/?') == 0) {
+	    if (attachment.url.indexOf('http://classification?') == 0) {
               return attachment.url;
 	    }	    
     }));
@@ -158,7 +116,6 @@ if (r.length >0) {
         title: 'Region Badge', // for detail badges only
 	icon: MAP_ICON, 
         text: r[c].name
-        //,color: 'yellow'	      
       });
     };
 };
@@ -168,7 +125,6 @@ if (d.length >0) {
         title: 'Document Badge', // for detail badges only
         text: d[c].name,
 	icon: ORDER_ICON
-        //,color: 'red'	      
       });
     };
 };	    
