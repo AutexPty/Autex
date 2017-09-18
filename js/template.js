@@ -218,6 +218,7 @@ var productAddCallback = function(t){
 };
 
 var documentAddCallback = function(t){
+	boardid = t.getContext().board
 	switch (boardid){
 		case VICID:
 			title = "Add Document # (V Number)";
