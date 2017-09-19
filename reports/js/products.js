@@ -5,7 +5,7 @@ function showlist(){
    for (l=0; l<promiseResult.length;l++) {
      var currentlist = promiseResult[l];
      opt = document.createElement("OPTION");
-     opt.name = currentlist.name;
+     opt.text = currentlist.name;
      opt.value = currentlist.id;
      list.appendChild(opt);
    }   
