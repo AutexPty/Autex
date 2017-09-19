@@ -14,7 +14,7 @@ function removeOptions(selectbox)
 removeOptions(document.getElementById("mySelectObject"));
 
 function updatelist(){
-  removeOptions(list);
+  if (list) {removeOptions(list);};
   opt = document.createElement("OPTION");
   opt.text = "Please Select";
   list.appendChild(opt);  
@@ -33,7 +33,7 @@ function updatelist(){
 
 function showlist(){
     selected = list[list.selectedIndex];   
-    t.list(selected.id).then(function(promiseResult) {        
-    alert (promiseResult);
+    t.list(selected.id).then(function(list) {        
+    alert (JSON.stringify(list, null, 2));
     });
 };
