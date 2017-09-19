@@ -35,7 +35,9 @@ function getregiondata() {
                    var currentattachment = currentcard.attachments[ii];
                    if (currentattachment.url.indexOf('http://region') == 0 ) 
                      {
-                     if (list.item(list.selectedIndex).text == currentattachment.name) 
+                     var curnams = list.item(list.selectedIndex).text
+                     var curnam = curnams.slice(curnams.indexOf("/")+1)
+                     if (curnam == currentattachment.name) 
                         {
                         var row = tbl.tBodies[0].insertRow(0);
                         // inserted cells are backwards (last first) because of reasons..
