@@ -35,5 +35,5 @@ function showlist(){
     selected = list[list.selectedIndex];   
     t.list(selected.id).then(function(promiseResult) {        
     alert (promiseResult);
-    }
+    });
 };
