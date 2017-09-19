@@ -4,7 +4,10 @@ function showlist(){
    .then(function(promiseResult) {
    for (l=0; l<promiseResult.length;l++) {
      var currentlist = promiseResult[l];
-     alert (currentlist.name);
+     opt = document.createElement("OPTION");
+     opt.name = currentlist.name;
+     opt.value = currentlist.id;
+     list.appendChild(opt);
    }   
   });        
   alert('done');
