@@ -1,4 +1,6 @@
 var t = TrelloPowerUp.iframe();
+updatelist();
+
 
 function removeOptions(selectbox)
 {
@@ -11,8 +13,11 @@ function removeOptions(selectbox)
 //using the function:
 removeOptions(document.getElementById("mySelectObject"));
 
-function showlist(){
+function updatelist(){
   removeOptions(list);
+  opt = document.createElement("OPTION");
+  opt.text = "Please Select";
+  list.appendChild(opt);  
   t.lists('all')
    .then(function(promiseResult) {
    for (l=0; l<promiseResult.length;l++) {
@@ -26,3 +31,6 @@ function showlist(){
   //alert('done');
 };
 
+function showlist(){
+    alert ("clicked");
+};
