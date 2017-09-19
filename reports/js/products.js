@@ -1,5 +1,5 @@
 var t = TrelloPowerUp.iframe();
-function showlists(){
+function showlist(){
   alert('hi');
 };
 
