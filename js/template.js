@@ -34,7 +34,7 @@ var boardButtonCallback = function(t){
         text: 'Product List',
         callback: function(t){
           return t.boardBar({
-            url: './tabledata.html',
+            url: './reports/product.html',
             height: 200,
 	    icon: ORDER_ICON
           })
