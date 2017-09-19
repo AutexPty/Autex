@@ -33,7 +33,7 @@ function updatelist(){
 
 function showlist(){
     selected = list[list.selectedIndex];   
-    t.list(selected.id).then(function(list) {        
+    t.list(selected.value).then(function(list) {        
     alert (JSON.stringify(list, null, 2));
     });
 };
