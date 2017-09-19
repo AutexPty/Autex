@@ -32,5 +32,8 @@ function updatelist(){
 };
 
 function showlist(){
-    alert ("clicked");
+    selected = list[list.selectedIndex];   
+    t.list(selected.id).then(function(promiseResult) {        
+    alert (promiseResult);
+    }
 };
