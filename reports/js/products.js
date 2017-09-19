@@ -6,7 +6,7 @@ function showlist(){
      var currentlist = promiseResult[l];
      alert (currentlist.name);
    }   
-  }        
+  });        
   alert('done');
 };
 
