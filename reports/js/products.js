@@ -1,7 +1,3 @@
-var t = TrelloPowerUp.iframe();
-updatelist();
-
-
 function removeOptions(selectbox)
 {
     var i;
@@ -10,8 +6,6 @@ function removeOptions(selectbox)
         selectbox.remove(i);
     }
 }
-//using the function:
-removeOptions(document.getElementById("mySelectObject"));
 
 function updatelist(){
   if (list) {removeOptions(list);};
@@ -37,3 +31,11 @@ function showlist(){
     alert (JSON.stringify(list, null, 2));
     });
 };
+
+
+var t = TrelloPowerUp.iframe();
+updatelist();
+//using the function:
+//removeOptions(document.getElementById("mySelectObject"));
+
+
