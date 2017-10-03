@@ -27,9 +27,16 @@ function updatelist(){
 
 function showlist(){
     selected = list[list.selectedIndex];   
-    t.list(selected.value).then(function(list) {        
-    alert (JSON.stringify(list, null, 2));
+    tbl = document.getElementById('table');
+    tbl.tBodies[0].innerHTML = "";
+    t.lists('all').then(function(promiseResult) {
+    alert (JSON.stringify(promiseResult, null, 2));    
     });
+    
+      
+    //t.list(selected.value).then(function(list) {        
+    //alert (JSON.stringify(list, null, 2));
+    //});
 };
 
 
