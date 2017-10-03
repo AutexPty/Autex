@@ -34,6 +34,8 @@ function showlist(){
          var currentlist = promiseResult[l];
          for (c=0; c<promiseResult[l].cards.length;c++) 
            {
+               if (promiseResult.id == list[list.selectedIndex].value) 
+               {
            var currentcard = currentlist.cards[c];           
            if (currentcard.attachments.length > 0) 
               {
@@ -114,6 +116,7 @@ function showlist(){
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
+           };
      }); //end loop of cards.
      tbl.hidden = false;                 
     //t.list(selected.value).then(function(list) {        
