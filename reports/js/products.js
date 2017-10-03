@@ -114,7 +114,7 @@ function showlist(){
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
-     }; //end loop of cards.
+     }); //end loop of cards.
      tbl.hidden = false;                 
     //t.list(selected.value).then(function(list) {        
     //alert (JSON.stringify(list, null, 2));
