@@ -29,7 +29,7 @@ function showlist(){
     selected = list[list.selectedIndex];   
     tbl = document.getElementById('table');
     tbl.tBodies[0].innerHTML = "";
-    t.list(selected.value).then(function(promiseResult) {
+    t.lists("all").then(function(promiseResult) {
     
          var currentlist = promiseResult[l];
          for (c=0; c<promiseResult[l].cards.length;c++) 
