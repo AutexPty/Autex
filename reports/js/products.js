@@ -38,7 +38,7 @@ function showlist(){
              }
          }        
 
-         for (c=0; c<promiseResult[l].cards.length;c++) 
+         for (c=0; c<currentlist.cards.length;c++) 
            {
            var currentcard = currentlist.cards[c];           
            if (currentcard.attachments.length > 0) 
