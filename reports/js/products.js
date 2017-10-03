@@ -46,12 +46,12 @@ function showlist(){
               for (ii=0; ii<currentcard.attachments.length;ii++) 
                  {
                    var currentattachment = currentcard.attachments[ii];
-                   if (currentattachment.url.indexOf('http://region') == 0 ) 
-                     {
-                     var curnams = list.item(list.selectedIndex).text
-                     var curnam = curnams.slice(curnams.indexOf("/")+1)
-                     if (curnam == currentattachment.name) 
-                        {
+                   //if (currentattachment.url.indexOf('http://region') == 0 ) 
+                     //{
+                     //var curnams = list.item(list.selectedIndex).text
+                     //var curnam = curnams.slice(curnams.indexOf("/")+1)
+                     //if (curnam == currentattachment.name) 
+                     //   {
                         var row = tbl.tBodies[0].insertRow(0);
                         // inserted cells are backwards (last first) because of reasons..
                         var cardproducts = row.insertCell(0);
@@ -115,8 +115,8 @@ function showlist(){
                           }
                         }
                         
-                        };                                                             
-                     };
+                        //};                                                             
+                     //};
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
