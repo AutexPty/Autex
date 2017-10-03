@@ -7,6 +7,18 @@ function removeOptions(selectbox)
     }
 }
 
+function addline(parent,header,body)
+{
+  var tli = document.createElement('li');
+  var h = document.createTextNode(header);
+  //h.style.fontWeight = 'bold';
+  tli.appendChild(h);
+  var b = document.createTextNode(body);
+  //b.style.fontStyle = "italic";
+  tli.appendChild(b);  
+  parent.appendChild(tli);
+}
+
 function updatelist(){
   if (list) {removeOptions(list);};
   opt = document.createElement("OPTION");
