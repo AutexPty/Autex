@@ -7,6 +7,18 @@ function removeOptions(selectbox)
     }
 }
 
+function addsumline(parent,header,body)
+{
+  var tli = document.createElement('li');
+  var h = document.createTextNode(header);
+  //h.style.fontWeight = 'bold';
+  tli.appendChild(h);
+  var b = document.createTextNode(body);
+  //b.style.fontStyle = "italic";
+  tli.appendChild(b);  
+  parent.appendChild(tli);
+}
+
 function addline(parent,header,body)
 {
   var tli = document.createElement('li');
@@ -43,6 +55,7 @@ function showlist(){
     selected = list[list.selectedIndex];   
     tbl = document.getElementById('table');
     tbl.tBodies[0].innerHTML = "";
+       
     t.lists("all").then(function(promiseResult) {
          
          for (l=0; l<promiseResult.length;l++)
@@ -66,7 +79,7 @@ function showlist(){
                      //var curnam = curnams.slice(curnams.indexOf("/")+1)
                      //if (curnam == currentattachment.name) 
                      //   {
-                        var row = tbl.tBodies[0].insertRow(0);
+                        var row  = tbl.tBodies[0].insertRow(0);
                         // inserted cells are backwards (last first) because of reasons..
                         var cardproducts = row.insertCell(0);
                         var carddue = row.insertCell(0); 
@@ -141,7 +154,11 @@ function showlist(){
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
-     alert(JSON.stringify(products) );
+     tbls = document.getElementById('summary');
+     tbls.tBodies[0].innerHTML = "";        
+     //var rows = tbl.tBodies[0].insertRow(0);
+     //alert(JSON.stringify(products) );
+     tbls.hidden = false;  
      }); //end loop of cards.
      tbl.hidden = false;                 
     //t.list(selected.value).then(function(list) {        
