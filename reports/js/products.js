@@ -126,10 +126,9 @@ function showlist(){
                                      addline(sublist,"Meters Squared:",m2);
                                      if (pcode) {
                                         if (products[pcode])
-                                           {products[pcode].m2 += parseFloat(m2)}
+                                           {products[pcode] += parseFloat(m2)}
                                         else 
-                                           {products[pcode] = {parseFloat(m2)}
-                                        };
+                                           {products[pcode] = parseFloat(m2)}
                                     };
                             if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
                             if (cmnt) {addline(sublist,"Comments:",cmnt);};
