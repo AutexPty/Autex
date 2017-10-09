@@ -124,7 +124,7 @@ function showlist(){
                             if (u) {addline(sublist,"Units Per Pack:",u);};                            
                             if (m2) {addline(sublist,"Meters Squared:",m2);
                                       if (pcode) {
-                                        if (products[pcode]) {products[pcode] = m2} else {products[pcode].push(m2)};
+                                        if (products[pcode]) {products[pcode].Push(m2);} else {products[pcode] = m2;};
                                       };
                                     };
                             if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
