@@ -122,10 +122,14 @@ function showlist(){
                             if (pcode) {addline(sublist,"Product Code:",pcode);};
                             if (qty) {addline(sublist,"Quantity:",qty + ' ' + uom);};
                             if (u) {addline(sublist,"Units Per Pack:",u);};                            
-                            if (m2) {addline(sublist,"Meters Squared:",m2);
-                                      if (pcode) {
-                                        if (products[pcode]) {products[pcode].m2 += parseFloat(m2);} else {products[pcode] = {parseFloat(m2)};};
-                                      };
+                            if (m2) {
+                                     addline(sublist,"Meters Squared:",m2);
+                                     if (pcode) {
+                                        if (products[pcode])
+                                           {products[pcode].m2 += parseFloat(m2);}
+                                        else 
+                                           {products[pcode] = {parseFloat(m2);}
+                                        };
                                     };
                             if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
                             if (cmnt) {addline(sublist,"Comments:",cmnt);};
