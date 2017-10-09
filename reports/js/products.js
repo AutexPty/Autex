@@ -129,7 +129,7 @@ function showlist(){
                                            {products[pcode] += parseFloat(m2)}
                                         else 
                                            {products[pcode] = parseFloat(m2)}
-                                    };
+                                    }};
                             if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
                             if (cmnt) {addline(sublist,"Comments:",cmnt);};
                             li.appendChild(sublist);                           
@@ -141,11 +141,11 @@ function showlist(){
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
+     alert(JSON.stringify(products) );
      }); //end loop of cards.
      tbl.hidden = false;                 
     //t.list(selected.value).then(function(list) {        
     //alert (JSON.stringify(list, null, 2));
-    alert(JSON.stringify(products) );
     //});
 };
 
