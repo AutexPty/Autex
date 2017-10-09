@@ -20,6 +20,7 @@ function addline(parent,header,body)
 }
 
 function updatelist(){
+    
   if (list) {removeOptions(list);};
   opt = document.createElement("OPTION");
   opt.text = "Please Select";
@@ -38,6 +39,7 @@ function updatelist(){
 };
 
 function showlist(){
+    var products = {};
     selected = list[list.selectedIndex];   
     tbl = document.getElementById('table');
     tbl.tBodies[0].innerHTML = "";
@@ -120,7 +122,11 @@ function showlist(){
                             if (pcode) {addline(sublist,"Product Code:",pcode);};
                             if (qty) {addline(sublist,"Quantity:",qty + ' ' + uom);};
                             if (u) {addline(sublist,"Units Per Pack:",u);};                            
-                            if (m2) {addline(sublist,"Meters Squared:",m2);};
+                            if (m2) {addline(sublist,"Meters Squared:",m2);
+                                      if (pcode) {
+                                        if (products[pcode]) {products[pcode].push(m2)} else {products[pcode] = m2};
+                                      };
+                                    };
                             if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
                             if (cmnt) {addline(sublist,"Comments:",cmnt);};
                             li.appendChild(sublist);                           
@@ -136,6 +142,7 @@ function showlist(){
      tbl.hidden = false;                 
     //t.list(selected.value).then(function(list) {        
     //alert (JSON.stringify(list, null, 2));
+    alert(JSON.stringify(products) );
     //});
 };
 
