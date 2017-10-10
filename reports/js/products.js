@@ -90,7 +90,8 @@ function showlist(){
                         var ank = document.createElement('a');
                         var linkText = document.createTextNode(currentcard["name"]);
                         ank.appendChild(linkText);
-                        ank.onclick=function(){t.showCard(currentcard["id"])};
+                        var acid = currentcard["id"];
+                        ank.onclick=function(){t.showCard(acid)};
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
                         cardstage.innerHTML = currentlist.name;
