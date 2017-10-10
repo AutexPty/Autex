@@ -160,10 +160,10 @@ function showlist(){
          var rows = tbls.tBodies[0].insertRow(0);
          var curcode = Object.keys(products)[keyno];
          var qty = products[curcode];
-         var cpc = rows.insertCell(0);
          var cpq = rows.insertCell(0);
+         var cpc = rows.insertCell(0);
          cpc.innerText = curcode;
-         cpq.innerText = qty;
+         cpq.innerText = qty.toFixed(2);
      }        
      //alert(JSON.stringify(products) );
      tbls.hidden = false;  
