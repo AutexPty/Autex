@@ -77,15 +77,6 @@ function showlist(){
            var currentcard = currentlist.cards[c];           
            if (currentcard.attachments.length > 0) 
               {
-              for (ii=0; ii<currentcard.attachments.length;ii++) 
-                 {
-                   var currentattachment = currentcard.attachments[ii];
-                   //if (currentattachment.url.indexOf('http://region') == 0 ) 
-                     //{
-                     //var curnams = list.item(list.selectedIndex).text
-                     //var curnam = curnams.slice(curnams.indexOf("/")+1)
-                     //if (curnam == currentattachment.name) 
-                     //   {
                         var row  = tbl.tBodies[0].insertRow(0);
                         // inserted cells are backwards (last first) because of reasons..
                         var cardproducts = row.insertCell(0);
@@ -104,10 +95,21 @@ function showlist(){
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
                         cardstage.innerHTML = currentlist.name;
+                  
+              for (ii=0; ii<currentcard.attachments.length;ii++) 
+                 {
+                   var currentattachment = currentcard.attachments[ii];
+                   //if (currentattachment.url.indexOf('http://region') == 0 ) 
+                     //{
+                     //var curnams = list.item(list.selectedIndex).text
+                     //var curnam = curnams.slice(curnams.indexOf("/")+1)
+                     //if (curnam == currentattachment.name) 
+                     //   {
+
                         
-                        for (cca=0; cca < currentcard.attachments.length;cca++)
-                        {
-                          var ccao = currentcard.attachments[cca]
+                        //for (cca=0; cca < currentcard.attachments.length;cca++)
+                        //{
+                          var ccao = currentcard.attachments[ii];
                           if (ccao.url.indexOf('http://product?') == 0) {
                             var ul = document.createElement('ul');
                             cardproducts.appendChild(ul);
@@ -157,7 +159,7 @@ function showlist(){
                             if (cmnt) {addline(sublist,"Comments:",cmnt);};
                             li.appendChild(sublist);                           
                           }
-                        }
+                        //}
                         
                         //};                                                             
                      //};
@@ -189,5 +191,3 @@ var t = TrelloPowerUp.iframe();
 updatelist();
 //using the function:
 //removeOptions(document.getElementById("mySelectObject"));
-
-
