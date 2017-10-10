@@ -156,7 +156,15 @@ function showlist(){
            }; //loop cards.
      tbls = document.getElementById('summary');
      tbls.tBodies[0].innerHTML = "";        
-     //var rows = tbl.tBodies[0].insertRow(0);
+     for (keyno = 0; keyno < Object.keys(products).length - 1; keyno++) {
+         var rows = tbls.tBodies[0].insertRow(0);
+         var curcode = Object.keys(products)[keyno];
+         var qty = products[curcode];
+         var cpc = rows.insertCell(0);
+         var cpq = rows.insertCell(0);
+         cpc.innerText = curcode;
+         cpq.innerText = qty;
+     }        
      //alert(JSON.stringify(products) );
      tbls.hidden = false;  
      }); //end loop of cards.
