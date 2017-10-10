@@ -7,10 +7,11 @@ function removeOptions(selectbox)
     }
 }
 
-function opencardid(id)
+function opencardid()
 {
+   var id = this.getAttribute('id');
    var t = TrelloPowerUp.iframe();
-    t.showCard(id);
+   t.showCard(id);
 }
 
 function addsumline(parent,header,body)
@@ -97,7 +98,8 @@ function showlist(){
                         var linkText = document.createTextNode(currentcard["name"]);
                         ank.appendChild(linkText);
                         //var acid = currentcard["id"];
-                        ank.onclick= function() {opencardid(currentcard["id"])};
+                        ank.id = currentcard["id"];
+                        ank.onclick= function() {opencardid()};
                         //function(){t.showCard(acid)};
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
