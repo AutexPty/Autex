@@ -97,7 +97,7 @@ function showlist(){
                         var linkText = document.createTextNode(currentcard["name"]);
                         ank.appendChild(linkText);
                         //var acid = currentcard["id"];
-                        ank.onclick=opencardid(currentcard["id"]);
+                        ank.onclick= function() {opencardid(currentcard["id"])};
                         //function(){t.showCard(acid)};
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
