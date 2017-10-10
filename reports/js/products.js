@@ -86,7 +86,9 @@ function showlist(){
 
                         //cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
                         var ank = document.createElement('a');
-                        var linkText = document.createTextNode(currentcard["name"]);
+                        var linkText = document.createElement("U");
+                        linkText.textContent = currentcard["name"];
+                        //var linkText = document.createTextNode(currentcard["name"]);
                         ank.appendChild(linkText);
                         //var acid = currentcard["id"];
                         ank.id = currentcard["id"];
