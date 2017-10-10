@@ -7,9 +7,9 @@ function removeOptions(selectbox)
     }
 }
 
-function opencardid()
+function opencardid(thing)
 {
-   var id = this.getAttribute('id');
+   var id = thing.getAttribute('id');
    var t = TrelloPowerUp.iframe();
    t.showCard(id);
 }
@@ -99,7 +99,7 @@ function showlist(){
                         ank.appendChild(linkText);
                         //var acid = currentcard["id"];
                         ank.id = currentcard["id"];
-                        ank.onclick= function() {opencardid()};
+                        ank.onclick= function() {opencardid(this)};
                         //function(){t.showCard(acid)};
                         cardname.appendChild(ank);                          
                         carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
