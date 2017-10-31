@@ -9,6 +9,14 @@
   </product>
   
   <product>
+    <productcode>ETC</productcode>
+    <description>Etch</description>
+    <variant><code></code><description>Etch</description></variant>
+    <colours>Vertiface</colours>
+    <unit>Lm</unit>
+  </product>	
+	
+  <product>
     <productcode>QSP</productcode>
     <description>Quietspace Panel</description>
     <colours>VertifaceN</colours>
@@ -64,7 +72,7 @@
     <productcode>QSS</productcode>
     <description>Symphony™</description>
     <colours>Vertiface</colours>
-    <unit>Pack</unit>
+    <unit>Lm</unit>
     <variants>
       <variant><code></code><description>Quietspace® Symphony™ </description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
@@ -111,7 +119,7 @@
 <product>
     <productcode>QSCA</productcode>
     <description>Accent Ceiling Tiles</description>
-    <colours>3d</colours>
+    <colours>Cube</colours>
     <unit>Pack</unit>
     <variants>
       <variant><code></code><description>Quietspace Accent Ceiling Tiles</description><width>1.2</width><length>2.4</length><units>1</units></variant>
