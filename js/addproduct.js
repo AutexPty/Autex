@@ -12,7 +12,6 @@ var quantity;
 var unit;
 var slccode;
 var slccode1;
-var typ;
 
 var t = TrelloPowerUp.iframe();
 
@@ -151,7 +150,7 @@ function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item.value].getElementsByTagName("productcode")[0].textContent 
   var mqty = document.getElementById("Quantity").value; 
-  var typ= document.getElementById("pcs").value; 
+
   var productstr = "";
   var productname = ""
   var m2 = document.getElementById('m2').value;
@@ -190,11 +189,8 @@ if (colour)  {
      var gc = comment.replace(/[^a-z\d\s]+/gi, "");
      productstr = productstr + "?comments=" + gc;
   };
-  if (typ= "PCS")
-  {  productstr = "Precision cut "+  productstr;
-     pcode= "PCS"+ pcode;
-  };
-  t.attach({ url: "product?productcode=" + pcode + productstr, name: productname });
+  
+  t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
   t.closePopup();
 }
 
@@ -248,8 +244,7 @@ function selectproduct() {
   } else {
       if (colourfile) {
       updatecolour();
-      } 
-    else {
+      } else {
         
       }
   }    
@@ -292,7 +287,7 @@ function editspecs() {
   document.getElementById('Width').disabled = false; 
   document.getElementById('Length').disabled = false; 
   document.getElementById('Units').disabled = false; 
-}
+};
 
 function selectvariant() {
   selvar = document.getElementById("variant").value;
