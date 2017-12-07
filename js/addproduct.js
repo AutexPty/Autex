@@ -190,7 +190,7 @@ if (colour)  {
      var gc = comment.replace(/[^a-z\d\s]+/gi, "");
      productstr = productstr + "?comments=" + gc;
   };
-  if (typ= "Custom")
+  if (typ= "PCS")
   {  productstr = "PCS"+  productstr
   }
   t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
