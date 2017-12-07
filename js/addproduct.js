@@ -12,7 +12,6 @@ var quantity;
 var unit;
 var slccode;
 var slccode1;
-var typ;
 
 var t = TrelloPowerUp.iframe();
 
@@ -57,7 +56,6 @@ function hidepages(){
         document.getElementById("dproductcat").hidden = true;
         document.getElementById("dproduct").hidden = true; 
         document.getElementById("dvariant").hidden = true;
-		document.getElementById("dpcs").hidden = true;
         document.getElementById("dcolour").hidden = true;
         document.getElementById("dquantity").hidden = true;     
         document.getElementById("ddescription").hidden = true; 
@@ -65,7 +63,7 @@ function hidepages(){
 }
 
 function toquantity(){
-   page = 6;
+   page = 5;
   changepage();
 }
 
@@ -111,28 +109,22 @@ function changepage(){
         document.getElementById("dvariant").hidden = false;
         break;
     case 3:
-        // select Type custom or std
-        hidepages();     
-        document.getElementById("dpcs").hidden = false;
-        nextpage();
-        break;
-    case 4:
         // select colour
         hidepages();     
         document.getElementById("dcolour").hidden = false;
         break;
-    case 5:
+    case 4:
         // select specs
         hidepages();     
         getproductstr();
         document.getElementById("dspec").hidden = false;       
         break;
-    case 6:
+    case 5:
         // select quantity
         hidepages();     
         document.getElementById("dquantity").hidden = false;     
       break;
-   case 7:
+   case 6:
         // enter description
         hidepages();     
         document.getElementById("ddescription").hidden = false;    
@@ -158,7 +150,7 @@ function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item.value].getElementsByTagName("productcode")[0].textContent 
   var mqty = document.getElementById("Quantity").value; 
-  var typ= document.getElementById("pcs").value; 
+
   var productstr = "";
   var productname = ""
   var m2 = document.getElementById('m2').value;
