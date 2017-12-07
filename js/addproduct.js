@@ -110,10 +110,11 @@ function changepage(){
         hidepages();     
         document.getElementById("dvariant").hidden = false;
         break;
-	case 3:
+    case 3:
         // select Type custom or std
         hidepages();     
         document.getElementById("dpcs").hidden = false;
+        nextpage();
         break;
     case 4:
         // select colour
