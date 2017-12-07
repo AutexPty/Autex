@@ -191,10 +191,10 @@ if (colour)  {
      productstr = productstr + "?comments=" + gc;
   };
   if (typ= "PCS")
-  {  productstr = "Precision cut "+  productstr
+  {  productstr = "Precision cut "+  productstr;
      pcode= "PCS"+ pcode;
-  }
-  t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
+  };
+  t.attach({ url: "product?productcode=" + pcode + productstr, name: productname });
   t.closePopup();
 }
 
@@ -248,7 +248,8 @@ function selectproduct() {
   } else {
       if (colourfile) {
       updatecolour();
-      } else {
+      } 
+    else {
         
       }
   }    
@@ -291,7 +292,7 @@ function editspecs() {
   document.getElementById('Width').disabled = false; 
   document.getElementById('Length').disabled = false; 
   document.getElementById('Units').disabled = false; 
-};
+}
 
 function selectvariant() {
   selvar = document.getElementById("variant").value;
