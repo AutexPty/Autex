@@ -191,7 +191,8 @@ if (colour)  {
      productstr = productstr + "?comments=" + gc;
   };
   if (typ= "PCS")
-  {  productstr = "PCS"+  productstr
+  {  productstr = "Precision cut "+  productstr
+     pcode= "PCS"+ pcode;
   }
   t.attach({ url: "product?productcode=" + pcode + productstr, name: productname })
   t.closePopup();
