@@ -266,7 +266,7 @@ TrelloPowerUp.initialize({
 
     // we will just claim urls for Yellowstone
     var claimed = options.entries.filter(function(attachment){
-      return (attachment.url.indexOf('http://product?') == 0);
+      return (attachment.url.indexOf('http://product.io/?') == 0);
     });
 
     /*for (i=0; i< claimed.length; i++) {
