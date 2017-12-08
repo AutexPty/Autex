@@ -17,7 +17,7 @@ t.render(function(){
   t.card('attachments')
   .get('attachments')
   .filter(function(attachment){
-    return ((attachment.url.indexOf('http://product?') == 0) or (attachment.url.indexOf('http://product.io/?') == 0));
+    return (attachment.url.indexOf('http://product.io/?') == 0) ;
   })
   .then(function(yellowstoneAttachments){
     var pcode = "";
