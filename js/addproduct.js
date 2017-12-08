@@ -189,7 +189,7 @@ if (colour)  {
      var gc = comment.replace(/[^a-z\d\s]+/gi, "");
      productstr = productstr + "?comments=" + gc;
   };
-  var url = "product/?productcode=" + pcode + productstr
+  var url = "http://product.io/?productcode=" + pcode + productstr
   t.attach({ url: url.split(' ').join('_'), name: productname })
   t.closePopup();
 }
