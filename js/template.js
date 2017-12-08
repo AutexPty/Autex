@@ -275,8 +275,8 @@ TrelloPowerUp.initialize({
 	   	claimed[i].url = 'http://product.io/index.html'+turl.substring(14);
 		claimed[i].url = claimed[i].url.split(' ').join('_');
 	}
-	*/
     }
+    */
     // you can have more than one attachment section on a card
     // you can group items together into one section, have a section
     // per attachment, or anything in between.
