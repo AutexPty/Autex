@@ -112,7 +112,7 @@ function showlist(){
                         //for (cca=0; cca < currentcard.attachments.length;cca++)
                         //{
                           var ccao = currentcard.attachments[ii];
-                          if (ccao.url.indexOf('http://product?') == 0) {
+                          if (ccao.url.indexOf('http://product') == 0 or ) {
                             var ul = document.createElement('ul');
                             cardproducts.appendChild(ul);
                             var li = document.createElement('li');
