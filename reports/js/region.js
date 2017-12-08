@@ -58,7 +58,7 @@ function getregiondata() {
                         for (cca=0; cca < currentcard.attachments.length;cca++)
                         {
                           var ccao = currentcard.attachments[cca]
-                          if (ccao.url.indexOf('http://product?') == 0) {
+                          if (ccao.url.indexOf('http://product') == 0) {
                             var ul = document.createElement('ul');
                             cardproducts.appendChild(ul);
                             var li = document.createElement('li');
