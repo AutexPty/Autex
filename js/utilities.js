@@ -1,17 +1,11 @@
 function showlist(){
     var products = {};
        
-    t.lists("all").then(function(promiseResult) {
-         
-         /*
-         for (l=0; l<promiseResult.length;l++)
-         {
-             if (promiseResult[l].id == selected.value){
-             var currentlist = promiseResult[l];  
-             }
-         } 
-         */
+    t.lists("all").then(function(promiseResult) {        
+      for (l=0; l<promiseResult.length;l++)
+      {
         var currentlist = promiseResult[0]
+        console.log('LIST:' +currentlist["name"]);
          for (c=0; c<currentlist.cards.length;c++) 
            {
            var currentcard = currentlist.cards[c];           
@@ -24,10 +18,13 @@ function showlist(){
                             var ccao = currentcard.attachments[ii];
                             if (ccao.url.indexOf('http://product') == 0) {
                                 console.log(ccao.name);
+                                ccao.url.indexOf('http://product?') == 0)
+                                console.log('http://product.io/?' + ccao.url.substring(15, 999)
                                 };
                         };
               }
            }
+      };
     });
 }
 
