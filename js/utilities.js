@@ -3,13 +3,15 @@ function showlist(){
        
     t.lists("all").then(function(promiseResult) {
          
+         /*
          for (l=0; l<promiseResult.length;l++)
          {
              if (promiseResult[l].id == selected.value){
-                var currentlist = promiseResult[l];  
+             var currentlist = promiseResult[l];  
              }
-         }        
-
+         } 
+         */
+        var currentlist = promiseResult[0]
          for (c=0; c<currentlist.cards.length;c++) 
            {
            var currentcard = currentlist.cards[c];           
@@ -113,6 +115,7 @@ function showlist(){
                  };   //end of attachment loop
               }; // end if attachment length > 0 
            }; //loop cards.
+    /*
      tbls = document.getElementById('summary');
      tbls.tBodies[0].innerHTML = "";        
      for (keyno = 0; keyno < Object.keys(products).length - 1; keyno++) {
@@ -131,6 +134,7 @@ function showlist(){
     //t.list(selected.value).then(function(list) {        
     //alert (JSON.stringify(list, null, 2));
     //});
+    */
 };
 
 
