@@ -230,6 +230,14 @@ var classificationAddCallback = function(t){
   });
 };
 
+var utilitiesAddCallback = function(t){
+  t.popup({
+	  title: 'Utility Scripts',
+	  url:"./Utilities.html",
+	  height: 180
+  });
+};
+
 var menu = function(t) {
 return t.popup({
 	title: 'Menu',
@@ -250,6 +258,10 @@ return t.popup({
 		{
 			text: "Add Classification (A/B/C)",
 			callback: classificationAddCallback	
+		},
+		{
+			text: "Utilities",
+			callback: utilitiesAddCallback				
 		}
 		]
 })
