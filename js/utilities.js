@@ -1,67 +1,5 @@
-function removeOptions(selectbox)
-{
-    var i;
-    for(i = selectbox.options.length - 1 ; i >= 0 ; i--)
-    {
-        selectbox.remove(i);
-    }
-}
-
-function opencardid(thing)
-{
-   var id = thing.getAttribute('id');
-   var t = TrelloPowerUp.iframe();
-   t.showCard(id);
-}
-
-function addsumline(parent,header,body)
-{
-  var tli = document.createElement('li');
-  var h = document.createTextNode(header);
-  //h.style.fontWeight = 'bold';
-  tli.appendChild(h);
-  var b = document.createTextNode(body);
-  //b.style.fontStyle = "italic";
-  tli.appendChild(b);  
-  parent.appendChild(tli);
-}
-
-function addline(parent,header,body)
-{
-  var tli = document.createElement('li');
-  var h = document.createTextNode(header);
-  //h.style.fontWeight = 'bold';
-  tli.appendChild(h);
-  var b = document.createTextNode(body);
-  //b.style.fontStyle = "italic";
-  tli.appendChild(b);  
-  parent.appendChild(tli);
-}
-
-function updatelist(){
-    
-  if (list) {removeOptions(list);};
-  opt = document.createElement("OPTION");
-  opt.text = "Please Select";
-  list.appendChild(opt);  
-  t.lists('all')
-   .then(function(promiseResult) {
-   for (l=0; l<promiseResult.length;l++) {
-     var currentlist = promiseResult[l];
-     opt = document.createElement("OPTION");
-     opt.text = currentlist.name;
-     opt.value = currentlist.id;
-     list.appendChild(opt);
-   }   
-  });        
-  //alert('done');
-};
-
 function showlist(){
     var products = {};
-    selected = list[list.selectedIndex];   
-    tbl = document.getElementById('table');
-    tbl.tBodies[0].innerHTML = "";
        
     t.lists("all").then(function(promiseResult) {
          
@@ -77,26 +15,26 @@ function showlist(){
            var currentcard = currentlist.cards[c];           
            if (currentcard.attachments.length > 0) 
               {
-                        var row  = tbl.tBodies[0].insertRow(0);
+                        //var row  = tbl.tBodies[0].insertRow(0);
                         // inserted cells are backwards (last first) because of reasons..
-                        var cardproducts = row.insertCell(0);
-                        var carddue = row.insertCell(0); 
-                        var cardname = row.insertCell(0);
-                        var cardstage = row.insertCell(0);
+                        //var cardproducts = row.insertCell(0);
+                        //var carddue = row.insertCell(0); 
+                        //var cardname = row.insertCell(0);
+                        //var cardstage = row.insertCell(0);
 
                         //cardname.innerHTML = '<a href="#" onlick="loadid(' + "'"+ currentcard["id"] +"'"+');">'+ currentcard["name"]+'</a>';
-                        var ank = document.createElement('a');
-                        var linkText = document.createElement("U");
-                        linkText.textContent = currentcard["name"];
+                        //var ank = document.createElement('a');
+                        //var linkText = document.createElement("U");
+                        console.log('CARD:('+currentcard["id"]+') ' + currentcard["name"]);
                         //var linkText = document.createTextNode(currentcard["name"]);
-                        ank.appendChild(linkText);
+                        //ank.appendChild(linkText);
                         //var acid = currentcard["id"];
-                        ank.id = currentcard["id"];
-                        ank.onclick= function() {opencardid(this)};
+                        //ank.id = currentcard["id"];
+                        //ank.onclick= function() {opencardid(this)};
                         //function(){t.showCard(acid)};
-                        cardname.appendChild(ank);                          
-                        carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
-                        cardstage.innerHTML = currentlist.name;
+                        //cardname.appendChild(ank);                          
+                        //carddue.innerHTML = Date(currentcard["due"]).slice(0,15);
+                        //cardstage.innerHTML = currentlist.name;
                   
               for (ii=0; ii<currentcard.attachments.length;ii++) 
                  {
@@ -113,21 +51,23 @@ function showlist(){
                         //{
                           var ccao = currentcard.attachments[ii];
                           if (ccao.url.indexOf('http://product') == 0) {
-                            var ul = document.createElement('ul');
-                            cardproducts.appendChild(ul);
-                            var li = document.createElement('li');
-                            li.appendChild(document.createTextNode(ccao.name));
-                            ul.appendChild(li);
+                            console.log(ccao.name)
+                            //var ul = document.createElement('ul');
+                            //cardproducts.appendChild(ul);
+                            //var li = document.createElement('li');
+                            //li.appendChild(document.createTextNode(ccao.name));
+                            //ul.appendChild(li);
                             
-                            var qty = null;
-                            var uom = null;
-                            var m2 = null;
-                            var w = null;
-                            var lx = null; 
-                            var cmnt = null;
-                            var pcode = null;
-                            var u = null;
+                            //var qty = null;
+                            //var uom = null;
+                            //var m2 = null;
+                            //var w = null;
+                            //var lx = null; 
+                            //var cmnt = null;
+                            //var pcode = null;
+                            //var u = null;
                             
+                            /*
                             b = ccao.url.split('?'); //divide the url into portions
                             for (i = 0; i < b.length; i++) {
                               if (b[i].indexOf("productcode=")==0) {pcode = b[i].slice(12);};
@@ -139,13 +79,16 @@ function showlist(){
                               if (b[i].indexOf("l=")==0)           {lx =   b[i].slice(2);};             
                               if (b[i].indexOf("comments=")==0)    {cmnt =   b[i].slice(9);};             
                             };
-                            
+                            */
+                            /*
                             // check for zeroes, remove if required.
                             if (qty=="0.00") {qty=null;};
                             if (m2=="0.00") {m2=null;};
+                            */
                             
                             //generate sublist
-                            sublist =  document.createElement('ul');
+                            /*
+                              sublist =  document.createElement('ul');
                             if (pcode) {addline(sublist,"Product Code:",pcode);};
                             if (qty) {addline(sublist,"Quantity:",qty + ' ' + uom);};
                             if (u) {addline(sublist,"Units Per Pack:",u);};                            
@@ -157,9 +100,11 @@ function showlist(){
                                         else 
                                            {products[pcode] = parseFloat(m2)}
                                     }};
-                            if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
-                            if (cmnt) {addline(sublist,"Comments:",cmnt);};
-                            li.appendChild(sublist);                           
+                            */
+                            //if (w&&lx) {addline(sublist,"Dimensions:",w+' x '+lx);};
+                            //if (cmnt) {addline(sublist,"Comments:",cmnt);};
+                            //li.appendChild(sublist);                           
+                            
                           }
                         //}
                         
