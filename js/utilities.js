@@ -135,6 +135,6 @@ function showlist(){
 
 
 var t = TrelloPowerUp.iframe();
-updatelist();
+//updatelist();
 //using the function:
 //removeOptions(document.getElementById("mySelectObject"));
