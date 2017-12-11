@@ -42,7 +42,7 @@ xhr.addEventListener("readystatechange", function () {
   }
 });
 	
-xhr.open("DELETE", "https://api.trello.com/1/cards/"+idcard+"/attachments/"+idAttachment);
+xhr.open("DELETE", "https://api.trello.com/1/cards/"+idcard+"/attachments/"+idattachment);
 xhr.send(data);	
 
 }
