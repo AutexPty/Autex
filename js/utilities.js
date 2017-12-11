@@ -22,6 +22,7 @@ function showlist(){
 				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999);
 				var newurl = newurl.replace(/[^\w\s\\\/\:_\=\?\.]/gi, '').split(' ').join('_');
 				ccao.url = newurl;
+				deletecard(currentcard.id,ccao.id);
                                 console.log(newurl);
                                 };
 								};
@@ -31,6 +32,20 @@ function showlist(){
 	}});
 }
 
+function deletecard(idcard,idattachment) {
+var data = JSON.stringify(false);
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+  }
+});
+	
+xhr.open("DELETE", "https://api.trello.com/1/cards/"+idcard+"/attachments/"+idAttachment);
+xhr.send(data);	
+
+}
 
 var t = TrelloPowerUp.iframe();
 //updatelist();
