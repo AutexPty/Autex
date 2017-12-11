@@ -21,6 +21,7 @@ function showlist(){
                                 if (ccao.url.indexOf('http://product?') == 0) {
 				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999);
 				var newurl = newurl.replace(/[^\w\s\\\/\:_\=\?\.]/gi, '').split(' ').join('_');
+				ccao.url = newurl;
                                 console.log(newurl);
                                 };
 								};
