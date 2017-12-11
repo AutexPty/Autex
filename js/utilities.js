@@ -1,4 +1,8 @@
 function showlist(){
+    alert("Not in use yet.");
+}
+
+function notinuse(){
     var products = {};
        
     t.lists("all").then(function(promiseResult) {        
