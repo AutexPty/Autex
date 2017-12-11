@@ -20,7 +20,7 @@ function showlist(){
                                 console.log(ccao.name);
                                 if (ccao.url.indexOf('http://product?') == 0) {
 				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999);
-				var newurl = newurl.replace(/[^\w\s]/gi, '').split(' ').join('_');
+				var newurl = newurl.replace(/[^\w\s\\\/\:_\=\?\.]/gi, '').split(' ').join('_');
                                 console.log(newurl);
                                 };
 								};
