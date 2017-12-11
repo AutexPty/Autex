@@ -19,9 +19,9 @@ function showlist(){
                             if (ccao.url.indexOf('http://product') == 0) {
                                 console.log(ccao.name);
                                 if (ccao.url.indexOf('http://product?') == 0) {
-				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999) 
-				newurl = newurl.replace(' ', '_')
-                                console.log(newurl)
+				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999);
+				var newurl = newurl.replace(/[^\w\s]/gi, '').split(' ').join('_');
+                                console.log(newurl);
                                 };
 								};
 						}
