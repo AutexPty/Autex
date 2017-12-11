@@ -19,7 +19,9 @@ function showlist(){
                             if (ccao.url.indexOf('http://product') == 0) {
                                 console.log(ccao.name);
                                 if (ccao.url.indexOf('http://product?') == 0) {
-                                console.log('http://product.io/?' + ccao.url.substring(15, 999))
+				var newurl = 'http://product.io/?' + ccao.url.substring(15, 999) 
+				newurl = newurl.replace(' ', '_')
+                                console.log(newurl)
                                 };
 								};
 						}
