@@ -78,7 +78,7 @@ var getBadges = function(t){
   .then(function(attachments){
 
     z = attachments.filter((function(attachment){
-      return attachment.url.indexOf('http://product?') == 0;
+      return attachment.url.indexOf('http://product.io/?') == 0;
     }));
 
     r = attachments.filter((function(attachment){
