@@ -12,7 +12,7 @@ var quantity;
 var unit;
 var slccode;
 var slccode1;
-
+var ptr=0;
 var t = TrelloPowerUp.iframe();
 
 function selectcategory() {
@@ -287,6 +287,7 @@ function editspecs() {
   document.getElementById('Width').disabled = false; 
   document.getElementById('Length').disabled = false; 
   document.getElementById('Units').disabled = false; 
+  ptr=1;
 };
 
 function selectvariant() {
