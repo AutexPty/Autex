@@ -150,7 +150,7 @@ function addproduct() {
   var comment =  document.getElementById('description').value;
   var pcode = products[item.value].getElementsByTagName("productcode")[0].textContent 
   var mqty = document.getElementById("Quantity").value; 
-
+  var cat=  document.getElementById("product").value; 
   var productstr = "";
   var productname = ""
   var m2 = document.getElementById('m2').value;
