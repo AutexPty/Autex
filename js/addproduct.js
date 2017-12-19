@@ -179,6 +179,10 @@ if (colour)  {
                else
                { pcode = pcode + colourcode;}
                }
+ 
+ If (ptr=1 && cat<6 && cat!=1)
+ {pcode= "PCS"+ pcode;}
+
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
   if (unit) {productstr = productstr + "?UOM=" + unit;};
   if (u)  {productstr = productstr + "?PPK=" + u;};
