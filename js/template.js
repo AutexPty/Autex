@@ -238,13 +238,14 @@ var utilitiesAddCallback = function(t){
   });
 };
 
-var classificationAddCallback = function(t){
+var timeframeAddCallback = function(t){
   t.popup({
 	  title: 'Add Timeframe',
-	  url:"./addtimeframe.html",
+	  url:"./addtimeframe.html.html",
 	  height: 180
   });
 };
+
 
 var menu = function(t) {
 return t.popup({
