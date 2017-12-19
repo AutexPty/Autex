@@ -11,27 +11,10 @@
   <product>
     <productcode>ETC</productcode>
     <description>Etch</description>
+    <variant><code></code><description>Etch</description></variant>
     <colours>Vertiface</colours>
-    <variants>  
-        <variant><code>ALP</code><description>Alphabet Soup</description></variant>
-	<variant><code>BAQ</code><description>Baroque</description></variant>
-	<variant><code>BLY</code><description>Barley</description></variant>
-	<variant><code>BAR</code><description>Burst</description></variant>
-	<variant><code>COS</code><description>Cosmic</description></variant>
-	<variant><code>DOT</code><description>Dots</description></variant>
-	<variant><code>FLA</code><description>Flamingo</description></variant>
-	<variant><code>HAR</code><description>Harlequin</description></variant>
-	<variant><code>JAW</code><description>Jaws</description></variant>
-	<variant><code>MOS</code><description>Mosaic</description></variant>
-	<variant><code>PIN</code><description>Pinstripe</description></variant>
-	<variant><code>SCH</code><description>School Days</description></variant>
-	<variant><code>STI</code><description>Stitch</description></variant>
-	<variant><code>TRO</code><description>Tropics</description></variant>
-	<variant><code>XXX</code><description>Bespoke</description></variant>
-	<variant><code>ZOO</code><description>Zoo</description></variant>
-   <variants>
     <unit>Lm</unit>
-  </product>	
+  </product>		
 	
   <product>
     <productcode>QSP</productcode>
