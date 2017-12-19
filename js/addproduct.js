@@ -173,12 +173,20 @@ if (colour)  {
                productstr = productstr + "?colour="  + colour;
                productname =  productname + " " + colour;
                if (slccode == "BLK")
-               { pcode = pcode + colourcode + "BLK"; }
+               { if pcode.substring(0,3)=="QSP"
+			              {pcode = pcode + colourcode + "K";}
+				             else
+			              {pcode = pcode + colourcode + "BLK";}
+			           	}
                else if (slccode == "WHI")
-               { pcode = pcode + colourcode+ "WHI"; }
+               { if pcode.substring(0,3)=="QSP"
+			              {pcode = pcode + colourcode;}
+				             else
+                 {pcode = pcode + colourcode+ "WHI"; }
+               }
                else
                { pcode = pcode + colourcode;}
-               }
+               } 
  
  if (ptr==1 && cat<6 && cat!=1)
  {pcode= "PCS"+ pcode;
