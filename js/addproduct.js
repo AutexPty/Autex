@@ -180,7 +180,7 @@ if (colour)  {
                { pcode = pcode + colourcode;}
                }
  
- If (ptr=1 && cat<6 && cat!=1)
+ If (ptr==1 && cat<6 && cat!=1)
  {pcode= "PCS"+ pcode;}
 
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
