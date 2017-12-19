@@ -11,7 +11,9 @@
   <product>
     <productcode>ETC</productcode>
     <description>Etch</description>
-    <variant><code>ALP</code><description>Alphabet Soup</description></variant>
+    <colours>Vertiface</colours>
+    <variants>  
+        <variant><code>ALP</code><description>Alphabet Soup</description></variant>
 	<variant><code>BAQ</code><description>Baroque</description></variant>
 	<variant><code>BLY</code><description>Barley</description></variant>
 	<variant><code>BAR</code><description>Burst</description></variant>
@@ -27,7 +29,7 @@
 	<variant><code>TRO</code><description>Tropics</description></variant>
 	<variant><code>XXX</code><description>Bespoke</description></variant>
 	<variant><code>ZOO</code><description>Zoo</description></variant>
-	<colours>Vertiface</colours>
+   <variants>
     <unit>Lm</unit>
   </product>	
 	
