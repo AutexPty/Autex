@@ -238,6 +238,14 @@ var utilitiesAddCallback = function(t){
   });
 };
 
+var classificationAddCallback = function(t){
+  t.popup({
+	  title: 'Add Timeframe',
+	  url:"./addtimeframe.html",
+	  height: 180
+  });
+};
+
 var menu = function(t) {
 return t.popup({
 	title: 'Menu',
@@ -259,6 +267,12 @@ return t.popup({
 			text: "Add Classification (A/B/C)",
 			callback: classificationAddCallback	
 		},
+		
+		{
+			text: "Add Project Timeframe",
+			callback: timeframeAddCallback	
+		},
+		
 		{
 			text: "Utilities",
 			callback: utilitiesAddCallback				
