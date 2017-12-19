@@ -182,6 +182,7 @@ if (colour)  {
  
  if (ptr==1 && cat<6 && cat!=1)
  {pcode= "PCS"+ pcode;
+  productname = "precision Cut "+productname;
   }
 
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
