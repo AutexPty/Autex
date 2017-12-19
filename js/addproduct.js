@@ -12,7 +12,7 @@ var quantity;
 var unit;
 var slccode;
 var slccode1;
-var ptr=0;
+var ptr = 0;
 var t = TrelloPowerUp.iframe();
 
 function selectcategory() {
@@ -180,7 +180,7 @@ if (colour)  {
                { pcode = pcode + colourcode;}
                }
  
- If (ptr==1 && cat<6 && cat!=1)
+ if (ptr==1 && cat<6 && cat!=1)
  {pcode= "PCS"+ pcode;}
 
   if (mqty) {productstr = productstr + "?Qty=" + mqty;};
