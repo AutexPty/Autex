@@ -173,7 +173,7 @@ if (colour)  {
                productstr = productstr + "?colour="  + colour;
                productname =  productname + " " + colour;
                if (slccode == "BLK")
-               { if pcode.substring(0,3)=="QSP"
+               { if (pcode.substring(0,3)=="QSP")
 			              {pcode = pcode + colourcode + "K";}
 				             else
 			              {pcode = pcode + colourcode + "BLK";}
