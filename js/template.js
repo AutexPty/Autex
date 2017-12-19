@@ -241,7 +241,7 @@ var utilitiesAddCallback = function(t){
 var timeframeAddCallback = function(t){
   t.popup({
 	  title: 'Add Timeframe',
-	  url:"./addtimeframe.html.html",
+	  url:"./addtimeframe.html",
 	  height: 180
   });
 };
