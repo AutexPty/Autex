@@ -11,26 +11,9 @@
   <product>
     <productcode>ETC</productcode>
     <description>Etch</description>
+    <variant><code></code><description>Etch</description></variant>
     <colours>Vertiface</colours>
-    <variants>  
-    <variant><code>ALP</code><description>Alphabet Soup</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>BAQ</code><description>Baroque</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>BLY</code><description>Barley</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>BAR</code><description>Burst</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>COS</code><description>Cosmic</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>DOT</code><description>Dots</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>FLA</code><description>Flamingo</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>HAR</code><description>Harlequin</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>JAW</code><description>Jaws</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>MOS</code><description>Mosaic</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>PIN</code><description>Pinstripe</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>SCH</code><description>School Days</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>STI</code><description>Stitch</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>TRO</code><description>Tropics</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>XXX</code><description>Bespoke</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-	<variant><code>ZOO</code><description>Zoo</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-   <variants>
-   <unit>Lm</unit>
+    <unit>Lm</unit>
   </product>		
 	
   <product>
