@@ -179,7 +179,7 @@ if (colour)  {
 			              {pcode = pcode + colourcode + "BLK";}
 			           	}
                else if (slccode == "WHI")
-               { if pcode.substring(0,3)=="QSP"
+               { if (pcode.substring(0,3)=="QSP")
 			              {pcode = pcode + colourcode;}
 				             else
                  {pcode = pcode + colourcode+ "WHI"; }
