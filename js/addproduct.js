@@ -169,6 +169,12 @@ function addproduct() {
                else
                { pcode = pcode + selvar ;}
               }
+	
+if (productname ==" ")
+{
+	productname= document.getElementById('product').value;
+}
+	
 if (colour)  {
                productstr = productstr + "?colour="  + colour;
                productname =  productname + " " + colour;
