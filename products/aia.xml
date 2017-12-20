@@ -9,12 +9,21 @@
   </product>
   
   <product>
-    <productcode>ETC</productcode>
-    <description>Etch</description>
-    <variant><code></code><description>Etch</description></variant>
-    <colours>Vertiface</colours>
-    <unit>Lm</unit>
-  </product>		
+    <productcode>QSP</productcode>
+    <description>Quietspace Panel</description>
+    <colours>VertifaceN</colours>
+    <variants>
+      <variant><code>25</code><description>25mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>25BLK</code><description>25mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>50</code><description>50mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>50BLK</code><description>50mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>75</code><description>75mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>75BLK</code><description>75mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>100</code><description>100mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>100BLK</code><description>100mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+    </variants>
+    <unit>Panels</unit>
+  </product>	
 	
   <product>
     <productcode>QSP</productcode>
