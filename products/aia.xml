@@ -8,22 +8,22 @@
     <unit>Lm</unit>
   </product>
   
-  <product>
-    <productcode>QSP</productcode>
-    <description>Quietspace Panel</description>
-    <colours>VertifaceN</colours>
+ <product>
+    <productcode>ETC</productcode>
+    <description>Etch</description>
+    <colours>Vertiface</colours>
     <variants>
-      <variant><code>25</code><description>25mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>25BLK</code><description>25mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>50</code><description>50mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>50BLK</code><description>50mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>75</code><description>75mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>75BLK</code><description>75mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>100</code><description>100mm White Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
-      <variant><code>100BLK</code><description>100mm Black Panel</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>ALP</code><description>Alphabet Soup</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>BAQ</code><description>Baroque</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>BLY</code><description>Barley</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>BAR</code><description>Burst</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>COS</code><description>Cosmic</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>DOT</code><description>Dots</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>FLA</code><description>Flamingo</description><width>1.2</width><length>2.4</length><units>1</units></variant>
+      <variant><code>HAR</code><description>Harlequin</description><width>1.2</width><length>2.4</length><units>1</units></variant>
     </variants>
     <unit>Panels</unit>
-  </product>	
+  </product>
 	
   <product>
     <productcode>QSP</productcode>
