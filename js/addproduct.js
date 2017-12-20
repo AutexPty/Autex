@@ -170,9 +170,9 @@ function addproduct() {
                { pcode = pcode + selvar ;}
               }
 	
-if (productname =="")
+if (productname ==" ")
 {
-	productname= document.getElementById('product').value;
+	productname= document.getElementById('description').value;
 }
 	
 if (colour)  {
