@@ -170,22 +170,22 @@ function addproduct() {
                { pcode = pcode + selvar ;}
               }
 	
-if (productname =="")
-{
-	var code= document.getElementById('product').value;
+var code= document.getElementById('product').value;
 	
-	switch(code) {
+switch(code) {
     	case '0':
-        productname= "Verfiface ";
-        break;
+        productname= "Verfiface";
+	case '1':
+	productname= "Etch";
     	case '7':
-        productname= "Symphony ";
+        productname= "Symphony";
 	case '10':
-        productname= "Accent Ceiling Tiles ";
+        productname= "Accent Ceiling Tiles";
+	
 	}
 	
 	
-}
+
 	
 if (colour)  {
                productstr = productstr + "?colour="  + colour;
