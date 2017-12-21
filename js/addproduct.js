@@ -177,12 +177,16 @@ switch(code) {
         productname= "Verfiface";
 	case '1':
 	productname= "Etch";
+	break;
     	case '7':
         productname= "Symphony";
+	break;
 	case '9':
-	productname= "Peel n stick Tiles";	
+	productname= "Peel n stick Tiles";
+	break;
 	case '10':
         productname= "Accent Ceiling Tiles";
+	break;
 	
 	}
 	
