@@ -177,9 +177,10 @@ if (productname =="")
 	switch(code) {
     	case 0:
         productname= "Verfiface ";
-    	case 7:
+        break;
+    	case "7":
         productname= "Symphony ";
-	case 10:
+	case "10":
         productname= "Accent Ceiling Tiles ";
 	}
 	
