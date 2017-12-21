@@ -175,12 +175,12 @@ if (productname =="")
 	var code= document.getElementById('product').value;
 	
 	switch(code) {
-    	case 0:
+    	case '0':
         productname= "Verfiface ";
         break;
-    	case "7":
+    	case '7':
         productname= "Symphony ";
-	case "10":
+	case '10':
         productname= "Accent Ceiling Tiles ";
 	}
 	
