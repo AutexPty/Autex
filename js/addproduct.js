@@ -179,6 +179,8 @@ switch(code) {
 	productname= "Etch";
     	case '7':
         productname= "Symphony";
+	case '9':
+	productname= "Peel n stick Tiles";	
 	case '10':
         productname= "Accent Ceiling Tiles";
 	
