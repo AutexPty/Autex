@@ -172,7 +172,18 @@ function addproduct() {
 	
 if (productname =="")
 {
-	productname= document.getElementById('description').value;
+	var code= document.getElementById('product').value;
+	
+	switch(code) {
+    	case 0:
+        productname= "Verfiface ";
+    	case 7:
+        productname= "Symphony ";
+	case 10:
+        productname= "Accent Ceiling Tiles ";
+	}
+	
+	
 }
 	
 if (colour)  {
