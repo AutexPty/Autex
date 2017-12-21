@@ -175,6 +175,7 @@ var code= document.getElementById('product').value;
 switch(code) {
     	case '0':
         productname= "Verfiface";
+	Break;
 	case '1':
 	productname= "Etch";
 	break;
